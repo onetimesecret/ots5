@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: ots-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - ots-network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ots-app
+    ports:
+      - "8000:8000"
+    environment:
+      - OTS_REDIS_URL=redis://redis:6379/0
+      - OTS_SECRET_KEY=${OTS_SECRET_KEY:-change_me_to_secure_random_key}
+      - OTS_SSL_ENABLED=false
+      - OTS_AUTH_REQUIRED=false
+      - OTS_PASSPHRASE_REQUIRED=false
+      - OTS_MAX_SECRET_SIZE=1048576
+      - OTS_DEFAULT_TTL=604800
+      - OTS_MAX_TTL=2592000
+      - OTS_DEBUG=true
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - ots-network
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+    driver: local
+
+networks:
+  ots-network:
+    driver: bridge
