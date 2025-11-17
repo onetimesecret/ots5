@@ -1,6 +1,6 @@
 """Unit tests for secret service."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from unittest.mock import MagicMock
 import pytest
 
@@ -117,7 +117,7 @@ class TestSecretService:
         secret_service.storage.get_metadata = MagicMock(return_value={
             "secret_key": secret_key,
             "has_passphrase": False,
-            "created_at": datetime.utcnow(),
+            "created_at": datetime.now(timezone.utc),
             "ttl": 3600,
             "viewed": False
         })
@@ -146,7 +146,7 @@ class TestSecretService:
         secret_service.storage.get_metadata = MagicMock(return_value={
             "secret_key": secret_key,
             "has_passphrase": True,
-            "created_at": datetime.utcnow(),
+            "created_at": datetime.now(timezone.utc),
             "ttl": 3600,
             "viewed": False
         })
@@ -177,7 +177,7 @@ class TestSecretService:
         secret_service.storage.get_metadata = MagicMock(return_value={
             "secret_key": secret_key,
             "has_passphrase": True,
-            "created_at": datetime.utcnow(),
+            "created_at": datetime.now(timezone.utc),
             "ttl": 3600,
             "viewed": False
         })
@@ -201,7 +201,7 @@ class TestSecretService:
         secret_service.storage.get_metadata = MagicMock(return_value={
             "secret_key": "test_key",
             "has_passphrase": False,
-            "created_at": datetime.utcnow(),
+            "created_at": datetime.now(timezone.utc),
             "ttl": 3600,
             "viewed": True  # Already viewed
         })
@@ -216,7 +216,7 @@ class TestSecretService:
         secret_service.storage.get_metadata = MagicMock(return_value={
             "secret_key": "test_key",
             "has_passphrase": True,
-            "created_at": datetime.utcnow(),
+            "created_at": datetime.now(timezone.utc),
             "ttl": 3600,
             "viewed": False
         })
@@ -227,7 +227,7 @@ class TestSecretService:
     def test_get_metadata(self, secret_service: SecretService) -> None:
         """Test getting secret metadata."""
         secret_key = "test_key"
-        created_at = datetime.utcnow()
+        created_at = datetime.now(timezone.utc)
 
         secret_service.storage.get_metadata = MagicMock(return_value={
             "secret_key": secret_key,

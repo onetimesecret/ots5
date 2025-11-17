@@ -1,6 +1,7 @@
 """Integration tests for API endpoints."""
 
 import pytest
+from datetime import datetime, timezone
 from fastapi.testclient import TestClient
 from unittest.mock import MagicMock, patch
 
@@ -48,7 +49,6 @@ class TestCreateSecret:
 
     def test_create_secret_basic(self, client: TestClient, mock_service) -> None:
         """Test creating a basic secret."""
-        from datetime import datetime
         from onetimesecret.models.secret import SecretResponse
 
         # Mock service response
@@ -56,7 +56,7 @@ class TestCreateSecret:
             secret_key="test_key_123",
             metadata_key="test_key_123:metadata",
             ttl=3600,
-            created_at=datetime.utcnow()
+            created_at=datetime.now(timezone.utc)
         )
 
         response = client.post(
@@ -73,14 +73,13 @@ class TestCreateSecret:
         self, client: TestClient, mock_service
     ) -> None:
         """Test creating a secret with passphrase."""
-        from datetime import datetime
         from onetimesecret.models.secret import SecretResponse
 
         mock_service.create_secret.return_value = SecretResponse(
             secret_key="test_key_456",
             metadata_key="test_key_456:metadata",
             ttl=7200,
-            created_at=datetime.utcnow()
+            created_at=datetime.now(timezone.utc)
         )
 
         response = client.post(
@@ -126,12 +125,11 @@ class TestRetrieveSecret:
 
     def test_retrieve_secret_post(self, client: TestClient, mock_service) -> None:
         """Test retrieving a secret using POST method."""
-        from datetime import datetime
         from onetimesecret.models.secret import SecretContent
 
         mock_service.retrieve_secret.return_value = SecretContent(
             secret="Test secret message",
-            created_at=datetime.utcnow()
+            created_at=datetime.now(timezone.utc)
         )
 
         response = client.post(
@@ -145,12 +143,11 @@ class TestRetrieveSecret:
 
     def test_retrieve_secret_get(self, client: TestClient, mock_service) -> None:
         """Test retrieving a secret using GET method."""
-        from datetime import datetime
         from onetimesecret.models.secret import SecretContent
 
         mock_service.retrieve_secret.return_value = SecretContent(
             secret="Test secret message",
-            created_at=datetime.utcnow()
+            created_at=datetime.now(timezone.utc)
         )
 
         response = client.get("/api/v2/secrets/test_key_123")
@@ -163,12 +160,11 @@ class TestRetrieveSecret:
         self, client: TestClient, mock_service
     ) -> None:
         """Test retrieving a passphrase-protected secret."""
-        from datetime import datetime
         from onetimesecret.models.secret import SecretContent
 
         mock_service.retrieve_secret.return_value = SecretContent(
             secret="Protected message",
-            created_at=datetime.utcnow()
+            created_at=datetime.now(timezone.utc)
         )
 
         response = client.post(
@@ -223,12 +219,11 @@ class TestSecretMetadata:
 
     def test_get_metadata(self, client: TestClient, mock_service) -> None:
         """Test getting secret metadata."""
-        from datetime import datetime
         from onetimesecret.models.secret import SecretMetadataResponse
 
         mock_service.get_metadata.return_value = SecretMetadataResponse(
             secret_key="test_key",
-            created_at=datetime.utcnow(),
+            created_at=datetime.now(timezone.utc),
             ttl=3600,
             viewed=False,
             has_passphrase=True

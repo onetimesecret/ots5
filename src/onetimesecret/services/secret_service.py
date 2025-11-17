@@ -1,6 +1,6 @@
 """Business logic for secret management."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 from onetimesecret.core.config import Settings
@@ -82,7 +82,7 @@ class SecretService:
         secret_key = generate_secret_id()
 
         # Create metadata
-        created_at = datetime.utcnow()
+        created_at = datetime.now(timezone.utc)
         metadata = SecretMetadata(
             secret_key=secret_key,
             encrypted_content=encrypted_content,

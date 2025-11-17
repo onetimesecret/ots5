@@ -1,6 +1,6 @@
 """Data models for secrets."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 from pydantic import BaseModel, Field
 
@@ -12,7 +12,7 @@ class SecretMetadata(BaseModel):
     encrypted_content: str = Field(description="Encrypted secret content")
     salt: Optional[str] = Field(default=None, description="Salt for passphrase-based encryption")
     has_passphrase: bool = Field(default=False, description="Whether secret requires passphrase")
-    created_at: datetime = Field(default_factory=datetime.utcnow, description="Creation timestamp")
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc), description="Creation timestamp")
     ttl: int = Field(description="Time-to-live in seconds")
     viewed: bool = Field(default=False, description="Whether secret has been viewed")
     metadata_key: Optional[str] = Field(default=None, description="Key for metadata storage")
