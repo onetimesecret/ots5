@@ -4,7 +4,7 @@ Secret Service
 Business logic for secret creation, retrieval, and management.
 """
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Optional, Tuple
 
 from sqlalchemy import select
@@ -80,7 +80,7 @@ class SecretService:
             passphrase_hash = None
 
         # Calculate expiration
-        expires_at = datetime.utcnow() + timedelta(seconds=secret_data.ttl)
+        expires_at = datetime.now(timezone.utc) + timedelta(seconds=secret_data.ttl)
 
         # Create secret model
         secret = Secret(
@@ -258,7 +258,7 @@ class SecretService:
             This should be run periodically as a background task.
         """
         result = await self.db.execute(
-            select(Secret).where(Secret.expires_at <= datetime.utcnow())
+            select(Secret).where(Secret.expires_at <= datetime.now(timezone.utc))
         )
         expired_secrets = result.scalars().all()
 

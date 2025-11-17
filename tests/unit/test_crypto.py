@@ -7,7 +7,7 @@ Tests for encryption, decryption, and token generation.
 import pytest
 
 from onetimesecret.crypto import SecretEncryption, TokenGenerator
-from onetimesecret.crypto.encryption import DecryptionError, EncryptionError
+from onetimesecret.crypto.encryption import DecryptionError
 
 
 class TestSecretEncryption:

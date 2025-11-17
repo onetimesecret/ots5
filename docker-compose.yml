@@ -86,7 +86,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: ots-celery-worker
-    command: celery -A onetimesecret.tasks worker --loglevel=info
+    command: celery -A onetimesecret.services.tasks worker --loglevel=info
     environment:
       DATABASE_URL: postgresql+asyncpg://ots:ots_password@postgres:5432/onetimesecret
       REDIS_URL: redis://redis:6379/0
@@ -108,7 +108,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: ots-celery-beat
-    command: celery -A onetimesecret.tasks beat --loglevel=info
+    command: celery -A onetimesecret.services.tasks beat --loglevel=info
     environment:
       DATABASE_URL: postgresql+asyncpg://ots:ots_password@postgres:5432/onetimesecret
       REDIS_URL: redis://redis:6379/0

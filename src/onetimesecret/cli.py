@@ -5,11 +5,9 @@ CLI tool for OneTimeSecret management.
 """
 
 import asyncio
-import sys
 from typing import Optional
 
 import click
-from cryptography.fernet import Fernet
 
 
 @click.group()
@@ -54,7 +52,7 @@ def generate_key():
 
 @main.command()
 @click.option("--db-url", help="Database URL (optional, uses config if not provided)")
-async def init_db(db_url: Optional[str]):
+def init_db(db_url: Optional[str]):
     """Initialize the database schema."""
     from onetimesecret.db import init_db as _init_db
 
@@ -65,7 +63,7 @@ async def init_db(db_url: Optional[str]):
         os.environ["DATABASE_URL"] = db_url
 
     click.echo("Initializing database...")
-    await _init_db()
+    asyncio.run(_init_db())
     click.echo("Database initialized successfully!")
 
 

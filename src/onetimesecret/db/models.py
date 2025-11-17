@@ -4,7 +4,7 @@ Database Models
 SQLAlchemy ORM models for secrets, users, and metadata.
 """
 
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
 from typing import Optional
 
 from sqlalchemy import (
@@ -75,7 +75,7 @@ class Secret(Base):
 
     def is_expired(self) -> bool:
         """Check if secret has expired."""
-        return datetime.utcnow() >= self.expires_at
+        return datetime.now(timezone.utc) >= self.expires_at
 
     def can_view(self) -> bool:
         """Check if secret can be viewed."""
@@ -123,7 +123,7 @@ class SecretMetadata(Base):
 
     def mark_accessed(self) -> None:
         """Mark metadata as accessed."""
-        self.accessed_at = datetime.utcnow()
+        self.accessed_at = datetime.now(timezone.utc)
         self.access_count += 1
 
 
@@ -215,10 +215,10 @@ class APIKey(Base):
         """Check if API key is valid."""
         if not self.is_active:
             return False
-        if self.expires_at and datetime.utcnow() >= self.expires_at:
+        if self.expires_at and datetime.now(timezone.utc) >= self.expires_at:
             return False
         return True
 
     def update_last_used(self) -> None:
         """Update last used timestamp."""
-        self.last_used = datetime.utcnow()
+        self.last_used = datetime.now(timezone.utc)
