@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200">
+<rect width="580" height="200" fill="#000"/>
+<text x="570" y="10" font-size="7" fill="#fff" opacity=".3">#C4E2</text>
+<!-- GLYPH 16×16 -->
+<path d="M28 33q-2-3.5-1-6.5t1-4.5q0 2 1 4.5t-1 6.5z" fill="#fff"/>
+<circle cx="26" cy="24" r=".6" fill="#fff" opacity=".5"/>
+<circle cx="30" cy="23" r=".5" fill="#fff" opacity=".4"/>
+<!-- LOCKUP 80px -->
+<g transform="translate(70,0)">
+<path d="M30 74q-7-9-4.5-18.5T30 37q2.5 9 4.5 18.5T30 74z" fill="#fff"/>
+<path d="M30 69q-3-5.5-2-11t2-9q1 3.5 2 9t-2 11z" fill="#000"/>
+<circle cx="22" cy="46" r="1.3" fill="#fff" opacity=".6"/>
+<circle cx="38" cy="47" r="1.2" fill="#fff" opacity=".5"/>
+<circle cx="26" cy="39" r="1" fill="#fff" opacity=".4"/>
+<text x="60" y="52" font-size="18" font-weight="700" fill="#fff">OneTime</text>
+<text x="60" y="70" font-size="18" font-weight="300" fill="#fff">Secret</text>
+</g>
+<!-- BADGE 200px -->
+<g transform="translate(300,0)">
+<path d="M130 108q-18-18-12-36t12-36q6 18 12 36t-12 36z" fill="#fff"/>
+<path d="M130 103q-9-12-6.5-24.5T130 54q3.5 12 6.5 24.5T130 103z" fill="#000"/>
+<path d="M130 93q-4.5-7-2.5-13.5T130 66q2 7 2.5 13.5T130 93z" fill="#fff"/>
+<circle cx="108" cy="58" r="2.2" fill="#fff" opacity=".6"/>
+<circle cx="152" cy="60" r="2" fill="#fff" opacity=".6"/>
+<circle cx="116" cy="48" r="1.8" fill="#fff" opacity=".5"/>
+<circle cx="144" cy="50" r="1.6" fill="#fff" opacity=".5"/>
+<circle cx="122" cy="40" r="1.4" fill="#fff" opacity=".4"/>
+<text x="130" y="138" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">OneTime</text>
+<text x="130" y="163" font-size="28" font-weight="300" fill="#fff" text-anchor="middle">Secret</text>
+<text x="130" y="188" font-size="14" fill="#fff" text-anchor="middle" opacity=".7">One view. Then gone.</text>
+</g>
+<text x="5" y="195" font-size="8" fill="#fff" opacity=".4">Controlled burn—symmetry before scatter.</text>
+</svg>
