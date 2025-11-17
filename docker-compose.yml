@@ -1,0 +1,135 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: ots-postgres
+    environment:
+      POSTGRES_USER: ots
+      POSTGRES_PASSWORD: ots_password
+      POSTGRES_DB: onetimesecret
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ots"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ots-network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: ots-redis
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ots-network
+
+  # OneTimeSecret Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ots-app
+    environment:
+      # Database
+      DATABASE_URL: postgresql+asyncpg://ots:ots_password@postgres:5432/onetimesecret
+
+      # Redis
+      REDIS_URL: redis://redis:6379/0
+
+      # Security (CHANGE IN PRODUCTION!)
+      SECRET_KEY: ${SECRET_KEY:-change-this-to-a-secure-random-key-minimum-32-chars}
+      SSL_ENABLED: ${SSL_ENABLED:-false}
+
+      # Application
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      DEBUG: ${DEBUG:-true}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+
+      # CORS
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:8000}
+
+      # Rate Limiting
+      RATE_LIMIT_ENABLED: ${RATE_LIMIT_ENABLED:-true}
+      RATE_LIMIT_PER_MINUTE: ${RATE_LIMIT_PER_MINUTE:-60}
+
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src  # Mount source for development
+    networks:
+      - ots-network
+    restart: unless-stopped
+
+  # Celery Worker (for background tasks)
+  celery-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ots-celery-worker
+    command: celery -A onetimesecret.tasks worker --loglevel=info
+    environment:
+      DATABASE_URL: postgresql+asyncpg://ots:ots_password@postgres:5432/onetimesecret
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      SECRET_KEY: ${SECRET_KEY:-change-this-to-a-secure-random-key-minimum-32-chars}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - ots-network
+    restart: unless-stopped
+
+  # Celery Beat (for scheduled tasks like cleanup)
+  celery-beat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ots-celery-beat
+    command: celery -A onetimesecret.tasks beat --loglevel=info
+    environment:
+      DATABASE_URL: postgresql+asyncpg://ots:ots_password@postgres:5432/onetimesecret
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      SECRET_KEY: ${SECRET_KEY:-change-this-to-a-secure-random-key-minimum-32-chars}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - ots-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  ots-network:
+    driver: bridge

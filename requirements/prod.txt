@@ -1,0 +1,5 @@
+-r base.txt
+
+# Production server dependencies
+gunicorn>=21.2.0
+setproctitle>=1.3.3
