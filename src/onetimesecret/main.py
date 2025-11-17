@@ -10,6 +10,9 @@ from fastapi.responses import JSONResponse
 from onetimesecret.api.routes import router
 from onetimesecret.core.config import get_settings
 from onetimesecret.core.exceptions import OTSException
+from onetimesecret.services.redis_client import SecretStorage
+from onetimesecret.services.secret_service import SecretService
+from onetimesecret.utils.crypto import SecretEncryption
 
 
 @asynccontextmanager
@@ -25,10 +28,21 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     print(f"Redis URL: {settings.redis_url}")
     print(f"API Prefix: {settings.api_prefix}")
 
+    # Initialize shared service instances
+    storage = SecretStorage(settings.redis_url)
+    encryption = SecretEncryption(settings.secret_key)
+    secret_service = SecretService(storage, encryption, settings)
+
+    # Store in app state for dependency injection
+    app.state.storage = storage
+    app.state.encryption = encryption
+    app.state.secret_service = secret_service
+
     yield
 
-    # Shutdown
+    # Shutdown - clean up resources
     print("Shutting down OneTimeSecret API")
+    storage.close()
 
 
 # Create FastAPI application

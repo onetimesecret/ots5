@@ -1,37 +1,32 @@
 """API routes for OneTimeSecret."""
 
 from typing import Optional
-from fastapi import APIRouter, Depends, HTTPException, Query, Body
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 
-from onetimesecret.core.config import Settings, get_settings
 from onetimesecret.core.exceptions import OTSException
 from onetimesecret.models.secret import (
     SecretCreate,
     SecretResponse,
     SecretContent,
     SecretMetadataResponse,
+    SecretRetrieve,
 )
-from onetimesecret.services.redis_client import SecretStorage
 from onetimesecret.services.secret_service import SecretService
-from onetimesecret.utils.crypto import SecretEncryption
-from onetimesecret.api.validators import validate_secret_key, validate_passphrase
+from onetimesecret.api.validators import validate_secret_key
 
 
 # Dependency for getting the secret service
-def get_secret_service(settings: Settings = Depends(get_settings)) -> SecretService:
+def get_secret_service(request: Request) -> SecretService:
     """
-    Create and return a SecretService instance.
+    Retrieve the SecretService instance from application state.
 
     Args:
-        settings: Application settings
+        request: FastAPI request object
 
     Returns:
-        Configured SecretService instance
+        Configured SecretService instance from app state
     """
-    storage = SecretStorage(settings.redis_url)
-    encryption = SecretEncryption(settings.secret_key)
-    return SecretService(storage, encryption, settings)
+    return request.app.state.secret_service
 
 
 # Create API router
@@ -78,7 +73,7 @@ async def create_secret(
 )
 async def retrieve_secret(
     secret_key: str,
-    passphrase: Optional[str] = Body(None, embed=True),
+    retrieve_data: SecretRetrieve,
     service: SecretService = Depends(get_secret_service)
 ) -> SecretContent:
     """
@@ -86,7 +81,7 @@ async def retrieve_secret(
 
     Args:
         secret_key: Unique secret identifier
-        passphrase: Optional passphrase for protected secrets
+        retrieve_data: Retrieval request with optional passphrase
         service: Secret service instance
 
     Returns:
@@ -100,7 +95,7 @@ async def retrieve_secret(
         secret_key = validate_secret_key(secret_key)
 
         # Retrieve the secret
-        return service.retrieve_secret(secret_key, passphrase)
+        return service.retrieve_secret(secret_key, retrieve_data.passphrase)
     except OTSException as e:
         raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:

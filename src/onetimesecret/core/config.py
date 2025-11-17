@@ -2,12 +2,19 @@
 
 import secrets
 from typing import Optional
-from pydantic_settings import BaseSettings
-from pydantic import Field, validator
+from typing_extensions import Self
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import Field, field_validator, model_validator
 
 
 class Settings(BaseSettings):
     """Application settings with environment variable support."""
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_prefix="OTS_",
+        case_sensitive=False
+    )
 
     # Core settings
     redis_url: str = Field(
@@ -71,7 +78,8 @@ class Settings(BaseSettings):
         description="Enable debug mode"
     )
 
-    @validator("max_secret_size")
+    @field_validator("max_secret_size")
+    @classmethod
     def validate_max_secret_size(cls, v: int) -> int:
         """Ensure max_secret_size is positive and reasonable."""
         if v <= 0:
@@ -80,25 +88,20 @@ class Settings(BaseSettings):
             raise ValueError("max_secret_size cannot exceed 10MB")
         return v
 
-    @validator("default_ttl", "max_ttl")
+    @field_validator("default_ttl", "max_ttl")
+    @classmethod
     def validate_ttl(cls, v: int) -> int:
         """Ensure TTL values are positive."""
         if v <= 0:
             raise ValueError("TTL must be positive")
         return v
 
-    @validator("max_ttl")
-    def validate_max_ttl_vs_default(cls, v: int, values: dict) -> int:
+    @model_validator(mode='after')
+    def validate_max_ttl_vs_default(self) -> Self:
         """Ensure max_ttl is greater than or equal to default_ttl."""
-        if "default_ttl" in values and v < values["default_ttl"]:
+        if self.max_ttl < self.default_ttl:
             raise ValueError("max_ttl must be >= default_ttl")
-        return v
-
-    class Config:
-        """Pydantic configuration."""
-        env_file = ".env"
-        env_prefix = "OTS_"
-        case_sensitive = False
+        return self
 
 
 # Global settings instance

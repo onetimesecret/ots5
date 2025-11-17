@@ -1,6 +1,7 @@
 """Redis client for secret storage."""
 
 import json
+import logging
 from typing import Optional
 from datetime import datetime
 
@@ -9,6 +10,8 @@ from redis.connection import ConnectionPool
 
 from onetimesecret.core.exceptions import StorageException, SecretNotFoundException
 from onetimesecret.models.secret import SecretMetadata
+
+logger = logging.getLogger(__name__)
 
 
 class SecretStorage:
@@ -216,5 +219,6 @@ class SecretStorage:
         """Close the Redis connection."""
         try:
             self.client.close()
-        except redis.RedisError:
-            pass  # Ignore errors during close
+            logger.info("Redis connection closed successfully")
+        except redis.RedisError as e:
+            logger.warning(f"Error closing Redis connection: {str(e)}")

@@ -246,8 +246,7 @@ onetimesecret/
 │       │   └── validators.py    # Input validation
 │       ├── core/
 │       │   ├── config.py        # Configuration management
-│       │   ├── exceptions.py    # Custom exceptions
-│       │   └── security.py      # Security utilities
+│       │   └── exceptions.py    # Custom exceptions
 │       ├── models/
 │       │   └── secret.py        # Pydantic models
 │       ├── services/
