@@ -1,0 +1,14 @@
+<!-- Iteration 17: Temporal X - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 60 60 L 100 100" stroke="#FFF" stroke-width="14" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="120" y2="120" stroke="#FFF" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <line x1="120" y1="120" x2="132" y2="132" stroke="#FFF" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="138" cy="138" r="2" fill="#FFF" opacity="0.3"/>
+
+  <path d="M 140 60 L 100 100" stroke="#FFF" stroke-width="14" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="80" y2="120" stroke="#FFF" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <line x1="80" y1="120" x2="68" y2="132" stroke="#FFF" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="62" cy="138" r="2" fill="#FFF" opacity="0.3"/>
+</svg>

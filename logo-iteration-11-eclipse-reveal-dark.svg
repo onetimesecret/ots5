@@ -1,0 +1,15 @@
+<!-- Iteration 11: Eclipse Reveal - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <circle cx="95" cy="100" r="45" fill="#FFF"/>
+
+  <circle cx="115" cy="100" r="45" fill="none" stroke="#FFF" stroke-width="8"/>
+
+  <path d="M 105 55 Q 110 100 105 145" fill="none" stroke="#FFF" stroke-width="2" opacity="0.4"/>
+
+  <circle cx="125" cy="80" r="2.5" fill="#FFF"/>
+  <circle cx="132" cy="75" r="1.5" fill="#FFF" opacity="0.7"/>
+  <circle cx="125" cy="120" r="2.5" fill="#FFF"/>
+  <circle cx="132" cy="125" r="1.5" fill="#FFF" opacity="0.7"/>
+</svg>

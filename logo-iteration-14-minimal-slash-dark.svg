@@ -1,0 +1,9 @@
+<!-- Iteration 14: Minimal Slash - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <line x1="130" y1="60" x2="70" y2="140" stroke="#FFF" stroke-width="18" stroke-linecap="round"/>
+
+  <circle cx="135" cy="53" r="3" fill="#FFF" opacity="0.5"/>
+  <circle cx="65" cy="147" r="3" fill="#FFF" opacity="0.5"/>
+</svg>

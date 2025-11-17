@@ -1,0 +1,19 @@
+<!-- Iteration 07: Signal Fade - Light Mode -->
+<!-- Concept: Transmitted signal that degrades to silence - waveform to flatline -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left side: strong signal waves -->
+  <path d="M 30 100 L 40 70 L 50 130 L 60 80 L 70 120"
+        fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Middle: degrading amplitude -->
+  <path d="M 70 120 L 85 105 L 100 115 L 115 95 L 130 105"
+        fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right: flatlining -->
+  <path d="M 130 105 L 145 102 L 160 100 L 170 100"
+        fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Final dots fading out -->
+  <circle cx="175" cy="100" r="2" fill="#000" opacity="0.5"/>
+  <circle cx="180" cy="100" r="1" fill="#000" opacity="0.2"/>
+</svg>

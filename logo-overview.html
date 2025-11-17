@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ephemeral Messaging Logo Iterations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .logo-card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 0.95em;
+    }
+
+    .logo-concept {
+      color: #666;
+      font-size: 0.85em;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .logo-display {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .logo-version {
+      flex: 1;
+      aspect-ratio: 1;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .logo-version.dark {
+      background: #000;
+    }
+
+    .logo-version.light {
+      background: #fff;
+    }
+
+    .logo-version img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+
+    .logo-label {
+      text-align: center;
+      font-size: 0.75em;
+      color: #999;
+      margin-top: 6px;
+    }
+
+    .section-header {
+      margin: 60px 0 30px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .section-header h2 {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+
+    .toggle-container {
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .toggle-btn {
+      padding: 12px 30px;
+      margin: 0 10px;
+      border: 2px solid #333;
+      background: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .toggle-btn:hover {
+      background: #333;
+      color: white;
+    }
+
+    .toggle-btn.active {
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ephemeral Messaging Logo Explorations</h1>
+    <p class="subtitle">24 iterations exploring disappearance, encryption, and urgency</p>
+
+    <div class="toggle-container">
+      <button class="toggle-btn active" onclick="showBoth()">Show Both</button>
+      <button class="toggle-btn" onclick="showLight()">Light Only</button>
+      <button class="toggle-btn" onclick="showDark()">Dark Only</button>
+    </div>
+
+    <div class="section-header">
+      <h2>Core Concepts: Fragmentation & Dissolution</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">01. Dissolving Letter</div>
+        <div class="logo-concept">Message fragment breaking into particles</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-01-dissolving-letter.svg" alt="Dissolving Letter Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-01-dissolving-letter-dark.svg" alt="Dissolving Letter Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">02. Vanishing Circle</div>
+        <div class="logo-concept">Progressive deletion from outside in</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-02-vanishing-circle.svg" alt="Vanishing Circle Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-02-vanishing-circle-dark.svg" alt="Vanishing Circle Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">12. Pixel Decay</div>
+        <div class="logo-concept">Digital message fragmenting to constituent pixels</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-12-pixel-decay.svg" alt="Pixel Decay Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-12-pixel-decay-dark.svg" alt="Pixel Decay Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Temporal Concepts: Moment & Closure</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">03. One-Time Aperture</div>
+        <div class="logo-concept">Closing iris representing single viewing moment</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-03-one-time-aperture.svg" alt="Aperture Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-03-one-time-aperture-dark.svg" alt="Aperture Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">06. Single Moment</div>
+        <div class="logo-concept">Central point with dispersing waves</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-06-single-moment.svg" alt="Single Moment Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-06-single-moment-dark.svg" alt="Single Moment Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">08. Void Breach</div>
+        <div class="logo-concept">Closing gap - viewing window disappearing</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-08-void-breach.svg" alt="Void Breach Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-08-void-breach-dark.svg" alt="Void Breach Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">11. Eclipse Reveal</div>
+        <div class="logo-concept">Brief alignment revealing secret, then concealment</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-11-eclipse-reveal.svg" alt="Eclipse Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-11-eclipse-reveal-dark.svg" alt="Eclipse Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">19. Open-Closed</div>
+        <div class="logo-concept">Bracket opening then closing - brief window of access</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-19-open-closed.svg" alt="Open-Closed Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-19-open-closed-dark.svg" alt="Open-Closed Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Destruction & Consumption</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">04. Falling Slash</div>
+        <div class="logo-concept">Deletion mark with finality and gravity</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-04-falling-slash.svg" alt="Falling Slash Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-04-falling-slash-dark.svg" alt="Falling Slash Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">05. Burning Message</div>
+        <div class="logo-concept">Document consumed by flame from bottom</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-05-burning-message.svg" alt="Burning Message Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-05-burning-message-dark.svg" alt="Burning Message Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">14. Minimal Slash</div>
+        <div class="logo-concept">Ultra-simple deletion mark - absolute minimalism</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-14-minimal-slash.svg" alt="Minimal Slash Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-14-minimal-slash-dark.svg" alt="Minimal Slash Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">17. Temporal X</div>
+        <div class="logo-concept">X mark forming/dissolving simultaneously</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-17-temporal-x.svg" alt="Temporal X Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-17-temporal-x-dark.svg" alt="Temporal X Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">22. Spark Line</div>
+        <div class="logo-concept">Burning fuse - unstoppable countdown to deletion</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-22-spark-line.svg" alt="Spark Line Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-22-spark-line-dark.svg" alt="Spark Line Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Transmission & Signal</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">07. Signal Fade</div>
+        <div class="logo-concept">Waveform degrading to flatline silence</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-07-signal-fade.svg" alt="Signal Fade Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-07-signal-fade-dark.svg" alt="Signal Fade Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">09. One Drop</div>
+        <div class="logo-concept">Single droplet with impact ripple</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-09-one-drop.svg" alt="One Drop Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-09-one-drop-dark.svg" alt="One Drop Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">13. Whisper Path</div>
+        <div class="logo-concept">Curved path thinning to invisibility</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-13-whisper-path.svg" alt="Whisper Path Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-13-whisper-path-dark.svg" alt="Whisper Path Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">24. Minimal Dot Trail</div>
+        <div class="logo-concept">Single point with vanishing trail - absolute minimalism</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-24-minimal-dot-trail.svg" alt="Dot Trail Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-24-minimal-dot-trail-dark.svg" alt="Dot Trail Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Severance & Breaking</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">10. Breaking Chain</div>
+        <div class="logo-concept">Chain link severing - connection then break</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-10-breaking-chain.svg" alt="Breaking Chain Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-10-breaking-chain-dark.svg" alt="Breaking Chain Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Geometric Collapse</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">15. Collapsing Square</div>
+        <div class="logo-concept">Perfect geometry collapsing to a point</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-15-collapsing-square.svg" alt="Collapsing Square Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-15-collapsing-square-dark.svg" alt="Collapsing Square Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Radial & Burst</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">16. Scatter Dot</div>
+        <div class="logo-concept">Dense center exploding into particles</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-16-scatter-dot.svg" alt="Scatter Dot Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-16-scatter-dot-dark.svg" alt="Scatter Dot Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">20. Negative Burst</div>
+        <div class="logo-concept">Circle with radiating voids - information escaping</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-20-negative-burst.svg" alt="Negative Burst Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-20-negative-burst-dark.svg" alt="Negative Burst Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Time & Countdown</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">18. Hourglass Minimal</div>
+        <div class="logo-concept">Geometric hourglass with vanishing sand</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-18-hourglass-minimal.svg" alt="Hourglass Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-18-hourglass-minimal-dark.svg" alt="Hourglass Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-card">
+        <div class="logo-title">21. Countdown One</div>
+        <div class="logo-concept">Bold "1" disintegrating - one time, one view</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-21-countdown-one.svg" alt="Countdown One Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-21-countdown-one-dark.svg" alt="Countdown One Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Void & Absorption</h2>
+    </div>
+
+    <div class="grid">
+      <div class="logo-card">
+        <div class="logo-title">23. Void Portal</div>
+        <div class="logo-concept">Spiral pulling information into nothingness</div>
+        <div class="logo-display">
+          <div>
+            <div class="logo-version light">
+              <img src="logo-iteration-23-void-portal.svg" alt="Void Portal Light">
+            </div>
+            <div class="logo-label">Light</div>
+          </div>
+          <div>
+            <div class="logo-version dark">
+              <img src="logo-iteration-23-void-portal-dark.svg" alt="Void Portal Dark">
+            </div>
+            <div class="logo-label">Dark</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.toggle-btn');
+    const displays = document.querySelectorAll('.logo-display');
+
+    function setActiveButton(btn) {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function showBoth() {
+      displays.forEach(display => {
+        const children = display.children;
+        children[0].style.display = 'block';
+        children[1].style.display = 'block';
+      });
+      setActiveButton(buttons[0]);
+    }
+
+    function showLight() {
+      displays.forEach(display => {
+        const children = display.children;
+        children[0].style.display = 'block';
+        children[1].style.display = 'none';
+      });
+      setActiveButton(buttons[1]);
+    }
+
+    function showDark() {
+      displays.forEach(display => {
+        const children = display.children;
+        children[0].style.display = 'none';
+        children[1].style.display = 'block';
+      });
+      setActiveButton(buttons[2]);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- Iteration 03: One-Time Aperture - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <g transform="translate(100, 100)">
+    <path d="M 0 -35 L 20 -10 L 20 10 L 0 35 L -20 10 L -20 -10 Z"
+          fill="none" stroke="#FFF" stroke-width="2"/>
+
+    <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#FFF"/>
+
+    <g transform="rotate(60)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#FFF"/>
+    </g>
+
+    <g transform="rotate(120)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#FFF"/>
+    </g>
+
+    <g transform="rotate(180)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#FFF"/>
+    </g>
+
+    <g transform="rotate(240)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#FFF"/>
+    </g>
+
+    <g transform="rotate(300)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#FFF"/>
+    </g>
+
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#FFF" stroke-width="1.5"/>
+  </g>
+</svg>

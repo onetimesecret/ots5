@@ -1,0 +1,17 @@
+<!-- Iteration 04: Falling Slash - Light Mode -->
+<!-- Concept: A single descending mark suggesting deletion, finality, irreversibility -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main diagonal slash - bold and final -->
+  <path d="M 130 40 L 70 160" stroke="#000" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Fragmenting trail above showing the path of descent -->
+  <line x1="135" y1="30" x2="140" y2="20" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+  <line x1="142" y1="18" x2="145" y2="12" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+  <line x1="147" y1="10" x2="149" y2="6" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Dispersing impact particles below -->
+  <circle cx="62" cy="168" r="3" fill="#000"/>
+  <circle cx="54" cy="172" r="2" fill="#000"/>
+  <circle cx="78" cy="168" r="2.5" fill="#000"/>
+  <circle cx="68" cy="175" r="1.5" fill="#000"/>
+</svg>

@@ -1,0 +1,18 @@
+<!-- Iteration 01: Dissolving Letter - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <!-- Envelope/message shape fragmenting from right to left -->
+  <path d="M 40 80 L 40 120 L 65 120 L 65 80 Z" fill="#FFF"/>
+
+  <rect x="70" y="80" width="18" height="40" fill="#FFF"/>
+  <rect x="93" y="82" width="14" height="36" fill="#FFF"/>
+  <rect x="112" y="85" width="10" height="30" fill="#FFF"/>
+
+  <rect x="127" y="88" width="6" height="24" fill="#FFF"/>
+  <rect x="138" y="92" width="4" height="16" fill="#FFF"/>
+  <rect x="147" y="95" width="3" height="10" fill="#FFF"/>
+
+  <rect x="155" y="98" width="2" height="4" fill="#FFF"/>
+  <rect x="160" y="100" width="1.5" height="2" fill="#FFF"/>
+</svg>

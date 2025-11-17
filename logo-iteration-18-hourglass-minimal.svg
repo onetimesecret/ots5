@@ -1,0 +1,17 @@
+<!-- Iteration 18: Hourglass Minimal - Light Mode -->
+<!-- Concept: Reinterpret hourglass as pure geometry - two triangles with vanishing sand -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Upper triangle (empty) - time passed -->
+  <path d="M 70 60 L 130 60 L 100 100 Z" fill="none" stroke="#000" stroke-width="5"/>
+
+  <!-- Lower triangle outline -->
+  <path d="M 100 100 L 70 140 L 130 140 Z" fill="none" stroke="#000" stroke-width="5"/>
+
+  <!-- Small amount of "sand" falling through -->
+  <circle cx="100" cy="98" r="2.5" fill="#000"/>
+  <circle cx="100" cy="105" r="2" fill="#000"/>
+
+  <!-- Tiny pile at bottom - almost gone -->
+  <path d="M 95 135 L 100 130 L 105 135 Z" fill="#000"/>
+  <circle cx="100" cy="136" r="1.5" fill="#000"/>
+</svg>

@@ -1,0 +1,23 @@
+<!-- Iteration 02: Vanishing Circle - Light Mode -->
+<!-- Concept: A circular message/secret that erases itself from the outer edge inward -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Series of concentric arcs showing progressive deletion -->
+  <!-- Outer rings - mostly gone -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#000" stroke-width="3"
+          stroke-dasharray="15 25" stroke-dashoffset="0"/>
+
+  <!-- Middle ring - half remaining -->
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#000" stroke-width="4"
+          stroke-dasharray="80 200"/>
+
+  <!-- Inner ring - mostly intact -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#000" stroke-width="5"
+          stroke-dasharray="140 50"/>
+
+  <!-- Core - solid but small -->
+  <circle cx="100" cy="100" r="15" fill="#000"/>
+
+  <!-- Single dispersing particle -->
+  <circle cx="145" cy="65" r="2" fill="#000" opacity="0.6"/>
+  <circle cx="155" cy="55" r="1.5" fill="#000" opacity="0.3"/>
+</svg>

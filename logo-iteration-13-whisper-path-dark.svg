@@ -1,0 +1,18 @@
+<!-- Iteration 13: Whisper Path - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 40 100 Q 70 60 100 80 Q 130 100 160 70"
+        fill="none" stroke="#FFF" stroke-width="20" stroke-linecap="round" opacity="1"/>
+
+  <path d="M 160 70 Q 165 67 170 65"
+        fill="none" stroke="#FFF" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+
+  <path d="M 170 65 Q 173 63 176 62"
+        fill="none" stroke="#FFF" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+
+  <path d="M 176 62 Q 178 61 180 60"
+        fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+
+  <circle cx="182" cy="59" r="0.5" fill="#FFF" opacity="0.1"/>
+</svg>

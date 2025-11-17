@@ -1,0 +1,13 @@
+<!-- Iteration 24: Minimal Dot Trail - Light Mode -->
+<!-- Concept: Absolute minimalism - single point with vanishing trail -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trail of diminishing dots -->
+  <circle cx="50" cy="100" r="8" fill="#000"/>
+  <circle cx="70" cy="100" r="7" fill="#000" opacity="0.9"/>
+  <circle cx="88" cy="100" r="6" fill="#000" opacity="0.75"/>
+  <circle cx="104" cy="100" r="5" fill="#000" opacity="0.6"/>
+  <circle cx="118" cy="100" r="4" fill="#000" opacity="0.45"/>
+  <circle cx="130" cy="100" r="3" fill="#000" opacity="0.3"/>
+  <circle cx="140" cy="100" r="2" fill="#000" opacity="0.2"/>
+  <circle cx="148" cy="100" r="1.5" fill="#000" opacity="0.1"/>
+</svg>

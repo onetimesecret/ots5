@@ -1,0 +1,18 @@
+<!-- Iteration 15: Collapsing Square - Light Mode -->
+<!-- Concept: Perfect square collapsing inward to a point - structure to void -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer square - largest -->
+  <rect x="50" y="50" width="100" height="100" fill="none" stroke="#000" stroke-width="3"/>
+
+  <!-- Middle square -->
+  <rect x="68" y="68" width="64" height="64" fill="none" stroke="#000" stroke-width="4"/>
+
+  <!-- Inner square -->
+  <rect x="82" y="82" width="36" height="36" fill="none" stroke="#000" stroke-width="5"/>
+
+  <!-- Near center -->
+  <rect x="92" y="92" width="16" height="16" fill="none" stroke="#000" stroke-width="6"/>
+
+  <!-- Center point - the final moment -->
+  <circle cx="100" cy="100" r="4" fill="#000"/>
+</svg>

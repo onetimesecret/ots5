@@ -1,0 +1,13 @@
+<!-- Iteration 06: Single Moment - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <circle cx="100" cy="100" r="18" fill="#FFF"/>
+
+  <circle cx="100" cy="100" r="35" fill="none" stroke="#FFF" stroke-width="6" opacity="0.8"/>
+  <circle cx="100" cy="100" r="52" fill="none" stroke="#FFF" stroke-width="4" opacity="0.5"/>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#FFF" stroke-width="2" opacity="0.25"/>
+
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#FFF" stroke-width="1.5"
+          stroke-dasharray="8 12" opacity="0.15"/>
+</svg>

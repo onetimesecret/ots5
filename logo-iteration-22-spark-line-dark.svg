@@ -1,0 +1,16 @@
+<!-- Iteration 22: Spark Line - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <line x1="30" y1="100" x2="140" y2="100" stroke="#FFF" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M 140 100 L 150 90 L 154 100 L 150 110 Z" fill="#FFF"/>
+  <path d="M 154 100 L 162 95 L 164 100 L 162 105 Z" fill="#FFF"/>
+
+  <circle cx="168" cy="92" r="2" fill="#FFF" opacity="0.5"/>
+  <circle cx="172" cy="88" r="1.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="170" cy="96" r="1" fill="#FFF" opacity="0.2"/>
+
+  <circle cx="145" cy="95" r="1.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="148" cy="105" r="1.5" fill="#FFF" opacity="0.3"/>
+</svg>

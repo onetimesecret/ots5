@@ -1,0 +1,19 @@
+<!-- Iteration 22: Spark Line - Light Mode -->
+<!-- Concept: Single burning fuse - urgent, unstoppable countdown to deletion -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horizontal fuse line -->
+  <line x1="30" y1="100" x2="140" y2="100" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Burning point - sharp angular flame -->
+  <path d="M 140 100 L 150 90 L 154 100 L 150 110 Z" fill="#000"/>
+  <path d="M 154 100 L 162 95 L 164 100 L 162 105 Z" fill="#000"/>
+
+  <!-- Smoke/dispersing particles -->
+  <circle cx="168" cy="92" r="2" fill="#000" opacity="0.5"/>
+  <circle cx="172" cy="88" r="1.5" fill="#000" opacity="0.3"/>
+  <circle cx="170" cy="96" r="1" fill="#000" opacity="0.2"/>
+
+  <!-- Consumed portion (ash particles behind the flame) -->
+  <circle cx="145" cy="95" r="1.5" fill="#000" opacity="0.3"/>
+  <circle cx="148" cy="105" r="1.5" fill="#000" opacity="0.3"/>
+</svg>

@@ -1,0 +1,15 @@
+<!-- Iteration 04: Falling Slash - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 130 40 L 70 160" stroke="#FFF" stroke-width="16" stroke-linecap="round"/>
+
+  <line x1="135" y1="30" x2="140" y2="20" stroke="#FFF" stroke-width="8" stroke-linecap="round"/>
+  <line x1="142" y1="18" x2="145" y2="12" stroke="#FFF" stroke-width="5" stroke-linecap="round"/>
+  <line x1="147" y1="10" x2="149" y2="6" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="62" cy="168" r="3" fill="#FFF"/>
+  <circle cx="54" cy="172" r="2" fill="#FFF"/>
+  <circle cx="78" cy="168" r="2.5" fill="#FFF"/>
+  <circle cx="68" cy="175" r="1.5" fill="#FFF"/>
+</svg>

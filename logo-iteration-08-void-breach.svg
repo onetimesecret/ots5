@@ -1,0 +1,18 @@
+<!-- Iteration 08: Void Breach - Light Mode -->
+<!-- Concept: A closing gap/breach - negative space representing the viewing window -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Two masses pressing together, narrow gap between -->
+  <!-- Left mass -->
+  <path d="M 30 50 L 92 50 L 98 100 L 92 150 L 30 150 Z" fill="#000"/>
+
+  <!-- Right mass -->
+  <path d="M 170 50 L 108 50 L 102 100 L 108 150 L 170 150 Z" fill="#000"/>
+
+  <!-- The critical gap in the middle (negative space) forms the key visual -->
+  <!-- Adding subtle inner edges to emphasize the pressure -->
+  <line x1="92" y1="70" x2="98" y2="85" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <line x1="108" y1="70" x2="102" y2="85" stroke="#000" stroke-width="1" opacity="0.3"/>
+
+  <line x1="92" y1="130" x2="98" y2="115" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <line x1="108" y1="130" x2="102" y2="115" stroke="#000" stroke-width="1" opacity="0.3"/>
+</svg>

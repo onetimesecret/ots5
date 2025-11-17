@@ -1,0 +1,14 @@
+<!-- Iteration 08: Void Breach - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 30 50 L 92 50 L 98 100 L 92 150 L 30 150 Z" fill="#FFF"/>
+
+  <path d="M 170 50 L 108 50 L 102 100 L 108 150 L 170 150 Z" fill="#FFF"/>
+
+  <line x1="92" y1="70" x2="98" y2="85" stroke="#FFF" stroke-width="1" opacity="0.3"/>
+  <line x1="108" y1="70" x2="102" y2="85" stroke="#FFF" stroke-width="1" opacity="0.3"/>
+
+  <line x1="92" y1="130" x2="98" y2="115" stroke="#FFF" stroke-width="1" opacity="0.3"/>
+  <line x1="108" y1="130" x2="102" y2="115" stroke="#FFF" stroke-width="1" opacity="0.3"/>
+</svg>

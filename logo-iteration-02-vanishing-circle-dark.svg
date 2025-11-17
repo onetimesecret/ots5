@@ -1,0 +1,18 @@
+<!-- Iteration 02: Vanishing Circle - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#FFF" stroke-width="3"
+          stroke-dasharray="15 25" stroke-dashoffset="0"/>
+
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#FFF" stroke-width="4"
+          stroke-dasharray="80 200"/>
+
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#FFF" stroke-width="5"
+          stroke-dasharray="140 50"/>
+
+  <circle cx="100" cy="100" r="15" fill="#FFF"/>
+
+  <circle cx="145" cy="65" r="2" fill="#FFF" opacity="0.6"/>
+  <circle cx="155" cy="55" r="1.5" fill="#FFF" opacity="0.3"/>
+</svg>

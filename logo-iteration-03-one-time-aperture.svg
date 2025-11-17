@@ -1,0 +1,41 @@
+<!-- Iteration 03: One-Time Aperture - Light Mode -->
+<!-- Concept: A closing iris/shutter representing the single viewing moment -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Iris blades closing in on center -->
+  <g transform="translate(100, 100)">
+    <!-- 6 triangular blades arranged in circle, leaving small center gap -->
+    <path d="M 0 -35 L 20 -10 L 20 10 L 0 35 L -20 10 L -20 -10 Z"
+          fill="none" stroke="#000" stroke-width="2"/>
+
+    <!-- Blade 1 -->
+    <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#000"/>
+
+    <!-- Blade 2 (rotated 60deg) -->
+    <g transform="rotate(60)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#000"/>
+    </g>
+
+    <!-- Blade 3 (rotated 120deg) -->
+    <g transform="rotate(120)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#000"/>
+    </g>
+
+    <!-- Blade 4 (rotated 180deg) -->
+    <g transform="rotate(180)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#000"/>
+    </g>
+
+    <!-- Blade 5 (rotated 240deg) -->
+    <g transform="rotate(240)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#000"/>
+    </g>
+
+    <!-- Blade 6 (rotated 300deg) -->
+    <g transform="rotate(300)">
+      <path d="M 0 -8 L 25 -25 L 35 0 L 25 25 L 0 8 Z" fill="#000"/>
+    </g>
+
+    <!-- Small center gap representing the brief moment of viewing -->
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#000" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- Iteration 20: Negative Burst - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <circle cx="100" cy="100" r="55" fill="#FFF"/>
+
+  <path d="M 100 100 L 100 45 L 110 47 Z" fill="#000"/>
+  <path d="M 100 100 L 155 100 L 153 110 Z" fill="#000"/>
+  <path d="M 100 100 L 100 155 L 90 153 Z" fill="#000"/>
+  <path d="M 100 100 L 45 100 L 47 90 Z" fill="#000"/>
+
+  <path d="M 100 100 L 135 65 L 138 73 Z" fill="#000"/>
+  <path d="M 100 100 L 135 135 L 127 138 Z" fill="#000"/>
+  <path d="M 100 100 L 65 135 L 62 127 Z" fill="#000"/>
+  <path d="M 100 100 L 65 65 L 73 62 Z" fill="#000"/>
+
+  <path d="M 100 35 L 98 30 L 102 30 Z" fill="#FFF"/>
+  <path d="M 165 100 L 170 98 L 170 102 Z" fill="#FFF"/>
+  <path d="M 100 165 L 98 170 L 102 170 Z" fill="#FFF"/>
+  <path d="M 35 100 L 30 98 L 30 102 Z" fill="#FFF"/>
+</svg>

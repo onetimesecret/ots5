@@ -1,0 +1,19 @@
+<!-- Iteration 11: Eclipse Reveal - Light Mode -->
+<!-- Concept: Brief alignment revealing secret, then concealment - negative space forms the moment -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large background circle -->
+  <circle cx="95" cy="100" r="45" fill="#000"/>
+
+  <!-- Overlapping circle creating crescent of visibility -->
+  <circle cx="115" cy="100" r="45" fill="none" stroke="#000" stroke-width="8"/>
+
+  <!-- The narrow crescent of light/visibility in the overlap zone -->
+  <!-- Emphasized by inner and outer edge markers -->
+  <path d="M 105 55 Q 110 100 105 145" fill="none" stroke="#000" stroke-width="2" opacity="0.4"/>
+
+  <!-- Particles escaping the brief opening -->
+  <circle cx="125" cy="80" r="2.5" fill="#000"/>
+  <circle cx="132" cy="75" r="1.5" fill="#000" opacity="0.7"/>
+  <circle cx="125" cy="120" r="2.5" fill="#000"/>
+  <circle cx="132" cy="125" r="1.5" fill="#000" opacity="0.7"/>
+</svg>

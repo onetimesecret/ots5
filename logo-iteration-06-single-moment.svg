@@ -1,0 +1,15 @@
+<!-- Iteration 06: Single Moment - Light Mode -->
+<!-- Concept: Bold single dot with dispersing wave - the moment of transmission and deletion -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Central solid core - the moment -->
+  <circle cx="100" cy="100" r="18" fill="#000"/>
+
+  <!-- Expanding/dispersing concentric rings -->
+  <circle cx="100" cy="100" r="35" fill="none" stroke="#000" stroke-width="6" opacity="0.8"/>
+  <circle cx="100" cy="100" r="52" fill="none" stroke="#000" stroke-width="4" opacity="0.5"/>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#000" stroke-width="2" opacity="0.25"/>
+
+  <!-- Fragmenting outer edge -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#000" stroke-width="1.5"
+          stroke-dasharray="8 12" opacity="0.15"/>
+</svg>

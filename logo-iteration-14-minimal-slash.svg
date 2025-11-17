@@ -1,0 +1,10 @@
+<!-- Iteration 14: Minimal Slash - Light Mode -->
+<!-- Concept: Ultra-simple deletion mark - absolute minimalism -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Single bold diagonal slash - the mark of deletion -->
+  <line x1="130" y1="60" x2="70" y2="140" stroke="#000" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Subtle trailing particles suggesting motion/finality -->
+  <circle cx="135" cy="53" r="3" fill="#000" opacity="0.5"/>
+  <circle cx="65" cy="147" r="3" fill="#000" opacity="0.5"/>
+</svg>

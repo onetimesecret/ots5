@@ -1,0 +1,18 @@
+<!-- Iteration 19: Open-Closed - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 80 65 L 65 65 L 65 135 L 80 135" fill="none" stroke="#FFF" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M 95 70 L 90 70" fill="none" stroke="#FFF" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 95 130 L 90 130" fill="none" stroke="#FFF" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+
+  <path d="M 105 75 L 102 75" fill="none" stroke="#FFF" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 105 125 L 102 125" fill="none" stroke="#FFF" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+
+  <path d="M 120 65 L 135 65 L 135 135 L 120 135" fill="none" stroke="#FFF" stroke-width="8" stroke-linecap="round"/>
+
+  <circle cx="100" cy="100" r="3" fill="#FFF" opacity="0.4"/>
+  <circle cx="100" cy="90" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="100" cy="110" r="2" fill="#FFF" opacity="0.3"/>
+</svg>
