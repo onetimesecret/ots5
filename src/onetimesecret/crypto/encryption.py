@@ -10,12 +10,14 @@ Fernet is a secure, authenticated encryption scheme that includes:
 """
 
 import hashlib
+import secrets
 from base64 import urlsafe_b64decode, urlsafe_b64encode
 from typing import Tuple
 
 from cryptography.fernet import Fernet, InvalidToken
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+from passlib.hash import argon2
 
 
 class EncryptionError(Exception):
@@ -88,8 +90,6 @@ class SecretEncryption:
         """
         try:
             # Generate random salt for this secret
-            import secrets
-
             salt = secrets.token_bytes(16)
 
             # Derive encryption key
@@ -174,8 +174,8 @@ class SecretEncryption:
             # First encrypt with master key
             ciphertext, salt = self.encrypt(plaintext)
 
-            # Hash the passphrase for verification
-            passphrase_hash = self.hash_metadata(passphrase)
+            # Hash the passphrase using Argon2 (secure password hashing)
+            passphrase_hash = argon2.hash(passphrase)
 
             return ciphertext, salt, passphrase_hash
 
@@ -200,8 +200,10 @@ class SecretEncryption:
         Raises:
             DecryptionError: If passphrase is incorrect or decryption fails
         """
-        # Verify passphrase
-        if self.hash_metadata(passphrase) != stored_hash:
+        # Verify passphrase using Argon2 (constant-time comparison built-in)
+        try:
+            argon2.verify(passphrase, stored_hash)
+        except Exception:
             raise DecryptionError("Incorrect passphrase")
 
         # Decrypt data

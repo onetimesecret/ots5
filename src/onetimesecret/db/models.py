@@ -39,7 +39,7 @@ class Secret(Base):
     salt: Mapped[str] = mapped_column(String(64), nullable=False)
 
     # Optional passphrase protection
-    passphrase_hash: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    passphrase_hash: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
     passphrase_required: Mapped[bool] = mapped_column(Boolean, default=False)
 
     # Access control
