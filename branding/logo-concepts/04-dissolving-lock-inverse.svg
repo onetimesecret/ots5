@@ -1,0 +1,82 @@
+<!-- Concept 4: Dissolving Lock - INVERSE (反转版) -->
+<!-- White background with black elements -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .fg { fill: #000000; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Lock body - solid center -->
+  <rect class="fg" x="75" y="100" width="50" height="45" rx="5"/>
+
+  <!-- Keyhole -->
+  <circle class="bg" cx="100" cy="120" r="6"/>
+  <rect class="bg" x="97" y="120" width="6" height="12"/>
+
+  <!-- Lock shackle (top arc) - solid core -->
+  <path class="fg" d="M 85 100 L 85 75 Q 85 60 100 60 Q 115 60 115 75 L 115 100"
+        fill="none" stroke="black" stroke-width="8"/>
+
+  <!-- Inner cutout of shackle -->
+  <path class="bg" d="M 90 100 L 90 77 Q 90 68 100 68 Q 110 68 110 77 L 110 100"
+        fill="none" stroke="white" stroke-width="6"/>
+
+  <!-- Dissolving edges - outer layer of pixels -->
+  <!-- Top left -->
+  <rect class="fg" x="68" y="95" width="3" height="3"/>
+  <rect class="fg" x="70" y="105" width="3" height="3"/>
+  <rect class="fg" x="68" y="115" width="3" height="3"/>
+
+  <!-- Top right -->
+  <rect class="fg" x="129" y="95" width="3" height="3"/>
+  <rect class="fg" x="127" y="105" width="3" height="3"/>
+  <rect class="fg" x="129" y="115" width="3" height="3"/>
+
+  <!-- Bottom left -->
+  <rect class="fg" x="70" y="125" width="3" height="3"/>
+  <rect class="fg" x="68" y="135" width="3" height="3"/>
+  <rect class="fg" x="70" y="145" width="3" height="3"/>
+
+  <!-- Bottom right -->
+  <rect class="fg" x="127" y="125" width="3" height="3"/>
+  <rect class="fg" x="129" y="135" width="3" height="3"/>
+  <rect class="fg" x="127" y="145" width="3" height="3"/>
+
+  <!-- Bottom edge dissolving -->
+  <rect class="fg" x="80" y="147" width="3" height="3"/>
+  <rect class="fg" x="95" y="148" width="3" height="3"/>
+  <rect class="fg" x="102" y="147" width="3" height="3"/>
+  <rect class="fg" x="117" y="148" width="3" height="3"/>
+
+  <!-- Shackle dissolving top -->
+  <rect class="fg" x="80" y="52" width="3" height="3"/>
+  <rect class="fg" x="95" y="50" width="3" height="3"/>
+  <rect class="fg" x="102" y="50" width="3" height="3"/>
+  <rect class="fg" x="117" y="52" width="3" height="3"/>
+
+  <!-- Second layer - more scattered -->
+  <rect class="fg" x="63" y="100" width="2" height="2"/>
+  <rect class="fg" x="65" y="120" width="2" height="2"/>
+  <rect class="fg" x="63" y="140" width="2" height="2"/>
+
+  <rect class="fg" x="135" y="100" width="2" height="2"/>
+  <rect class="fg" x="133" y="120" width="2" height="2"/>
+  <rect class="fg" x="135" y="140" width="2" height="2"/>
+
+  <rect class="fg" x="85" y="153" width="2" height="2"/>
+  <rect class="fg" x="100" y="154" width="2" height="2"/>
+  <rect class="fg" x="115" y="153" width="2" height="2"/>
+
+  <!-- Third layer - individual pixels floating away -->
+  <rect class="fg" x="58" y="105" width="1" height="1"/>
+  <rect class="fg" x="60" y="125" width="1" height="1"/>
+  <rect class="fg" x="140" y="105" width="1" height="1"/>
+  <rect class="fg" x="138" y="125" width="1" height="1"/>
+  <rect class="fg" x="90" y="158" width="1" height="1"/>
+  <rect class="fg" x="110" y="158" width="1" height="1"/>
+</svg>

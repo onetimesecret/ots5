@@ -1,0 +1,48 @@
+<!-- Concept 2: Melting Key (熔化的钥匙) -->
+<!-- A key melting/dripping downward, representing the destruction of the decryption key -->
+<!-- Visual metaphor: Security credentials self-destructing -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Key head (circular, partially intact) -->
+  <circle class="fg" cx="60" cy="70" r="20"/>
+  <circle class="bg" cx="60" cy="70" r="10"/>
+
+  <!-- Key shaft (upper part, solid) -->
+  <rect class="fg" x="75" y="65" width="50" height="10"/>
+
+  <!-- Key teeth (traditional key teeth) -->
+  <rect class="fg" x="115" y="60" width="8" height="10"/>
+  <rect class="fg" x="115" y="75" width="8" height="5"/>
+
+  <!-- Melting/dripping effect from key shaft -->
+  <!-- First drip -->
+  <path class="fg" d="M 85 75 L 85 95 Q 85 100 82 100 Q 79 100 79 95 L 79 75 Z"/>
+
+  <!-- Second drip (longer) -->
+  <path class="fg" d="M 100 75 L 100 110 Q 100 116 96 116 Q 92 116 92 110 L 92 75 Z"/>
+
+  <!-- Third drip -->
+  <path class="fg" d="M 115 80 L 115 100 Q 115 105 112 105 Q 109 105 109 100 L 109 80 Z"/>
+
+  <!-- Melting from key teeth -->
+  <path class="fg" d="M 120 80 L 120 125 Q 120 130 117 130 Q 114 130 114 125 L 114 85 Z"/>
+
+  <!-- Drips below (detached drops falling) -->
+  <ellipse class="fg" cx="82" cy="108" rx="3" ry="4"/>
+  <ellipse class="fg" cx="96" cy="125" rx="3" ry="4"/>
+  <ellipse class="fg" cx="117" cy="138" rx="2" ry="3"/>
+
+  <!-- Smallest drops (almost evaporated) -->
+  <circle class="fg" cx="82" cy="118" r="1.5"/>
+  <circle class="fg" cx="96" cy="135" r="1.5"/>
+  <circle class="fg" cx="117" cy="148" r="1"/>
+</svg>

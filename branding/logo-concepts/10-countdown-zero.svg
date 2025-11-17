@@ -1,0 +1,61 @@
+<!-- Concept 10: Countdown to Zero (归零倒计时) -->
+<!-- A countdown timer showing the transition from 1 to 0, then dissolving -->
+<!-- Visual metaphor: One-time use, the final second, then oblivion -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Left side: "1" (solid, bold) -->
+  <rect class="fg" x="55" y="70" width="15" height="80"/>
+  <path class="fg" d="M 55 70 L 45 80 L 55 80 Z"/>
+
+  <!-- Arrow/transition symbol (pointing right, indicating flow of time) -->
+  <path class="fg" d="M 85 110 L 105 110 L 100 105 M 105 110 L 100 115"
+        stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Right side: "0" starting to dissolve -->
+  <!-- Top half solid -->
+  <path class="fg" d="M 115 70 Q 115 60 130 60 Q 145 60 145 70 L 145 95
+                       Q 145 95 130 95 Q 115 95 115 95 Z"/>
+  <path class="bg" d="M 122 70 Q 122 67 130 67 Q 138 67 138 70 L 138 88
+                       Q 138 88 130 88 Q 122 88 122 88 Z"/>
+
+  <!-- Bottom half - pixelating/dissolving -->
+  <!-- Fragmented sections of the "0" -->
+  <rect class="fg" x="115" y="100" width="8" height="10"/>
+  <rect class="fg" x="137" y="100" width="8" height="10"/>
+
+  <rect class="fg" x="115" y="113" width="6" height="8"/>
+  <rect class="fg" x="139" y="113" width="6" height="8"/>
+
+  <rect class="fg" x="116" y="124" width="5" height="7"/>
+  <rect class="fg" x="139" y="124" width="5" height="7"/>
+
+  <!-- More dissolved bottom curve -->
+  <rect class="fg" x="118" y="134" width="4" height="5"/>
+  <rect class="fg" x="125" y="138" width="4" height="4"/>
+  <rect class="fg" x="131" y="138" width="4" height="4"/>
+  <rect class="fg" x="138" y="134" width="4" height="5"/>
+
+  <!-- Bottom completely dissolved into particles -->
+  <rect class="fg" x="120" y="145" width="3" height="3"/>
+  <rect class="fg" x="127" y="147" width="3" height="3"/>
+  <rect class="fg" x="133" y="147" width="3" height="3"/>
+  <rect class="fg" x="140" y="145" width="3" height="3"/>
+
+  <!-- Final scattered pixels -->
+  <rect class="fg" x="122" y="153" width="2" height="2"/>
+  <rect class="fg" x="130" y="155" width="2" height="2"/>
+  <rect class="fg" x="138" y="153" width="2" height="2"/>
+
+  <!-- Almost invisible traces -->
+  <rect class="fg" cx="126" cy="161" width="1" height="1"/>
+  <rect class="fg" cx="134" cy="161" width="1" height="1"/>
+</svg>

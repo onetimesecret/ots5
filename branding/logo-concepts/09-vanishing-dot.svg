@@ -1,0 +1,53 @@
+<!-- Concept 9: Vanishing Dot (消逝之点) -->
+<!-- Ultra-minimalist: A solid dot that disperses into smaller dots, then nothing -->
+<!-- Visual metaphor: The essence of ephemeral - something becomes nothing -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center - the solid core (the message at the moment of existence) -->
+  <circle class="fg" cx="100" cy="100" r="15"/>
+
+  <!-- First dissolution ring - breaking into larger fragments -->
+  <circle class="fg" cx="75" cy="100" r="6"/>
+  <circle class="fg" cx="125" cy="100" r="6"/>
+  <circle class="fg" cx="100" cy="75" r="6"/>
+  <circle class="fg" cx="100" cy="125" r="6"/>
+
+  <!-- Second dissolution ring - medium fragments -->
+  <circle class="fg" cx="65" cy="85" r="4"/>
+  <circle class="fg" cx="135" cy="85" r="4"/>
+  <circle class="fg" cx="65" cy="115" r="4"/>
+  <circle class="fg" cx="135" cy="115" r="4"/>
+  <circle class="fg" cx="85" cy="65" r="4"/>
+  <circle class="fg" cx="115" cy="65" r="4"/>
+  <circle class="fg" cx="85" cy="135" r="4"/>
+  <circle class="fg" cx="115" cy="135" r="4"/>
+
+  <!-- Third dissolution ring - small particles -->
+  <circle class="fg" cx="55" cy="100" r="2.5"/>
+  <circle class="fg" cx="145" cy="100" r="2.5"/>
+  <circle class="fg" cx="100" cy="55" r="2.5"/>
+  <circle class="fg" cx="100" cy="145" r="2.5"/>
+  <circle class="fg" cx="70" cy="70" r="2"/>
+  <circle class="fg" cx="130" cy="70" r="2"/>
+  <circle class="fg" cx="70" cy="130" r="2"/>
+  <circle class="fg" cx="130" cy="130" r="2"/>
+
+  <!-- Fourth dissolution ring - tiny, almost invisible -->
+  <circle class="fg" cx="48" cy="92" r="1"/>
+  <circle class="fg" cx="152" cy="92" r="1"/>
+  <circle class="fg" cx="48" cy="108" r="1"/>
+  <circle class="fg" cx="152" cy="108" r="1"/>
+  <circle class="fg" cx="92" cy="48" r="1"/>
+  <circle class="fg" cx="108" cy="48" r="1"/>
+  <circle class="fg" cx="92" cy="152" r="1"/>
+  <circle class="fg" cx="108" cy="152" r="1"/>
+</svg>

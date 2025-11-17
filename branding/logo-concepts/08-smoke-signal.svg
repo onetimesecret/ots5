@@ -1,0 +1,52 @@
+<!-- Concept 8: Smoke Signal (烟雾信号) -->
+<!-- A solid symbol/letter transforming into smoke and dispersing upward -->
+<!-- Visual metaphor: Communication that exists briefly then vanishes into air -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Base symbol - letter "O" for OTS (solid at bottom) -->
+  <path class="fg" d="M 70 150 Q 70 130 100 130 Q 130 130 130 150 Q 130 165 100 165 Q 70 165 70 150 Z"/>
+  <path class="bg" d="M 82 150 Q 82 138 100 138 Q 118 138 118 150 Q 118 157 100 157 Q 82 157 82 150 Z"/>
+
+  <!-- Transition zone - letter starts to break apart -->
+  <path class="fg" d="M 75 125 Q 90 120 100 120 Q 110 120 125 125"/>
+  <path class="fg" d="M 78 115 Q 88 112 100 112 Q 112 112 122 115"/>
+
+  <!-- Breaking into segments -->
+  <rect class="fg" x="80" y="105" width="8" height="6"/>
+  <rect class="fg" x="96" y="103" width="8" height="8"/>
+  <rect class="fg" x="112" y="105" width="8" height="6"/>
+
+  <!-- Smoke wisps - organic, flowing shapes -->
+  <path class="fg" d="M 85 100 Q 82 92 85 85 Q 88 78 85 70 Q 83 65 85 60"
+        fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+
+  <path class="fg" d="M 100 98 Q 98 88 100 78 Q 102 68 100 58 Q 99 48 100 40"
+        fill="none" stroke="white" stroke-width="5" stroke-linecap="round"/>
+
+  <path class="fg" d="M 115 100 Q 118 92 115 85 Q 112 78 115 70 Q 117 65 115 60"
+        fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Thinner wisps higher up -->
+  <path class="fg" d="M 88 55 Q 86 48 88 42"
+        fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+
+  <path class="fg" d="M 100 35 Q 99 28 100 22"
+        fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <path class="fg" d="M 112 55 Q 114 48 112 42"
+        fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Final dissipation - tiny particles -->
+  <circle class="fg" cx="90" cy="38" r="1.5"/>
+  <circle class="fg" cx="100" cy="18" r="1"/>
+  <circle class="fg" cx="110" cy="38" r="1.5"/>
+</svg>

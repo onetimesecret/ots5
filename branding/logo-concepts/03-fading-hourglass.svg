@@ -1,0 +1,65 @@
+<!-- Concept 3: Fading Hourglass (消逝的沙漏) -->
+<!-- An hourglass where the bottom chamber is dissolving into particles -->
+<!-- Visual metaphor: Time running out, the last grain of sand, then nothingness -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Top cap of hourglass -->
+  <rect class="fg" x="70" y="40" width="60" height="6"/>
+
+  <!-- Top chamber (nearly empty) -->
+  <path class="fg" d="M 75 46 L 100 80 L 125 46 Z" fill="none" stroke="white" stroke-width="3"/>
+
+  <!-- Small amount of sand in top -->
+  <path class="fg" d="M 95 50 L 100 56 L 105 50 Z"/>
+
+  <!-- Narrow middle section -->
+  <rect class="fg" x="98" y="80" width="4" height="8"/>
+
+  <!-- Sand falling through (single grain) -->
+  <circle class="fg" cx="100" cy="92" r="2"/>
+
+  <!-- Bottom chamber outline (solid at top, dissolving at bottom) -->
+  <!-- Solid upper part -->
+  <path class="fg" d="M 75 100 L 100 88 L 125 100" fill="none" stroke="white" stroke-width="3"/>
+
+  <!-- Dissolving sides - getting fragmented -->
+  <line class="fg" x1="75" y1="100" x2="75" y2="120" stroke="white" stroke-width="3"/>
+  <line class="fg" x1="125" y1="100" x2="125" y2="120" stroke="white" stroke-width="3"/>
+
+  <!-- Fragmented lower sections -->
+  <line class="fg" x1="76" y1="122" x2="76" y2="132" stroke="white" stroke-width="2.5"/>
+  <line class="fg" x1="124" y1="122" x2="124" y2="132" stroke="white" stroke-width="2.5"/>
+
+  <!-- More fragmented -->
+  <line class="fg" x1="77" y1="134" x2="77" y2="140" stroke="white" stroke-width="2"/>
+  <line class="fg" x1="123" y1="134" x2="123" y2="140" stroke="white" stroke-width="2"/>
+
+  <!-- Dissolving into particles -->
+  <rect class="fg" x="78" y="142" width="3" height="4"/>
+  <rect class="fg" x="119" y="142" width="3" height="4"/>
+
+  <rect class="fg" x="80" y="148" width="2" height="3"/>
+  <rect class="fg" x="118" y="148" width="2" height="3"/>
+
+  <!-- Bottom "cap" area - completely dissolved into scattered particles -->
+  <rect class="fg" x="75" y="152" width="2" height="2"/>
+  <rect class="fg" x="85" y="154" width="2" height="2"/>
+  <rect class="fg" x="95" y="156" width="2" height="2"/>
+  <rect class="fg" x="105" y="154" width="2" height="2"/>
+  <rect class="fg" x="115" y="152" width="2" height="2"/>
+  <rect class="fg" x="123" y="154" width="2" height="2"/>
+
+  <!-- Final scattered pixels -->
+  <rect class="fg" x="82" y="160" width="1" height="1"/>
+  <rect class="fg" x="100" y="162" width="1" height="1"/>
+  <rect class="fg" x="118" y="160" width="1" height="1"/>
+</svg>

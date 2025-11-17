@@ -1,0 +1,41 @@
+<!-- Concept 6: Fading Echo - INVERSE (反转版) -->
+<!-- White background with black elements -->
+<!-- Demonstrates positive/negative form reversal -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .fg { fill: #000000; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center point (the message/secret origin) -->
+  <circle class="fg" cx="100" cy="100" r="8"/>
+
+  <!-- First echo - solid, strong -->
+  <circle class="fg" cx="100" cy="100" r="20"
+          fill="none" stroke="black" stroke-width="6"/>
+
+  <!-- Second echo - still solid but thinner -->
+  <circle class="fg" cx="100" cy="100" r="35"
+          fill="none" stroke="black" stroke-width="4"/>
+
+  <!-- Third echo - getting fragmented -->
+  <circle class="fg" cx="100" cy="100" r="50"
+          fill="none" stroke="black" stroke-width="3" stroke-dasharray="8 4"/>
+
+  <!-- Fourth echo - more fragmented -->
+  <circle class="fg" cx="100" cy="100" r="65"
+          fill="none" stroke="black" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Fifth echo - barely there, heavily dashed -->
+  <circle class="fg" cx="100" cy="100" r="80"
+          fill="none" stroke="black" stroke-width="1.5" stroke-dasharray="3 9"/>
+
+  <!-- Final echo - just traces, almost vanished -->
+  <circle class="fg" cx="100" cy="100" r="92"
+          fill="none" stroke="black" stroke-width="1" stroke-dasharray="2 14"/>
+</svg>

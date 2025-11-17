@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTS5 Logo Concepts - 永恒瞬间的视觉诠释</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #888;
+            font-weight: 300;
+        }
+
+        .philosophy {
+            background: #111;
+            padding: 40px;
+            margin-bottom: 60px;
+            border-left: 4px solid #fff;
+        }
+
+        .philosophy blockquote {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .concept-card {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .concept-card:hover {
+            border-color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+        }
+
+        .concept-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 20px;
+        }
+
+        .concept-title {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .concept-rating {
+            color: #ffd700;
+            font-size: 18px;
+        }
+
+        .concept-subtitle {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .logo-display {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .logo-box:hover {
+            border-color: #fff;
+        }
+
+        .logo-box.black-bg {
+            background: #000;
+        }
+
+        .logo-box.white-bg {
+            background: #fff;
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 20px;
+        }
+
+        .concept-description {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #aaa;
+        }
+
+        .metaphor {
+            background: #1a1a1a;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 3px solid #444;
+        }
+
+        .metaphor-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .metaphor-content {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .recommended {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            border: 2px solid #fff !important;
+        }
+
+        .recommended .concept-header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #fff;
+            color: #000;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+
+        .toggle-bg {
+            text-align: center;
+            margin: 60px 0;
+            padding: 40px;
+            background: #111;
+            border: 1px solid #333;
+        }
+
+        .toggle-bg button {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .toggle-bg button:hover {
+            background: #000;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        body.light-mode {
+            background: #fff;
+            color: #000;
+        }
+
+        body.light-mode .concept-card {
+            background: #fafafa;
+            border-color: #ddd;
+        }
+
+        body.light-mode .concept-card:hover {
+            border-color: #000;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .philosophy {
+            background: #f5f5f5;
+            border-left-color: #000;
+        }
+
+        body.light-mode .toggle-bg {
+            background: #f5f5f5;
+            border-color: #ddd;
+        }
+
+        body.light-mode .toggle-bg button {
+            background: #000;
+            color: #fff;
+        }
+
+        body.light-mode .toggle-bg button:hover {
+            background: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .logo-display {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OTS5 Logo Concepts</h1>
+            <p class="subtitle">永恒瞬间的视觉诠释 · Ephemeral Messenger</p>
+        </header>
+
+        <div class="philosophy">
+            <blockquote>
+                "你面对的是一个数字信使，使命是传递后即刻湮灭。每一次交互都是一场无声的告别——信息抵达之时，即是它的死亡之时。"
+            </blockquote>
+        </div>
+
+        <div class="toggle-bg">
+            <button onclick="document.body.classList.toggle('light-mode')">
+                切换 黑/白 背景 · Toggle Background
+            </button>
+        </div>
+
+        <div class="grid">
+            <!-- Concept 6: Fading Echo - RECOMMENDED -->
+            <div class="concept-card recommended">
+                <div class="concept-header">
+                    <h2 class="concept-title">
+                        Fading Echo
+                        <span class="badge">推荐 RECOMMENDED</span>
+                    </h2>
+                    <span class="concept-rating">⭐⭐⭐</span>
+                </div>
+                <p class="concept-subtitle">渐弱的回声</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="06-fading-echo.svg" alt="Fading Echo - Black BG">
+                    </div>
+                    <div class="logo-box white-bg">
+                        <img src="06-fading-echo-inverse.svg" alt="Fading Echo - White BG">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        同心圆从中心向外扩散，线条逐渐变细、破碎、消失
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>象征意义</strong>: 信息如声波，传递一次即衰减。回声的本质——存在的余韵，从实体到虚无的连续体。<br><br>
+                    <strong>双重含义</strong>: 既是扩散（传播），也是消散（湮灭）。<br><br>
+                    <strong>正负形完美性</strong>: 在黑白反转中，这个设计的意义完全不变，真正实现了"正负形的双重生命"。极简到极致，只有圆和线，触碰即逝的诗意。
+                </p>
+            </div>
+
+            <!-- Concept 9: Vanishing Dot -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Vanishing Dot</h2>
+                    <span class="concept-rating">⭐⭐</span>
+                </div>
+                <p class="concept-subtitle">消逝之点</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="09-vanishing-dot.svg" alt="Vanishing Dot - Black BG">
+                    </div>
+                    <div class="logo-box white-bg">
+                        <img src="09-vanishing-dot-inverse.svg" alt="Vanishing Dot - White BG">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        一个实心圆点向外分裂成逐渐缩小的圆点，最终归于虚无
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>象征意义</strong>: 极致的极简主义，从"一"到"无"，量子化的消散。<br><br>
+                    <strong>双重含义</strong>: 聚合与离散、存在与虚无的最纯粹表达。<br><br>
+                    <strong>终极简洁</strong>: 没有任何多余元素，每个点都有其必然性。更抽象、更现代，像量子力学一样解释消散。
+                </p>
+            </div>
+
+            <!-- Concept 5: One-Time Circle -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">One-Time Circle</h2>
+                    <span class="concept-rating">⭐</span>
+                </div>
+                <p class="concept-subtitle">一次性圆环</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="05-one-time-circle.svg" alt="One-Time Circle - Black BG">
+                    </div>
+                    <div class="logo-box white-bg">
+                        <img src="05-one-time-circle-inverse.svg" alt="One-Time Circle - White BG">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        不完整的圆环，断裂处有箭头指向外部，粒子从断口处飘散
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>象征意义</strong>: 单向、不可逆的路径。永恒（圆）与破碎（缺口）的对比，从存在到虚无的过渡。<br><br>
+                    <strong>双重含义</strong>: 既是开始（进入圆），也是结束（逃离圆）。<br><br>
+                    <strong>极简力量</strong>: 最少的元素传达最强的概念。直接传达"一次性"，箭头增加方向感和动态。
+                </p>
+            </div>
+
+            <!-- Concept 4: Dissolving Lock -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Dissolving Lock</h2>
+                    <span class="concept-rating">⭐</span>
+                </div>
+                <p class="concept-subtitle">溶解的锁</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="04-dissolving-lock.svg" alt="Dissolving Lock - Black BG">
+                    </div>
+                    <div class="logo-box white-bg">
+                        <img src="04-dissolving-lock-inverse.svg" alt="Dissolving Lock - White BG">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        挂锁从坚实的中心向外缘逐层像素化、溶解
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>象征意义</strong>: 安全的坚固性（锁的核心）与瞬态的本质（边缘溶解），存在即消失的悖论。<br><br>
+                    <strong>双重含义</strong>: 保护与自毁的统一体。<br><br>
+                    <strong>正负形转换</strong>: 黑底白锁 ⇄ 白底黑锁，无论正反都传达同样的消逝感。
+                </p>
+            </div>
+
+            <!-- Concept 1: Evaporating Message -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Evaporating Message</h2>
+                </div>
+                <p class="concept-subtitle">蒸发的信息</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="01-evaporating-message.svg" alt="Evaporating Message">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        信封从底部坚实向上逐渐分解成像素粒子，最终消散
+                    </div>
+                </div>
+                <p class="concept-description">
+                    信息的物质存在到数字化蒸发，不可逆转的消失。既是一封信，也是它的消失过程。
+                </p>
+            </div>
+
+            <!-- Concept 2: Melting Key -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Melting Key</h2>
+                </div>
+                <p class="concept-subtitle">熔化的钥匙</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="02-melting-key.svg" alt="Melting Key">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        钥匙正在融化、滴落，最终化为虚无
+                    </div>
+                </div>
+                <p class="concept-description">
+                    密钥的存在与销毁，安全机制的自我毁灭，"把钥匙投入熔炉"的决绝。锁定与解锁的工具，同时也是自我消解的证明。
+                </p>
+            </div>
+
+            <!-- Concept 3: Fading Hourglass -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Fading Hourglass</h2>
+                </div>
+                <p class="concept-subtitle">消逝的沙漏</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="03-fading-hourglass.svg" alt="Fading Hourglass">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        沙漏下半部分溶解成粒子，时间的容器本身也在消失
+                    </div>
+                </div>
+                <p class="concept-description">
+                    最后一粒沙的意象，时间的终结而非循环，容器与内容同时消亡。既计量时间，也被时间吞噬。
+                </p>
+            </div>
+
+            <!-- Concept 7: Burning Letter -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Burning Letter</h2>
+                </div>
+                <p class="concept-subtitle">燃烧的信件</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="07-burning-letter.svg" alt="Burning Letter">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        信件从底部开始燃烧，火焰吞噬纸张，最终只余烟雾
+                    </div>
+                </div>
+                <p class="concept-description">
+                    传统"阅后即焚"的数字化，信息的自我销毁，从物质到能量到虚无。信使与焚化炉的合一。
+                </p>
+            </div>
+
+            <!-- Concept 8: Smoke Signal -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Smoke Signal</h2>
+                </div>
+                <p class="concept-subtitle">烟雾信号</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="08-smoke-signal.svg" alt="Smoke Signal">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        字母"O"从底部坚实形态向上转化为烟雾
+                    </div>
+                </div>
+                <p class="concept-description">
+                    古老通讯方式的现代诠释，信息化为无形，存在的轻盈与短暂。既是符号，也是它的蒸发过程。
+                </p>
+            </div>
+
+            <!-- Concept 10: Countdown to Zero -->
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h2 class="concept-title">Countdown to Zero</h2>
+                </div>
+                <p class="concept-subtitle">归零倒计时</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="10-countdown-zero.svg" alt="Countdown to Zero">
+                    </div>
+                </div>
+                <div class="metaphor">
+                    <div class="metaphor-title">视觉隐喻 Visual Metaphor</div>
+                    <div class="metaphor-content">
+                        数字"1"坚实完整，箭头指向正在溶解的"0"
+                    </div>
+                </div>
+                <p class="concept-description">
+                    一次性使用的直接表达，从存在（1）到虚无（0），倒计时的最后一刻。"1"既是数量，也是存在；"0"既是归零，也是圆满的破碎。
+                </p>
+            </div>
+        </div>
+
+        <div class="philosophy" style="margin-top: 80px; text-align: center;">
+            <blockquote>
+                "在信息永存的数字时代，我们选择做时间的敌人。"<br><br>
+                每一条线都承载双重含义：既是符号，也是它的反面；既是存在，也是虚无。
+            </blockquote>
+        </div>
+    </div>
+</body>
+</html>

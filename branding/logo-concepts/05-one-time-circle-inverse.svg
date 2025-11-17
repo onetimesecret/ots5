@@ -1,0 +1,36 @@
+<!-- Concept 5: One-Time Circle - INVERSE (反转版) -->
+<!-- White background with black elements -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .fg { fill: #000000; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Main circle arc (incomplete - broken at the top right) -->
+  <path class="fg" d="M 150 100 A 50 50 0 1 1 130 50"
+        fill="none" stroke="black" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Arrow indicating one-way direction and the break point -->
+  <path class="fg" d="M 130 50 L 140 45 L 135 55 Z"/>
+
+  <!-- Dissolving particles emanating from the break -->
+  <!-- Layer 1 -->
+  <circle class="fg" cx="145" cy="42" r="3"/>
+  <circle class="fg" cx="152" cy="38" r="2.5"/>
+
+  <!-- Layer 2 - smaller, more scattered -->
+  <circle class="fg" cx="158" cy="35" r="2"/>
+  <circle class="fg" cx="148" cy="33" r="1.5"/>
+
+  <!-- Layer 3 - tiny, almost gone -->
+  <circle class="fg" cx="163" cy="32" r="1"/>
+  <circle class="fg" cx="155" cy="28" r="1"/>
+
+  <!-- Central dot (origin point - the message/secret) -->
+  <circle class="fg" cx="100" cy="100" r="8"/>
+</svg>

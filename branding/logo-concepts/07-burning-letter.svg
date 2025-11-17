@@ -1,0 +1,51 @@
+<!-- Concept 7: Burning Letter (燃烧的信件) -->
+<!-- A letter/document being consumed by flames from bottom to top -->
+<!-- Visual metaphor: Self-destructing message, burning after reading -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Document/letter - top part still intact -->
+  <rect class="fg" x="70" y="40" width="60" height="50" rx="3"/>
+
+  <!-- Text lines on document (solid) -->
+  <line class="bg" x1="78" y1="50" x2="115" y2="50" stroke="black" stroke-width="2"/>
+  <line class="bg" x1="78" y1="60" x2="122" y2="60" stroke="black" stroke-width="2"/>
+  <line class="bg" x1="78" y1="70" x2="108" y2="70" stroke="black" stroke-width="2"/>
+  <line class="bg" x1="78" y1="80" x2="118" y2="80" stroke="black" stroke-width="2"/>
+
+  <!-- Burning edge - irregular, flame-like bottom -->
+  <path class="fg" d="M 70 90 L 75 95 L 73 100 L 78 105 L 75 110 L 80 115
+                       L 78 120 L 83 125 L 80 130 L 85 135
+                       L 90 130 L 88 125 L 92 120 L 90 115
+                       L 95 110 L 92 105 L 97 100 L 95 95
+                       L 100 90 L 98 95 L 102 100 L 100 105
+                       L 105 110 L 103 115 L 108 120 L 105 125
+                       L 110 130 L 115 135
+                       L 120 130 L 117 125 L 122 120 L 118 115
+                       L 123 110 L 120 105 L 125 100 L 122 95
+                       L 127 90 L 130 90 L 130 40 L 70 40 Z"/>
+
+  <!-- Flames/smoke rising (getting smaller and more dispersed) -->
+  <!-- Large flame tongues -->
+  <path class="fg" d="M 85 140 Q 83 148 85 155 Q 87 148 85 140 Z"/>
+  <path class="fg" d="M 100 145 Q 98 153 100 162 Q 102 153 100 145 Z"/>
+  <path class="fg" d="M 115 140 Q 113 148 115 155 Q 117 148 115 140 Z"/>
+
+  <!-- Smaller smoke wisps -->
+  <path class="fg" d="M 90 158 Q 89 163 90 168 Q 91 163 90 158 Z"/>
+  <path class="fg" d="M 100 165 Q 99 170 100 175 Q 101 170 100 165 Z"/>
+  <path class="fg" d="M 110 158 Q 109 163 110 168 Q 111 163 110 158 Z"/>
+
+  <!-- Tiny smoke particles dissolving -->
+  <circle class="fg" cx="92" cy="172" r="1.5"/>
+  <circle class="fg" cx="100" cy="180" r="1"/>
+  <circle class="fg" cx="108" cy="172" r="1.5"/>
+</svg>

@@ -1,0 +1,49 @@
+<!-- Concept 1: Evaporating Message (蒸发的信息) -->
+<!-- A message/envelope dissolving into particles at the top -->
+<!-- Visual metaphor: Information exists, then evaporates into nothingness -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Envelope base (solid) -->
+  <path class="fg" d="M 50 120 L 50 160 L 150 160 L 150 120 Z"/>
+
+  <!-- Envelope flap (solid lower part) -->
+  <path class="fg" d="M 50 120 L 100 145 L 150 120"/>
+
+  <!-- Dissolving top part - particles getting smaller and more scattered -->
+  <!-- Layer 1: Larger particles -->
+  <rect class="fg" x="70" y="95" width="8" height="8"/>
+  <rect class="fg" x="95" y="90" width="10" height="10"/>
+  <rect class="fg" x="122" y="95" width="8" height="8"/>
+
+  <!-- Layer 2: Medium particles -->
+  <rect class="fg" x="65" y="75" width="6" height="6"/>
+  <rect class="fg" x="85" y="70" width="7" height="7"/>
+  <rect class="fg" x="100" y="68" width="6" height="6"/>
+  <rect class="fg" x="115" y="70" width="7" height="7"/>
+  <rect class="fg" x="130" y="75" width="6" height="6"/>
+
+  <!-- Layer 3: Small particles -->
+  <rect class="fg" x="75" y="55" width="4" height="4"/>
+  <rect class="fg" x="90" y="50" width="5" height="5"/>
+  <rect class="fg" x="105" y="48" width="4" height="4"/>
+  <rect class="fg" x="120" y="52" width="4" height="4"/>
+
+  <!-- Layer 4: Tiny particles (evaporating) -->
+  <rect class="fg" x="80" y="35" width="3" height="3"/>
+  <rect class="fg" x="95" y="32" width="3" height="3"/>
+  <rect class="fg" x="110" y="35" width="3" height="3"/>
+
+  <!-- Layer 5: Almost gone -->
+  <rect class="fg" x="88" y="20" width="2" height="2"/>
+  <rect class="fg" x="100" y="18" width="2" height="2"/>
+  <rect class="fg" x="112" y="20" width="2" height="2"/>
+</svg>
