@@ -1,0 +1,19 @@
+<!-- Iteration 32: Eye Blink - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <ellipse cx="100" cy="100" rx="45" ry="25" fill="none" stroke="#FFF" stroke-width="6"/>
+
+  <circle cx="100" cy="100" r="12" fill="#FFF"/>
+  <circle cx="100" cy="100" r="6" fill="#000"/>
+
+  <rect x="65" y="85" width="70" height="3" fill="#FFF" opacity="0.3"/>
+  <rect x="70" y="90" width="60" height="3" fill="#FFF" opacity="0.5"/>
+  <rect x="75" y="95" width="50" height="3" fill="#FFF" opacity="0.7"/>
+
+  <line x1="145" y1="100" x2="155" y2="95" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+  <line x1="145" y1="100" x2="155" y2="105" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+
+  <circle cx="160" cy="93" r="1.5" fill="#FFF" opacity="0.2"/>
+  <circle cx="160" cy="107" r="1.5" fill="#FFF" opacity="0.2"/>
+</svg>

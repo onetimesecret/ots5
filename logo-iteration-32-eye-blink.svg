@@ -1,0 +1,22 @@
+<!-- Iteration 32: Eye Blink - Light Mode -->
+<!-- Concept: Eye closing - blink and it's gone, viewing as consuming -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Eye outline - almond shape -->
+  <ellipse cx="100" cy="100" rx="45" ry="25" fill="none" stroke="#000" stroke-width="6"/>
+
+  <!-- Iris/pupil -->
+  <circle cx="100" cy="100" r="12" fill="#000"/>
+  <circle cx="100" cy="100" r="6" fill="#FFF"/>
+
+  <!-- Closing eyelid from top - progressive bars showing closure -->
+  <rect x="65" y="85" width="70" height="3" fill="#000" opacity="0.3"/>
+  <rect x="70" y="90" width="60" height="3" fill="#000" opacity="0.5"/>
+  <rect x="75" y="95" width="50" height="3" fill="#000" opacity="0.7"/>
+
+  <!-- Fragmenting sight lines dispersing -->
+  <line x1="145" y1="100" x2="155" y2="95" stroke="#000" stroke-width="2" opacity="0.3"/>
+  <line x1="145" y1="100" x2="155" y2="105" stroke="#000" stroke-width="2" opacity="0.3"/>
+
+  <circle cx="160" cy="93" r="1.5" fill="#000" opacity="0.2"/>
+  <circle cx="160" cy="107" r="1.5" fill="#000" opacity="0.2"/>
+</svg>

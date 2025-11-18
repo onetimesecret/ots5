@@ -1,0 +1,22 @@
+<!-- Iteration 38: Lightning Strike - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 110 40 L 95 85 L 115 85 L 90 140 L 120 95 L 100 95 Z" fill="#FFF"/>
+
+  <line x1="108" y1="35" x2="105" y2="28" stroke="#FFF" stroke-width="2" opacity="0.5"/>
+  <line x1="112" y1="35" x2="115" y2="28" stroke="#FFF" stroke-width="2" opacity="0.5"/>
+  <line x1="110" y1="33" x2="110" y2="25" stroke="#FFF" stroke-width="2.5" opacity="0.6"/>
+
+  <circle cx="85" cy="145" r="3" fill="#FFF" opacity="0.6"/>
+  <circle cx="95" cy="145" r="2.5" fill="#FFF" opacity="0.5"/>
+  <circle cx="78" cy="148" r="2" fill="#FFF" opacity="0.4"/>
+  <circle cx="92" cy="150" r="2" fill="#FFF" opacity="0.4"/>
+
+  <line x1="90" y1="140" x2="80" y2="155" stroke="#FFF" stroke-width="1.5" opacity="0.3"/>
+  <line x1="90" y1="140" x2="75" y2="145" stroke="#FFF" stroke-width="1.5" opacity="0.3"/>
+  <line x1="90" y1="140" x2="85" y2="152" stroke="#FFF" stroke-width="1.5" opacity="0.3"/>
+
+  <circle cx="125" cy="100" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="93" cy="90" r="2" fill="#FFF" opacity="0.3"/>
+</svg>

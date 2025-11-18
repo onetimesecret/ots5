@@ -1,0 +1,26 @@
+<!-- Iteration 38: Lightning Strike - Light Mode -->
+<!-- Concept: Instant, violent, complete - like a lightning bolt of deletion -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main lightning bolt - angular, aggressive -->
+  <path d="M 110 40 L 95 85 L 115 85 L 90 140 L 120 95 L 100 95 Z" fill="#000"/>
+
+  <!-- Energy discharge at top -->
+  <line x1="108" y1="35" x2="105" y2="28" stroke="#000" stroke-width="2" opacity="0.5"/>
+  <line x1="112" y1="35" x2="115" y2="28" stroke="#000" stroke-width="2" opacity="0.5"/>
+  <line x1="110" y1="33" x2="110" y2="25" stroke="#000" stroke-width="2.5" opacity="0.6"/>
+
+  <!-- Impact fragments at bottom -->
+  <circle cx="85" cy="145" r="3" fill="#000" opacity="0.6"/>
+  <circle cx="95" cy="145" r="2.5" fill="#000" opacity="0.5"/>
+  <circle cx="78" cy="148" r="2" fill="#000" opacity="0.4"/>
+  <circle cx="92" cy="150" r="2" fill="#000" opacity="0.4"/>
+
+  <!-- Radiating impact lines -->
+  <line x1="90" y1="140" x2="80" y2="155" stroke="#000" stroke-width="1.5" opacity="0.3"/>
+  <line x1="90" y1="140" x2="75" y2="145" stroke="#000" stroke-width="1.5" opacity="0.3"/>
+  <line x1="90" y1="140" x2="85" y2="152" stroke="#000" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Afterglow particles -->
+  <circle cx="125" cy="100" r="2" fill="#000" opacity="0.3"/>
+  <circle cx="93" cy="90" r="2" fill="#000" opacity="0.3"/>
+</svg>

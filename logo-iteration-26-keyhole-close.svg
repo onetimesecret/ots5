@@ -1,0 +1,19 @@
+<!-- Iteration 26: Keyhole Close - Light Mode -->
+<!-- Concept: Keyhole closing, not as lock metaphor but as vanishing access point -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer ring -->
+  <circle cx="100" cy="90" r="25" fill="none" stroke="#000" stroke-width="6"/>
+
+  <!-- Keyhole shaft - closing from bottom -->
+  <path d="M 95 112 L 95 140 L 105 140 L 105 112 Z" fill="#000"/>
+
+  <!-- Closing fragments -->
+  <rect x="93" y="143" width="14" height="8" fill="#000" opacity="0.7"/>
+  <rect x="94" y="154" width="12" height="6" fill="#000" opacity="0.5"/>
+  <rect x="96" y="163" width="8" height="4" fill="#000" opacity="0.3"/>
+
+  <!-- Center void shrinking -->
+  <circle cx="100" cy="90" r="10" fill="#000"/>
+  <circle cx="100" cy="90" r="5" fill="#FFF"/>
+  <circle cx="100" cy="90" r="2" fill="#000"/>
+</svg>

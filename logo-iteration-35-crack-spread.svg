@@ -1,0 +1,30 @@
+<!-- Iteration 35: Crack Spread - Light Mode -->
+<!-- Concept: Crack spreading through solid surface - structure failing -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solid square -->
+  <rect x="60" y="60" width="80" height="80" fill="none" stroke="#000" stroke-width="6"/>
+
+  <!-- Main crack - jagged line through center -->
+  <path d="M 100 60 L 95 75 L 102 85 L 98 95 L 105 110 L 98 125 L 103 140"
+        fill="none" stroke="#000" stroke-width="3"/>
+
+  <!-- Secondary cracks branching off -->
+  <path d="M 95 75 L 85 70 L 80 65" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 102 85 L 110 82 L 120 78" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 98 95 L 88 98 L 78 102" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 105 110 L 115 108 L 125 105" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 98 125 L 90 130 L 82 135" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 103 140 L 112 138 L 122 136" fill="none" stroke="#000" stroke-width="2"/>
+
+  <!-- Micro-cracks (thinner lines) -->
+  <path d="M 85 70 L 80 68" fill="none" stroke="#000" stroke-width="1" opacity="0.6"/>
+  <path d="M 110 82 L 115 80" fill="none" stroke="#000" stroke-width="1" opacity="0.6"/>
+  <path d="M 88 98 L 83 100" fill="none" stroke="#000" stroke-width="1" opacity="0.6"/>
+  <path d="M 115 108 L 120 106" fill="none" stroke="#000" stroke-width="1" opacity="0.6"/>
+
+  <!-- Fragmenting corners -->
+  <circle cx="77" cy="65" r="2" fill="#000" opacity="0.4"/>
+  <circle cx="123" cy="75" r="2" fill="#000" opacity="0.4"/>
+  <circle cx="75" cy="105" r="2" fill="#000" opacity="0.4"/>
+  <circle cx="127" cy="103" r="2" fill="#000" opacity="0.4"/>
+</svg>

@@ -1,0 +1,22 @@
+<!-- Iteration 27: Ghost Message - Light Mode -->
+<!-- Concept: Message fading to ghost, then nothing - progressive transparency as metaphor -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solid message lines -->
+  <rect x="40" y="70" width="50" height="6" fill="#000"/>
+  <rect x="40" y="82" width="45" height="6" fill="#000"/>
+  <rect x="40" y="94" width="48" height="6" fill="#000"/>
+
+  <!-- Fading message lines -->
+  <rect x="100" y="70" width="45" height="6" fill="#000" opacity="0.6"/>
+  <rect x="100" y="82" width="40" height="6" fill="#000" opacity="0.6"/>
+  <rect x="100" y="94" width="42" height="6" fill="#000" opacity="0.6"/>
+
+  <!-- Ghost/barely visible -->
+  <rect x="155" y="71" width="30" height="5" fill="#000" opacity="0.25"/>
+  <rect x="150" y="83" width="25" height="5" fill="#000" opacity="0.25"/>
+  <rect x="152" y="95" width="28" height="5" fill="#000" opacity="0.25"/>
+
+  <!-- Nearly gone -->
+  <rect x="185" y="73" width="12" height="3" fill="#000" opacity="0.1"/>
+  <rect x="180" y="85" width="10" height="3" fill="#000" opacity="0.1"/>
+</svg>

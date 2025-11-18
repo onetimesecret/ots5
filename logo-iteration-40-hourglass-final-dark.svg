@@ -1,0 +1,16 @@
+<!-- Iteration 40: Hourglass Final - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 65 50 L 135 50 L 100 100 L 135 150 L 65 150 L 100 100 Z"
+        fill="none" stroke="#FFF" stroke-width="4"/>
+
+  <path d="M 95 145 L 100 140 L 105 145 Z" fill="#FFF"/>
+
+  <circle cx="100" cy="95" r="2.5" fill="#FFF"/>
+
+  <circle cx="100" cy="90" r="1.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="100" cy="85" r="1" fill="#FFF" opacity="0.15"/>
+
+  <ellipse cx="100" cy="146" rx="6" ry="2" fill="#FFF"/>
+</svg>

@@ -1,0 +1,25 @@
+<!-- Iteration 36: Triangle Dissolve - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 100 50 L 140 120 L 60 120 Z" fill="none" stroke="#FFF" stroke-width="8"/>
+
+  <line x1="100" y1="50" x2="105" y2="45" stroke="#FFF" stroke-width="4" opacity="0.6"/>
+  <line x1="140" y1="120" x2="148" y2="122" stroke="#FFF" stroke-width="4" opacity="0.6"/>
+  <line x1="60" y1="120" x2="52" y2="122" stroke="#FFF" stroke-width="4" opacity="0.6"/>
+
+  <circle cx="107" cy="42" r="2.5" fill="#FFF" opacity="0.4"/>
+  <circle cx="110" cy="38" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="152" cy="125" r="2.5" fill="#FFF" opacity="0.4"/>
+  <circle cx="156" cy="128" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="48" cy="125" r="2.5" fill="#FFF" opacity="0.4"/>
+  <circle cx="44" cy="128" r="2" fill="#FFF" opacity="0.3"/>
+
+  <line x1="100" y1="70" x2="95" y2="78" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+  <line x1="100" y1="70" x2="105" y2="78" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+  <line x1="90" y1="95" x2="110" y2="95" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+
+  <circle cx="100" cy="85" r="3" fill="#FFF" opacity="0.3"/>
+  <circle cx="85" cy="105" r="2" fill="#FFF" opacity="0.2"/>
+  <circle cx="115" cy="105" r="2" fill="#FFF" opacity="0.2"/>
+</svg>

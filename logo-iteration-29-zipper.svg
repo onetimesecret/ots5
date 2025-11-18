@@ -1,0 +1,30 @@
+<!-- Iteration 29: Zipper - Light Mode -->
+<!-- Concept: Information sealed/unsealed, but viewing causes destruction -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left side of zipper -->
+  <rect x="85" y="60" width="6" height="12" fill="#000"/>
+  <rect x="85" y="76" width="6" height="12" fill="#000"/>
+  <rect x="85" y="92" width="6" height="12" fill="#000"/>
+  <rect x="85" y="108" width="6" height="12" fill="#000"/>
+  <rect x="85" y="124" width="6" height="12" fill="#000"/>
+
+  <!-- Right side of zipper -->
+  <rect x="109" y="60" width="6" height="12" fill="#000"/>
+  <rect x="109" y="76" width="6" height="12" fill="#000"/>
+  <rect x="109" y="92" width="6" height="12" fill="#000"/>
+  <rect x="109" y="108" width="6" height="12" fill="#000"/>
+  <rect x="109" y="124" width="6" height="12" fill="#000"/>
+
+  <!-- Zipper pull - at top, partially open -->
+  <rect x="94" y="50" width="12" height="16" fill="#000"/>
+
+  <!-- Opening/separating at top -->
+  <line x1="91" y1="68" x2="85" y2="75" stroke="#000" stroke-width="3"/>
+  <line x1="109" y1="68" x2="115" y2="75" stroke="#000" stroke-width="3"/>
+
+  <!-- Fragmenting pieces from separation -->
+  <circle cx="78" cy="78" r="2" fill="#000" opacity="0.5"/>
+  <circle cx="122" cy="78" r="2" fill="#000" opacity="0.5"/>
+  <circle cx="75" cy="85" r="1.5" fill="#000" opacity="0.3"/>
+  <circle cx="125" cy="85" r="1.5" fill="#000" opacity="0.3"/>
+</svg>

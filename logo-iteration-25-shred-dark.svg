@@ -1,0 +1,37 @@
+<!-- Iteration 25: Shred - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <rect x="60" y="50" width="80" height="20" fill="#FFF"/>
+
+  <rect x="60" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="71" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="82" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="93" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="104" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="115" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="126" y="72" width="9" height="15" fill="#FFF"/>
+  <rect x="137" y="72" width="3" height="15" fill="#FFF"/>
+
+  <rect x="60" y="92" width="7" height="28" fill="#FFF"/>
+  <rect x="71" y="95" width="7" height="22" fill="#FFF"/>
+  <rect x="82" y="90" width="7" height="30" fill="#FFF"/>
+  <rect x="93" y="97" width="7" height="26" fill="#FFF"/>
+  <rect x="104" y="91" width="7" height="24" fill="#FFF"/>
+  <rect x="115" y="94" width="7" height="29" fill="#FFF"/>
+  <rect x="126" y="89" width="7" height="25" fill="#FFF"/>
+  <rect x="137" y="93" width="3" height="20" fill="#FFF"/>
+
+  <rect x="62" y="128" width="5" height="8" fill="#FFF" opacity="0.7"/>
+  <rect x="73" y="124" width="5" height="6" fill="#FFF" opacity="0.7"/>
+  <rect x="84" y="127" width="5" height="10" fill="#FFF" opacity="0.7"/>
+  <rect x="95" y="130" width="5" height="7" fill="#FFF" opacity="0.7"/>
+  <rect x="106" y="122" width="5" height="9" fill="#FFF" opacity="0.7"/>
+  <rect x="117" y="129" width="5" height="8" fill="#FFF" opacity="0.7"/>
+  <rect x="128" y="120" width="5" height="11" fill="#FFF" opacity="0.7"/>
+
+  <rect x="64" y="145" width="3" height="4" fill="#FFF" opacity="0.4"/>
+  <rect x="85" y="148" width="3" height="3" fill="#FFF" opacity="0.4"/>
+  <rect x="108" y="143" width="3" height="5" fill="#FFF" opacity="0.4"/>
+  <rect x="120" y="147" width="2" height="3" fill="#FFF" opacity="0.3"/>
+</svg>

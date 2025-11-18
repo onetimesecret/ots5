@@ -1,0 +1,23 @@
+<!-- Iteration 31: Redacted - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <rect x="40" y="70" width="60" height="12" fill="#FFF"/>
+  <rect x="40" y="90" width="55" height="12" fill="#FFF"/>
+  <rect x="40" y="110" width="58" height="12" fill="#FFF"/>
+
+  <rect x="105" y="70" width="25" height="12" fill="#FFF" opacity="0.7"/>
+  <rect x="100" y="90" width="30" height="12" fill="#FFF" opacity="0.7"/>
+  <rect x="103" y="110" width="27" height="12" fill="#FFF" opacity="0.7"/>
+
+  <rect x="135" y="71" width="12" height="10" fill="#FFF" opacity="0.4"/>
+  <rect x="135" y="91" width="15" height="10" fill="#FFF" opacity="0.4"/>
+  <rect x="135" y="111" width="13" height="10" fill="#FFF" opacity="0.4"/>
+
+  <rect x="152" y="73" width="8" height="8" fill="#FFF" opacity="0.2"/>
+  <rect x="155" y="93" width="10" height="8" fill="#FFF" opacity="0.2"/>
+  <rect x="153" y="113" width="9" height="8" fill="#FFF" opacity="0.2"/>
+
+  <rect x="165" y="75" width="4" height="6" fill="#FFF" opacity="0.1"/>
+  <rect x="168" y="95" width="5" height="6" fill="#FFF" opacity="0.1"/>
+</svg>

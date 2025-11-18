@@ -1,0 +1,28 @@
+<!-- Iteration 33: Data Bleed - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <rect x="40" y="75" width="15" height="15" fill="#FFF"/>
+  <rect x="40" y="95" width="15" height="15" fill="#FFF"/>
+  <rect x="40" y="115" width="15" height="15" fill="#FFF"/>
+
+  <rect x="60" y="75" width="15" height="15" fill="#FFF"/>
+  <rect x="60" y="95" width="15" height="15" fill="#FFF"/>
+  <rect x="60" y="115" width="15" height="15" fill="#FFF"/>
+
+  <rect x="80" y="75" width="15" height="15" fill="#FFF" opacity="0.8"/>
+  <rect x="82" y="95" width="13" height="15" fill="#FFF" opacity="0.8"/>
+  <rect x="80" y="115" width="15" height="15" fill="#FFF" opacity="0.8"/>
+
+  <rect x="100" y="77" width="12" height="13" fill="#FFF" opacity="0.6"/>
+  <rect x="101" y="96" width="11" height="13" fill="#FFF" opacity="0.6"/>
+  <rect x="100" y="116" width="12" height="13" fill="#FFF" opacity="0.6"/>
+
+  <path d="M 118 80 L 118 90 L 115 95 L 118 100 L 115 105" fill="none" stroke="#FFF" stroke-width="4" opacity="0.4"/>
+  <path d="M 125 78 L 125 93 L 122 98 L 125 103" fill="none" stroke="#FFF" stroke-width="3" opacity="0.3"/>
+  <path d="M 132 82 L 132 95 L 130 100" fill="none" stroke="#FFF" stroke-width="2" opacity="0.2"/>
+
+  <circle cx="115" cy="108" r="2.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="125" cy="106" r="2" fill="#FFF" opacity="0.2"/>
+  <circle cx="130" cy="103" r="1.5" fill="#FFF" opacity="0.15"/>
+</svg>

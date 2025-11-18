@@ -1,0 +1,34 @@
+<!-- Iteration 28: Quantum Dot - Light Mode -->
+<!-- Concept: Particle in superposition then collapsed - quantum ephemerality -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Central solid dot - the observed state -->
+  <circle cx="100" cy="100" r="10" fill="#000"/>
+
+  <!-- Probability cloud - multiple possible positions -->
+  <circle cx="80" cy="80" r="4" fill="#000" opacity="0.3"/>
+  <circle cx="120" cy="80" r="4" fill="#000" opacity="0.3"/>
+  <circle cx="80" cy="120" r="4" fill="#000" opacity="0.3"/>
+  <circle cx="120" cy="120" r="4" fill="#000" opacity="0.3"/>
+
+  <circle cx="100" cy="70" r="3" fill="#000" opacity="0.2"/>
+  <circle cx="130" cy="100" r="3" fill="#000" opacity="0.2"/>
+  <circle cx="100" cy="130" r="3" fill="#000" opacity="0.2"/>
+  <circle cx="70" cy="100" r="3" fill="#000" opacity="0.2"/>
+
+  <circle cx="88" cy="88" r="2.5" fill="#000" opacity="0.15"/>
+  <circle cx="112" cy="88" r="2.5" fill="#000" opacity="0.15"/>
+  <circle cx="88" cy="112" r="2.5" fill="#000" opacity="0.15"/>
+  <circle cx="112" cy="112" r="2.5" fill="#000" opacity="0.15"/>
+
+  <!-- Outer dispersing ghosts -->
+  <circle cx="60" cy="60" r="2" fill="#000" opacity="0.1"/>
+  <circle cx="140" cy="60" r="2" fill="#000" opacity="0.1"/>
+  <circle cx="60" cy="140" r="2" fill="#000" opacity="0.1"/>
+  <circle cx="140" cy="140" r="2" fill="#000" opacity="0.1"/>
+
+  <!-- Connection lines suggesting uncertainty -->
+  <line x1="100" y1="100" x2="80" y2="80" stroke="#000" stroke-width="1" opacity="0.15"/>
+  <line x1="100" y1="100" x2="120" y2="80" stroke="#000" stroke-width="1" opacity="0.15"/>
+  <line x1="100" y1="100" x2="80" y2="120" stroke="#000" stroke-width="1" opacity="0.15"/>
+  <line x1="100" y1="100" x2="120" y2="120" stroke="#000" stroke-width="1" opacity="0.15"/>
+</svg>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ephemeral Messaging Logo Iterations - All 40 Concepts</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; padding: 40px 20px; }
+    h1 { text-align: center; margin-bottom: 10px; font-size: 2em; font-weight: 700; }
+    .subtitle { text-align: center; color: #666; margin-bottom: 40px; font-size: 1.1em; }
+    .container { max-width: 1800px; margin: 0 auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
+    .logo-card { background: white; border-radius: 8px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .logo-title { font-weight: 600; margin-bottom: 6px; font-size: 0.9em; }
+    .logo-concept { color: #666; font-size: 0.8em; margin-bottom: 14px; line-height: 1.3; }
+    .logo-display { display: flex; gap: 8px; margin-bottom: 10px; }
+    .logo-version { flex: 1; aspect-ratio: 1; border: 1px solid #e0e0e0; border-radius: 4px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .logo-version.dark { background: #000; }
+    .logo-version.light { background: #fff; }
+    .logo-version img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
+    .logo-label { text-align: center; font-size: 0.7em; color: #999; margin-top: 4px; }
+    .section-header { margin: 50px 0 25px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }
+    .section-header h2 { font-size: 1.4em; font-weight: 600; }
+    .toggle-container { text-align: center; margin: 30px 0; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .toggle-btn { padding: 12px 30px; margin: 0 10px; border: 2px solid #333; background: white; border-radius: 6px; cursor: pointer; font-size: 1em; font-weight: 600; transition: all 0.2s; }
+    .toggle-btn:hover { background: #333; color: white; }
+    .toggle-btn.active { background: #333; color: white; }
+    .stats { text-align: center; color: #888; font-size: 0.95em; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ephemeral Messaging Logo Explorations</h1>
+    <p class="subtitle">40 iterations exploring disappearance, encryption, and urgency</p>
+    <p class="stats">Complete set: 80 SVG files (40 concepts × 2 color modes)</p>
+
+    <div class="toggle-container">
+      <button class="toggle-btn active" onclick="showBoth()">Show Both</button>
+      <button class="toggle-btn" onclick="showLight()">Light Only</button>
+      <button class="toggle-btn" onclick="showDark()">Dark Only</button>
+    </div>
+
+    <div class="section-header"><h2>Phase 1: Core Concepts (1-24)</h2></div>
+
+    <div class="grid">
+      ${generateLogoCards([
+        [1, 'Dissolving Letter', 'Message fragment breaking into particles'],
+        [2, 'Vanishing Circle', 'Progressive deletion from outside in'],
+        [3, 'One-Time Aperture', 'Closing iris - single viewing moment'],
+        [4, 'Falling Slash', 'Deletion mark with finality'],
+        [5, 'Burning Message', 'Document consumed by flame'],
+        [6, 'Single Moment', 'Central point with dispersing waves'],
+        [7, 'Signal Fade', 'Waveform degrading to silence'],
+        [8, 'Void Breach', 'Closing gap - viewing window'],
+        [9, 'One Drop', 'Single droplet with impact ripple'],
+        [10, 'Breaking Chain', 'Chain link severing'],
+        [11, 'Eclipse Reveal', 'Brief alignment then concealment'],
+        [12, 'Pixel Decay', 'Digital message fragmenting to pixels'],
+        [13, 'Whisper Path', 'Curved path thinning to invisibility'],
+        [14, 'Minimal Slash', 'Ultra-simple deletion mark'],
+        [15, 'Collapsing Square', 'Geometry collapsing to point'],
+        [16, 'Scatter Dot', 'Dense center exploding outward'],
+        [17, 'Temporal X', 'X mark forming/dissolving'],
+        [18, 'Hourglass Minimal', 'Geometric hourglass with vanishing sand'],
+        [19, 'Open-Closed', 'Bracket opening then closing'],
+        [20, 'Negative Burst', 'Circle with radiating voids'],
+        [21, 'Countdown One', 'Bold "1" disintegrating'],
+        [22, 'Spark Line', 'Burning fuse countdown'],
+        [23, 'Void Portal', 'Spiral pulling into nothingness'],
+        [24, 'Minimal Dot Trail', 'Single point with vanishing trail']
+      ])}
+    </div>
+
+    <div class="section-header"><h2>Phase 2: Refined Explorations (25-40)</h2></div>
+
+    <div class="grid">
+      ${generateLogoCards([
+        [25, 'Shred', 'Document shredded into vertical strips'],
+        [26, 'Keyhole Close', 'Keyhole closing - vanishing access'],
+        [27, 'Ghost Message', 'Message fading through transparency'],
+        [28, 'Quantum Dot', 'Particle in superposition then collapsed'],
+        [29, 'Zipper', 'Information sealed then destructively opened'],
+        [30, 'Arrow Scatter', 'Forward arrow disintegrating in flight'],
+        [31, 'Redacted', 'Redaction bars dissolving'],
+        [32, 'Eye Blink', 'Eye closing - viewing as consuming'],
+        [33, 'Data Bleed', 'Structured data bleeding out'],
+        [34, 'Imploding Ring', 'Ring collapsing with velocity'],
+        [35, 'Crack Spread', 'Crack spreading through surface'],
+        [36, 'Triangle Dissolve', 'Perfect triangle degrading to chaos'],
+        [37, 'Bubble Pop', 'Fragile bubble at moment of bursting'],
+        [38, 'Lightning Strike', 'Instant, violent deletion'],
+        [39, 'Hexagon Shatter', 'Perfect hexagon shattering from impact'],
+        [40, 'Hourglass Final', 'Last grain falling - time expired']
+      ])}
+    </div>
+
+  </div>
+
+  <script>
+    function generateLogoCards(data) {
+      return data.map(([num, title, concept]) => {
+        const numPadded = String(num).padStart(2, '0');
+        const slug = title.toLowerCase().replace(/\s+/g, '-').replace(/"/g, '');
+        return `
+          <div class="logo-card">
+            <div class="logo-title">${numPadded}. ${title}</div>
+            <div class="logo-concept">${concept}</div>
+            <div class="logo-display">
+              <div>
+                <div class="logo-version light">
+                  <img src="logo-iteration-${numPadded}-${slug}.svg" alt="${title} Light">
+                </div>
+                <div class="logo-label">Light</div>
+              </div>
+              <div>
+                <div class="logo-version dark">
+                  <img src="logo-iteration-${numPadded}-${slug}-dark.svg" alt="${title} Dark">
+                </div>
+                <div class="logo-label">Dark</div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    const buttons = document.querySelectorAll('.toggle-btn');
+    const displays = document.querySelectorAll('.logo-display');
+
+    function setActiveButton(btn) {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function showBoth() {
+      displays.forEach(display => {
+        const children = display.children;
+        children[0].style.display = 'block';
+        children[1].style.display = 'block';
+      });
+      setActiveButton(buttons[0]);
+    }
+
+    function showLight() {
+      displays.forEach(display => {
+        const children = display.children;
+        children[0].style.display = 'block';
+        children[1].style.display = 'none';
+      });
+      setActiveButton(buttons[1]);
+    }
+
+    function showDark() {
+      displays.forEach(display => {
+        const children = display.children;
+        children[0].style.display = 'none';
+        children[1].style.display = 'block';
+      });
+      setActiveButton(buttons[2]);
+    }
+
+    // Generate cards on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const grids = document.querySelectorAll('.grid');
+      const phase1Data = [
+        [1, 'Dissolving Letter', 'Message fragment breaking into particles'],
+        [2, 'Vanishing Circle', 'Progressive deletion from outside in'],
+        [3, 'One-Time Aperture', 'Closing iris - single viewing moment'],
+        [4, 'Falling Slash', 'Deletion mark with finality'],
+        [5, 'Burning Message', 'Document consumed by flame'],
+        [6, 'Single Moment', 'Central point with dispersing waves'],
+        [7, 'Signal Fade', 'Waveform degrading to silence'],
+        [8, 'Void Breach', 'Closing gap - viewing window'],
+        [9, 'One Drop', 'Single droplet with impact ripple'],
+        [10, 'Breaking Chain', 'Chain link severing'],
+        [11, 'Eclipse Reveal', 'Brief alignment then concealment'],
+        [12, 'Pixel Decay', 'Digital message fragmenting to pixels'],
+        [13, 'Whisper Path', 'Curved path thinning to invisibility'],
+        [14, 'Minimal Slash', 'Ultra-simple deletion mark'],
+        [15, 'Collapsing Square', 'Geometry collapsing to point'],
+        [16, 'Scatter Dot', 'Dense center exploding outward'],
+        [17, 'Temporal X', 'X mark forming/dissolving'],
+        [18, 'Hourglass Minimal', 'Geometric hourglass with vanishing sand'],
+        [19, 'Open-Closed', 'Bracket opening then closing'],
+        [20, 'Negative Burst', 'Circle with radiating voids'],
+        [21, 'Countdown One', 'Bold "1" disintegrating'],
+        [22, 'Spark Line', 'Burning fuse countdown'],
+        [23, 'Void Portal', 'Spiral pulling into nothingness'],
+        [24, 'Minimal Dot Trail', 'Single point with vanishing trail']
+      ];
+
+      const phase2Data = [
+        [25, 'Shred', 'Document shredded into vertical strips'],
+        [26, 'Keyhole Close', 'Keyhole closing - vanishing access'],
+        [27, 'Ghost Message', 'Message fading through transparency'],
+        [28, 'Quantum Dot', 'Particle in superposition then collapsed'],
+        [29, 'Zipper', 'Information sealed then destructively opened'],
+        [30, 'Arrow Scatter', 'Forward arrow disintegrating in flight'],
+        [31, 'Redacted', 'Redaction bars dissolving'],
+        [32, 'Eye Blink', 'Eye closing - viewing as consuming'],
+        [33, 'Data Bleed', 'Structured data bleeding out'],
+        [34, 'Imploding Ring', 'Ring collapsing with velocity'],
+        [35, 'Crack Spread', 'Crack spreading through surface'],
+        [36, 'Triangle Dissolve', 'Perfect triangle degrading to chaos'],
+        [37, 'Bubble Pop', 'Fragile bubble at moment of bursting'],
+        [38, 'Lightning Strike', 'Instant, violent deletion'],
+        [39, 'Hexagon Shatter', 'Perfect hexagon shattering from impact'],
+        [40, 'Hourglass Final', 'Last grain falling - time expired']
+      ];
+
+      if (grids[0]) grids[0].innerHTML = generateLogoCards(phase1Data);
+      if (grids[1]) grids[1].innerHTML = generateLogoCards(phase2Data);
+    });
+  </script>
+</body>
+</html>
