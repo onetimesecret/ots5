@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200">
+<text x="570" y="10" font-size="7" opacity=".3">#H9Q7</text>
+<!-- GLYPH 16×16 -->
+<circle cx="28" cy="28" r="6.5"/>
+<circle cx="28" cy="28" r="4.5" fill="#fff"/>
+<rect x="26.5" y="28" width="3" height="5" fill="#fff"/>
+<circle cx="28" cy="25" r="1.5" fill="#fff"/>
+<!-- LOCKUP 80px -->
+<g transform="translate(70,0)">
+<circle cx="30" cy="60" r="15"/>
+<circle cx="30" cy="60" r="10" fill="#fff"/>
+<rect x="27" y="60" width="6" height="12" fill="#fff"/>
+<circle cx="30" cy="55" r="3" fill="#fff"/>
+<text x="60" y="52" font-size="18" font-weight="700">OneTime</text>
+<text x="60" y="70" font-size="18" font-weight="300">Secret</text>
+</g>
+<!-- BADGE 200px -->
+<g transform="translate(300,0)">
+<circle cx="130" cy="70" r="32"/>
+<circle cx="130" cy="70" r="22" fill="#fff"/>
+<rect x="120" y="70" width="20" height="26" fill="#fff"/>
+<circle cx="130" cy="60" r="7" fill="#fff"/>
+<path d="M110 95a25 25 0 010-8m40 0a25 25 0 010 8" fill="none" stroke="#000" stroke-width="2.5" opacity=".3"/>
+<text x="130" y="130" font-size="28" font-weight="700" text-anchor="middle">OneTime</text>
+<text x="130" y="155" font-size="28" font-weight="300" text-anchor="middle">Secret</text>
+<text x="130" y="180" font-size="14" text-anchor="middle" opacity=".7">One view. Then gone.</text>
+</g>
+<text x="5" y="195" font-size="8" opacity=".4">Keyhole revealing void—once opened, nothing remains.</text>
+</svg>
