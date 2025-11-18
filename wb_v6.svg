@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200">
+<rect width="580" height="200" fill="#000"/>
+<text x="570" y="10" font-size="7" fill="#fff" opacity=".3">#F7N5</text>
+<!-- GLYPH 16×16 -->
+<circle cx="28" cy="28" r="5" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M26 25l4 3-4 3" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M26 27l2-2m0 6l2-2" stroke="#fff" stroke-width="1" opacity=".5"/>
+<!-- LOCKUP 80px -->
+<g transform="translate(70,0)">
+<circle cx="30" cy="60" r="12" fill="none" stroke="#fff" stroke-width="2.5"/>
+<path d="M23 54l7 6-7 6" fill="none" stroke="#fff" stroke-width="2.5"/>
+<path d="M22 57l4-4m0 14l4-4" stroke="#fff" stroke-width="2" opacity=".5"/>
+<path d="M38 57l4-4m0 14l4-4" stroke="#fff" stroke-width="1.5" opacity=".3"/>
+<text x="60" y="52" font-size="18" font-weight="700" fill="#fff">OneTime</text>
+<text x="60" y="70" font-size="18" font-weight="300" fill="#fff">Secret</text>
+</g>
+<!-- BADGE 200px -->
+<g transform="translate(300,0)">
+<circle cx="130" cy="70" r="26" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="M115 58l15 12-15 12" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="M112 62l8-8m0 32l8-8" stroke="#fff" stroke-width="3.5" opacity=".5"/>
+<path d="M148 62l8-8m0 32l8-8" stroke="#fff" stroke-width="3" opacity=".4"/>
+<path d="M108 66l6-6m0 20l6-6" stroke="#fff" stroke-width="2" opacity=".3"/>
+<path d="M152 66l6-6m0 20l6-6" stroke="#fff" stroke-width="2" opacity=".2"/>
+<text x="130" y="125" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">OneTime</text>
+<text x="130" y="150" font-size="28" font-weight="300" fill="#fff" text-anchor="middle">Secret</text>
+<text x="130" y="175" font-size="14" fill="#fff" text-anchor="middle" opacity=".7">One view. Then gone.</text>
+</g>
+<text x="5" y="195" font-size="8" fill="#fff" opacity=".4">Seal broken, fragments scattering—cannot be resealed.</text>
+</svg>

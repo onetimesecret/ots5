@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200">
+<text x="570" y="10" font-size="7" opacity=".3">#E6M4</text>
+<!-- GLYPH 16×16 -->
+<circle cx="28" cy="28" r="3.5"/>
+<circle cx="28" cy="28" r="5.5" fill="none" stroke="#000" stroke-width="1" opacity=".4"/>
+<circle cx="28" cy="28" r="7" fill="none" stroke="#000" stroke-width=".7" opacity=".2"/>
+<!-- LOCKUP 80px -->
+<g transform="translate(70,0)">
+<circle cx="30" cy="60" r="8"/>
+<circle cx="30" cy="60" r="12.5" fill="none" stroke="#000" stroke-width="2.2" opacity=".5"/>
+<circle cx="30" cy="60" r="16" fill="none" stroke="#000" stroke-width="1.8" opacity=".3"/>
+<circle cx="30" cy="60" r="19" fill="none" stroke="#000" stroke-width="1.2" opacity=".15"/>
+<text x="60" y="52" font-size="18" font-weight="700">OneTime</text>
+<text x="60" y="70" font-size="18" font-weight="300">Secret</text>
+</g>
+<!-- BADGE 200px -->
+<g transform="translate(300,0)">
+<circle cx="130" cy="70" r="16"/>
+<circle cx="130" cy="70" r="24" fill="none" stroke="#000" stroke-width="4" opacity=".6"/>
+<circle cx="130" cy="70" r="31" fill="none" stroke="#000" stroke-width="3.5" opacity=".4"/>
+<circle cx="130" cy="70" r="37" fill="none" stroke="#000" stroke-width="2.8" opacity=".25"/>
+<circle cx="130" cy="70" r="42" fill="none" stroke="#000" stroke-width="2" opacity=".12"/>
+<text x="130" y="130" font-size="28" font-weight="700" text-anchor="middle">OneTime</text>
+<text x="130" y="155" font-size="28" font-weight="300" text-anchor="middle">Secret</text>
+<text x="130" y="180" font-size="14" text-anchor="middle" opacity=".7">One view. Then gone.</text>
+</g>
+<text x="5" y="195" font-size="8" opacity=".4">Ripple dissolving outward—presence fading to absence.</text>
+</svg>
