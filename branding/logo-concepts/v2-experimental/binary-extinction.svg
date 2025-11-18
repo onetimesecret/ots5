@@ -1,0 +1,48 @@
+<!-- EXPERIMENTAL: Binary Extinction (二进制消亡) -->
+<!-- Concept: Digital data (1s and 0s) dissolving into nothingness
+     The language of computers returning to void -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+      .monospace { font-family: 'Courier New', monospace; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Row 1: Full binary data (bottom) -->
+  <text class="fg monospace" x="40" y="170" font-size="18">1 0 1 1 0 1</text>
+
+  <!-- Row 2: Starting to fragment -->
+  <text class="fg monospace" x="45" y="145" font-size="17">1 0  1  0 1</text>
+
+  <!-- Row 3: More gaps -->
+  <text class="fg monospace" x="50" y="122" font-size="16">1   0   1  </text>
+
+  <!-- Row 4: Isolated digits -->
+  <text class="fg monospace" x="55" y="100" font-size="14">1     0    </text>
+
+  <!-- Row 5: Fragments -->
+  <text class="fg monospace" x="65" y="80" font-size="12">1       </text>
+
+  <!-- Row 6: Dissolving into components -->
+  <!-- Breaking "1" into lines -->
+  <line class="fg" x1="80" y1="58" x2="80" y2="68" stroke="white" stroke-width="2"/>
+  <line class="fg" x1="100" y1="58" x2="100" y2="68" stroke="white" stroke-width="1.5"/>
+
+  <!-- Row 7: Just strokes -->
+  <line class="fg" x1="85" y1="42" x2="85" y2="48" stroke="white" stroke-width="1.5"/>
+  <line class="fg" x1="105" y1="40" x2="105" y2="46" stroke="white" stroke-width="1"/>
+
+  <!-- Row 8: Tiny fragments -->
+  <line class="fg" x1="90" y1="28" x2="90" y2="32" stroke="white" stroke-width="1"/>
+  <line class="fg" x1="110" y1="26" x2="110" y2="30" stroke="white" stroke-width="0.8"/>
+
+  <!-- Row 9: Final particles -->
+  <circle class="fg" cx="95" cy="18" r="1"/>
+  <circle class="fg" cx="105" cy="16" r="0.7"/>
+
+  <!-- Row 10: Silence (void) -->
+</svg>

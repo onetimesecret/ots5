@@ -1,0 +1,68 @@
+<!-- NEW CONCEPT: Shattered Mirror (碎镜) -->
+<!-- Visual metaphor: A mirror/reflection fragmenting into shards, then dust
+     Represents: Identity/image that exists briefly then shatters beyond recovery
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center - intact core (the moment before shattering) -->
+  <circle class="fg" cx="100" cy="100" r="18"/>
+  <circle class="bg" cx="100" cy="100" r="14"/>
+
+  <!-- First ring - large shards -->
+  <!-- Angular pieces radiating outward -->
+  <path class="fg" d="M 100 70 L 95 65 L 105 62 Z"/>
+  <path class="fg" d="M 130 100 L 135 95 L 138 105 Z"/>
+  <path class="fg" d="M 100 130 L 105 135 L 95 138 Z"/>
+  <path class="fg" d="M 70 100 L 65 105 L 62 95 Z"/>
+
+  <path class="fg" d="M 120 80 L 125 72 L 128 82 Z"/>
+  <path class="fg" d="M 120 120 L 128 118 L 125 128 Z"/>
+  <path class="fg" d="M 80 80 L 72 82 L 75 72 Z"/>
+  <path class="fg" d="M 80 120 L 75 128 L 72 118 Z"/>
+
+  <!-- Second ring - medium shards (more irregular) -->
+  <polygon class="fg" points="100,52 97,48 103,46"/>
+  <polygon class="fg" points="145,85 148,82 150,88"/>
+  <polygon class="fg" points="148,115 150,112 154,118"/>
+  <polygon class="fg" points="100,148 103,154 97,152"/>
+  <polygon class="fg" points="52,100 48,103 46,97"/>
+  <polygon class="fg" points="55,85 50,82 52,88"/>
+
+  <!-- Third ring - small fragments -->
+  <rect class="fg" x="98" y="38" width="4" height="5" transform="rotate(15 100 40)"/>
+  <rect class="fg" x="155" y="95" width="5" height="4" transform="rotate(30 157 97)"/>
+  <rect class="fg" x="155" y="125" width="4" height="5" transform="rotate(-20 157 127)"/>
+  <rect class="fg" x="98" y="158" width="5" height="4" transform="rotate(25 100 160)"/>
+  <rect class="fg" x="38" y="98" width="4" height="5" transform="rotate(-35 40 100)"/>
+  <rect class="fg" x="42" y="75" width="5" height="3" transform="rotate(40 44 76)"/>
+
+  <!-- Fourth ring - tiny shards -->
+  <rect class="fg" x="100" y="28" width="2" height="3"/>
+  <rect class="fg" x="165" y="88" width="3" height="2"/>
+  <rect class="fg" x="167" y="130" width="2" height="3"/>
+  <rect class="fg" x="98" y="168" width="3" height="2"/>
+  <rect class="fg" x="28" y="102" width="2" height="3"/>
+  <rect class="fg" x="32" y="68" width="3" height="2"/>
+
+  <!-- Final dispersion - dust particles -->
+  <circle class="fg" cx="100" cy="20" r="1"/>
+  <circle class="fg" cx="172" cy="82" r="1"/>
+  <circle class="fg" cx="175" cy="135" r="1"/>
+  <circle class="fg" cx="98" cy="178" r="1"/>
+  <circle class="fg" cx="22" cy="105" r="1"/>
+  <circle class="fg" cx="25" cy="62" r="1"/>
+
+  <circle class="fg" cx="105" cy="15" r="0.5"/>
+  <circle class="fg" cx="178" cy="100" r="0.5"/>
+  <circle class="fg" cx="100" cy="185" r="0.5"/>
+  <circle class="fg" cx="15" cy="100" r="0.5"/>
+</svg>

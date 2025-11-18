@@ -1,0 +1,69 @@
+<!-- NEW CONCEPT: Broken Chain (断裂之链) -->
+<!-- Visual metaphor: A chain link that breaks after single use
+     Represents: Connection that severs, one-time passage, irreversible break
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Left chain link - solid, intact -->
+  <ellipse class="fg" cx="65" cy="100" rx="20" ry="30"
+           fill="none" stroke="white" stroke-width="8"/>
+  <ellipse class="bg" cx="65" cy="100" rx="12" ry="22"
+           fill="black" stroke="black" stroke-width="1"/>
+
+  <!-- Center link - BREAKING APART -->
+  <!-- Top half - still connected to left -->
+  <path class="fg" d="M 85 80 Q 95 70 105 70 Q 115 70 115 80"
+        fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path class="bg" d="M 89 82 Q 95 76 105 76 Q 111 76 111 82"
+        fill="none" stroke="black" stroke-width="4"/>
+
+  <!-- Bottom half - fragmenting, separating from top -->
+  <path class="fg" d="M 85 120 Q 95 130 105 130 Q 115 130 115 120"
+        fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path class="bg" d="M 89 118 Q 95 124 105 124 Q 111 124 111 118"
+        fill="none" stroke="black" stroke-width="3"/>
+
+  <!-- Right side pieces - dissolving into fragments -->
+  <!-- Top fragment -->
+  <path class="fg" d="M 115 80 Q 125 75 130 75"
+        fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Middle fragments - scattered pieces -->
+  <rect class="fg" x="132" y="73" width="8" height="5"/>
+  <rect class="fg" x="142" y="76" width="6" height="4"/>
+  <rect class="fg" x="150" y="78" width="5" height="3"/>
+
+  <!-- Bottom fragment -->
+  <path class="fg" d="M 115 120 Q 125 125 130 125"
+        fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Bottom fragments - scattered -->
+  <rect class="fg" x="132" y="123" width="8" height="5"/>
+  <rect class="fg" x="142" y="121" width="6" height="4"/>
+  <rect class="fg" x="150" y="120" width="5" height="3"/>
+
+  <!-- Particles dispersing from break point -->
+  <rect class="fg" x="118" y="95" width="4" height="4"/>
+  <rect class="fg" x="124" y="98" width="3" height="3"/>
+  <rect class="fg" x="130" y="100" width="3" height="3"/>
+  <rect class="fg" x="136" y="102" width="2" height="2"/>
+  <rect class="fg" x="142" y="100" width="2" height="2"/>
+
+  <!-- Final scattered particles -->
+  <rect class="fg" x="158" y="80" width="2" height="2"/>
+  <rect class="fg" x="156" y="100" width="2" height="2"/>
+  <rect class="fg" x="158" y="118" width="2" height="2"/>
+
+  <circle class="fg" cx="165" cy="85" r="1"/>
+  <circle class="fg" cx="165" cy="100" r="1"/>
+  <circle class="fg" cx="165" cy="115" r="1"/>
+</svg>

@@ -1,0 +1,54 @@
+<!-- V2 REFINED: Fading Echo (渐弱的回声) -->
+<!-- Refinements:
+     - More precise mathematical progression (fibonacci-based spacing)
+     - Enhanced dash patterns for smoother visual decay
+     - Optimized stroke weights for better hierarchy
+     - Added micro-detail in outer rings
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center point - the origin pulse (slightly larger for impact) -->
+  <circle class="fg" cx="100" cy="100" r="10"/>
+
+  <!-- First echo - solid, strong (fibonacci: 21) -->
+  <circle class="fg" cx="100" cy="100" r="21"
+          fill="none" stroke="white" stroke-width="7"/>
+
+  <!-- Second echo - solid (fibonacci: 34) -->
+  <circle class="fg" cx="100" cy="100" r="34"
+          fill="none" stroke="white" stroke-width="5"/>
+
+  <!-- Third echo - beginning to fragment (fibonacci: 55) -->
+  <circle class="fg" cx="100" cy="100" r="55"
+          fill="none" stroke="white" stroke-width="3.5"
+          stroke-dasharray="10 3"/>
+
+  <!-- Fourth echo - more fragmented (fibonacci: 89) -->
+  <circle class="fg" cx="100" cy="100" r="70"
+          fill="none" stroke="white" stroke-width="2.5"
+          stroke-dasharray="7 5"/>
+
+  <!-- Fifth echo - heavily dashed -->
+  <circle class="fg" cx="100" cy="100" r="82"
+          fill="none" stroke="white" stroke-width="1.8"
+          stroke-dasharray="4 8"/>
+
+  <!-- Sixth echo - barely visible traces -->
+  <circle class="fg" cx="100" cy="100" r="91"
+          fill="none" stroke="white" stroke-width="1.2"
+          stroke-dasharray="2 12"/>
+
+  <!-- Seventh echo - almost dissolved (micro-detail) -->
+  <circle class="fg" cx="100" cy="100" r="96"
+          fill="none" stroke="white" stroke-width="0.8"
+          stroke-dasharray="1 18"/>
+</svg>

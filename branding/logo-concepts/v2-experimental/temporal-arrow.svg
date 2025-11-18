@@ -1,0 +1,43 @@
+<!-- EXPERIMENTAL: Temporal Arrow (时间之矢) -->
+<!-- Concept: Arrow of time - one direction only, irreversible
+     Time flows forward, leaving only traces -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Past: Solid arrow shaft (left side) -->
+  <rect class="fg" x="20" y="95" width="60" height="10"/>
+
+  <!-- Arrow head (present moment) -->
+  <path class="fg" d="M 80 90 L 100 100 L 80 110 Z"/>
+
+  <!-- Future: Dissolving trajectory -->
+  <!-- Immediate future - still somewhat solid -->
+  <rect class="fg" x="100" y="96" width="15" height="8" opacity="0.9"/>
+  <rect class="fg" x="118" y="97" width="12" height="6" opacity="0.75"/>
+
+  <!-- Near future - fragmenting -->
+  <rect class="fg" x="132" y="98" width="8" height="4" opacity="0.6"/>
+  <rect class="fg" x="143" y="98.5" width="6" height="3" opacity="0.45"/>
+
+  <!-- Mid future - particles -->
+  <rect class="fg" x="152" y="99" width="4" height="2" opacity="0.3"/>
+  <rect class="fg" x="159" y="99.5" width="3" height="1.5" opacity="0.2"/>
+
+  <!-- Far future - traces -->
+  <circle class="fg" cx="167" cy="100" r="1" opacity="0.15"/>
+  <circle class="fg" cx="173" cy="100" r="0.7" opacity="0.1"/>
+  <circle class="fg" cx="178" cy="100" r="0.5" opacity="0.05"/>
+
+  <!-- Uncertainty particles spreading from future -->
+  <circle class="fg" cx="150" cy="93" r="0.8" opacity="0.2"/>
+  <circle class="fg" cx="150" cy="107" r="0.8" opacity="0.2"/>
+  <circle class="fg" cx="165" cy="90" r="0.6" opacity="0.1"/>
+  <circle class="fg" cx="165" cy="110" r="0.6" opacity="0.1"/>
+</svg>

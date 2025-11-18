@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTS5 Logo - Iteration V2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 200;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: #fff;
+            color: #000;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin: 10px 0 20px 0;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #888;
+            font-weight: 300;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 300;
+            margin: 80px 0 40px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #222;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .grid-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .concept-card {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .concept-card:hover {
+            border-color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+        }
+
+        .concept-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+        }
+
+        .concept-title {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .concept-rating {
+            color: #ffd700;
+            font-size: 16px;
+        }
+
+        .concept-subtitle {
+            font-size: 15px;
+            color: #888;
+            margin-bottom: 25px;
+        }
+
+        .logo-display {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .logo-box:hover {
+            border-color: #fff;
+        }
+
+        .logo-box.black-bg {
+            background: #000;
+        }
+
+        .logo-box.white-bg {
+            background: #fff;
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 15px;
+        }
+
+        .icon-box {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            border: 1px solid #333;
+        }
+
+        .icon-box:hover {
+            border-color: #fff;
+        }
+
+        .icon-box img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+
+        .concept-description {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #aaa;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #fff;
+            color: #000;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-left: 8px;
+        }
+
+        .badge.new {
+            background: #00ff00;
+        }
+
+        .badge.refined {
+            background: #00bfff;
+        }
+
+        .badge.experimental {
+            background: #ff00ff;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+            padding: 40px;
+            background: #111;
+            border: 1px solid #333;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 200;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .philosophy {
+            background: #111;
+            padding: 40px;
+            margin: 60px 0;
+            border-left: 4px solid #fff;
+        }
+
+        .philosophy blockquote {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .grid, .grid-icons {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OTS5 Logo Concepts</h1>
+            <div class="version-badge">ITERATION V2</div>
+            <p class="subtitle">精炼 · 探索 · 突破 / Refine · Explore · Breakthrough</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">30</div>
+                <div class="stat-label">Total Designs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Refined Concepts</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Icon Versions</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Experimental</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">V2 Refined - 精炼版本</h2>
+
+        <div class="grid">
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Fading Echo
+                        <span class="badge refined">REFINED</span>
+                    </h3>
+                    <span class="concept-rating">⭐⭐⭐</span>
+                </div>
+                <p class="concept-subtitle">渐弱的回声 - 斐波那契优化版</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/fading-echo-refined.svg" alt="Fading Echo Refined">
+                    </div>
+                    <div class="logo-box white-bg">
+                        <img src="v2-refined/fading-echo-refined-inverse.svg" alt="Fading Echo Refined Inverse">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>改进</strong>: 斐波那契数列规划间距（21, 34, 55...），7层精确回声，优化虚线模式，流畅的视觉衰减。数学美学与诗意的完美结合。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Vanishing Dot
+                        <span class="badge refined">REFINED</span>
+                    </h3>
+                    <span class="concept-rating">⭐⭐</span>
+                </div>
+                <p class="concept-subtitle">消逝之点 - 黄金螺旋布局</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/vanishing-dot-refined.svg" alt="Vanishing Dot Refined">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>改进</strong>: 黄金螺旋粒子布局，指数衰减大小，8层溶解，非对称散射。量子化的优雅表达。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        One-Time Circle
+                        <span class="badge refined">REFINED</span>
+                    </h3>
+                    <span class="concept-rating">⭐⭐</span>
+                </div>
+                <p class="concept-subtitle">一次性圆环 - 增强破碎效果</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/one-time-circle-refined.svg" alt="One-Time Circle Refined">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    <strong>改进</strong>: 270°精确圆弧，渐进碎片化，强化箭头，指数衰减粒子轨迹。从完整到破碎的流畅过渡。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Dissolving Grid
+                        <span class="badge new">NEW</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">消解的网格</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/dissolving-grid.svg" alt="Dissolving Grid">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    数字数据从结构化网格到混沌再到虚无。从底部完整的4×3网格，逐层瓦解成单个像素，最终消散。数字化消亡的直接表达。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Single Flame
+                        <span class="badge new">NEW</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">一次燃烧</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/single-flame.svg" alt="Single Flame">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    火焰明亮地燃烧一次，转化为烟雾，最终消散。燃料→火焰→烟→虚空。"阅后即焚"的诗意诠释。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Broken Chain
+                        <span class="badge new">NEW</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">断裂之链</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/broken-chain.svg" alt="Broken Chain">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    链条在单次使用后断裂，碎片飞散。左侧完整，中心断裂，右侧消散。一次性连接的物理化呈现。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Quantum State
+                        <span class="badge new">NEW</span>
+                    </h3>
+                    <span class="concept-rating">⭐⭐</span>
+                </div>
+                <p class="concept-subtitle">量子态 - 薛定谔的信息</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/quantum-state.svg" alt="Quantum State">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    叠加态的视觉化：左侧观测态（实心），中间叠加态（半透明），右侧未观测态（概率云）。垂直线标记观测时刻。量子力学遇见信息论。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Shattered Mirror
+                        <span class="badge new">NEW</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">碎镜</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-refined/shattered-mirror.svg" alt="Shattered Mirror">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    镜面从中心向外放射状破碎。完整的环→大碎片→小碎片→尘埃。破镜不能重圆的视觉化，身份的瞬间粉碎。
+                </p>
+            </div>
+        </div>
+
+        <h2 class="section-title">V2 Icons - 图标优化版</h2>
+
+        <div class="grid-icons">
+            <div class="concept-card">
+                <h3 class="concept-title">Echo 64px</h3>
+                <div class="icon-box">
+                    <img src="v2-icons/echo-icon-64.svg" alt="Echo Icon 64">
+                </div>
+                <p class="concept-description" style="margin-top: 15px;">
+                    简化为4层，更粗笔画，适合中等尺寸图标。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3 class="concept-title">Echo 32px</h3>
+                <div class="icon-box">
+                    <img src="v2-icons/echo-icon-32.svg" alt="Echo Icon 32">
+                </div>
+                <p class="concept-description" style="margin-top: 15px;">
+                    仅3层，极简版本，小尺寸清晰可辨。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3 class="concept-title">Dot Icon 64px</h3>
+                <div class="icon-box">
+                    <img src="v2-icons/dot-icon-64.svg" alt="Dot Icon 64">
+                </div>
+                <p class="concept-description" style="margin-top: 15px;">
+                    简化粒子模式，保持核心消散感。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3 class="concept-title">Circle Icon 64px</h3>
+                <div class="icon-box">
+                    <img src="v2-icons/circle-icon-64.svg" alt="Circle Icon 64">
+                </div>
+                <p class="concept-description" style="margin-top: 15px;">
+                    更粗的圆弧和箭头，图标级可读性。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3 class="concept-title">Monogram "O"</h3>
+                <div class="icon-box">
+                    <img src="v2-icons/monogram-o.svg" alt="Monogram O">
+                </div>
+                <p class="concept-description" style="margin-top: 15px;">
+                    字母O破碎版，适合App图标，品牌识别强。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3 class="concept-title">Minimal Pulse <span class="concept-rating">⭐</span></h3>
+                <div class="icon-box">
+                    <img src="v2-icons/minimal-pulse.svg" alt="Minimal Pulse">
+                </div>
+                <p class="concept-description" style="margin-top: 15px;">
+                    超极简脉冲线溶解，适合Favicon和工具栏。
+                </p>
+            </div>
+        </div>
+
+        <h2 class="section-title">V2 Experimental - 实验性探索</h2>
+
+        <div class="grid">
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Void Threshold
+                        <span class="badge experimental">EXPERIMENTAL</span>
+                    </h3>
+                    <span class="concept-rating">⭐</span>
+                </div>
+                <p class="concept-subtitle">虚无之阈 - 存在论的边界</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-experimental/void-threshold.svg" alt="Void Threshold">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    左：实心方块（存在），中：垂直阈值线，右：溶解到虚无。渐变透明度表达物质性的消退。哲学化的极简抽象。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Entropic Decay
+                        <span class="badge experimental">EXPERIMENTAL</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">熵增衰变 - 热力学诗意</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-experimental/entropic-decay.svg" alt="Entropic Decay">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    从底部完美秩序（低熵）到顶部最大混沌（热寂）。8个层级展示熵增过程。物理定律的视觉翻译。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Binary Extinction
+                        <span class="badge experimental">EXPERIMENTAL</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">二进制消亡 - 机器语言之死</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-experimental/binary-extinction.svg" alt="Binary Extinction">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    1和0（计算机语言）逐层消散。从完整二进制序列→数字破碎→笔画分解→归于沉默。数字诗意。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Temporal Arrow
+                        <span class="badge experimental">EXPERIMENTAL</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">时间之矢 - 不可逆的流动</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-experimental/temporal-arrow.svg" alt="Temporal Arrow">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    左：坚实箭身（过去），中：箭头（当下），右：溶解的未来。发散粒子代表不确定性增加。熵增与时间之矢的统一。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Glitch Fade
+                        <span class="badge experimental">EXPERIMENTAL</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">故障消逝 - 数字化崩溃之美</p>
+                <div class="logo-display">
+                    <div class="logo-box black-bg">
+                        <img src="v2-experimental/glitch-fade.svg" alt="Glitch Fade">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    数据块→水平位移→扫描线→噪点→静默。5个故障区域展示数据腐败到删除的过程。赛博美学。
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-header">
+                    <h3 class="concept-title">
+                        Negative Space
+                        <span class="badge experimental">EXPERIMENTAL</span>
+                    </h3>
+                </div>
+                <p class="concept-subtitle">负形空间 - 空即是色</p>
+                <div class="logo-display">
+                    <div class="logo-box white-bg">
+                        <img src="v2-experimental/negative-space.svg" alt="Negative Space">
+                    </div>
+                </div>
+                <p class="concept-description">
+                    白色背景（虚空），黑色框架（结构），白色圆形作为"消息"（负空间）。不存在的重要性。禅意抽象。
+                </p>
+            </div>
+        </div>
+
+        <div class="philosophy">
+            <blockquote>
+                "第一轮是创造基础。第二轮是精炼、深化和突破。<br><br>
+                完美不是无可增加，而是无可删减。"<br>
+                — Antoine de Saint-Exupéry
+            </blockquote>
+        </div>
+
+        <div class="philosophy" style="margin-top: 40px; text-align: center; border-left: none; border-top: 1px solid #333;">
+            <p style="font-size: 16px; color: #888; margin-top: 20px;">
+                <strong>V2 Iteration Complete</strong><br>
+                30 unique visual designs · 2025-11-17<br>
+                从诗意到科学，从具象到抽象，从像素到虚空
+            </p>
+        </div>
+    </div>
+</body>
+</html>

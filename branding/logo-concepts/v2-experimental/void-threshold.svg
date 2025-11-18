@@ -1,0 +1,39 @@
+<!-- EXPERIMENTAL: Void Threshold (虚无之阈) -->
+<!-- Concept: The boundary between existence and nothingness
+     Ultra-abstract: a geometric threshold being crossed -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Left side: EXISTENCE (solid geometric form) -->
+  <rect class="fg" x="40" y="80" width="40" height="40"/>
+
+  <!-- The threshold line (vertical) -->
+  <line class="fg" x1="100" y1="60" x2="100" y2="140"
+        stroke="white" stroke-width="2"/>
+
+  <!-- Crossing the threshold - form dissolving -->
+  <!-- Transitional fragments -->
+  <rect class="fg" x="105" y="85" width="12" height="12" opacity="0.9"/>
+  <rect class="fg" x="105" y="103" width="12" height="12" opacity="0.9"/>
+
+  <rect class="fg" x="122" y="88" width="9" height="9" opacity="0.7"/>
+  <rect class="fg" x="122" y="106" width="9" height="9" opacity="0.7"/>
+
+  <rect class="fg" x="136" y="92" width="6" height="6" opacity="0.5"/>
+  <rect class="fg" x="136" y="108" width="6" height="6" opacity="0.5"/>
+
+  <rect class="fg" x="148" y="96" width="4" height="4" opacity="0.3"/>
+  <rect class="fg" x="148" y="104" width="4" height="4" opacity="0.3"/>
+
+  <rect class="fg" x="157" y="99" width="2" height="2" opacity="0.1"/>
+  <rect class="fg" x="157" y="102" width="2" height="2" opacity="0.1"/>
+
+  <!-- Right side: VOID (nothing) -->
+</svg>

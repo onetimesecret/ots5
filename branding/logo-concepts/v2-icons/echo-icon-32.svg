@@ -1,0 +1,27 @@
+<!-- ICON OPTIMIZED: Fading Echo - 32px -->
+<!-- Ultra-simplified for very small sizes: only 3 rings -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="32" height="32"/>
+
+  <!-- Center dot -->
+  <circle class="fg" cx="16" cy="16" r="2.5"/>
+
+  <!-- Only 3 clear rings -->
+  <circle class="fg" cx="16" cy="16" r="6"
+          fill="none" stroke="white" stroke-width="2"/>
+
+  <circle class="fg" cx="16" cy="16" r="10"
+          fill="none" stroke="white" stroke-width="1.5"
+          stroke-dasharray="2 1"/>
+
+  <circle class="fg" cx="16" cy="16" r="14"
+          fill="none" stroke="white" stroke-width="1"
+          stroke-dasharray="1 2"/>
+</svg>

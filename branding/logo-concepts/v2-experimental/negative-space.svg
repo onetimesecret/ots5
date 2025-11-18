@@ -1,0 +1,40 @@
+<!-- EXPERIMENTAL: Negative Space (负形空间) -->
+<!-- Concept: What's NOT there is as important as what IS
+     The void shapes the message -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .fg { fill: #000000; }
+    </style>
+  </defs>
+
+  <!-- White background (the void is the canvas) -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Black frame containing the message space -->
+  <path class="fg" d="M 30 30 L 170 30 L 170 170 L 30 170 Z
+                       M 45 45 L 45 155 L 155 155 L 155 45 Z"
+        fill-rule="evenodd"/>
+
+  <!-- The message - a shape cut from the frame -->
+  <!-- Circle at center (the message exists as absence) -->
+  <circle class="bg" cx="100" cy="100" r="35"/>
+
+  <!-- Fragments escaping the frame (absence dispersing) -->
+  <circle class="bg" cx="165" cy="70" r="6"/>
+  <circle class="bg" cx="172" cy="85" r="4"/>
+  <circle class="bg" cx="178" cy="95" r="3"/>
+
+  <circle class="bg" cx="168" cy="115" r="5"/>
+  <circle class="bg" cx="175" cy="125" r="3.5"/>
+  <circle class="bg" cx="181" cy="132" r="2"/>
+
+  <!-- Tiny voids -->
+  <circle class="bg" cx="185" cy="100" r="1.5"/>
+  <circle class="bg" cx="189" cy="108" r="1"/>
+  <circle class="bg" cx="192" cy="115" r="0.8"/>
+
+  <!-- The negative space becomes the message
+       The void is the content -->
+</svg>

@@ -1,0 +1,59 @@
+<!-- NEW CONCEPT: Quantum State (量子态) -->
+<!-- Visual metaphor: Superposition - existing and not existing simultaneously
+     Represents: The paradox of ephemeral existence, Schrödinger's message
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+    <!-- Gradient representing superposition -->
+    <linearGradient id="quantum-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Left side - SOLID (observed state, message exists) -->
+  <circle class="fg" cx="70" cy="100" r="25"/>
+
+  <!-- Transition zone - SUPERPOSITION (both states simultaneously) -->
+  <!-- Overlapping circles with varying opacity -->
+  <circle fill="url(#quantum-fade)" cx="100" cy="100" r="25"/>
+
+  <!-- Middle - fragmented existence -->
+  <circle class="fg" cx="95" cy="90" r="8"/>
+  <circle class="fg" cx="105" cy="90" r="6"/>
+  <circle class="fg" cx="92" cy="103" r="7"/>
+  <circle class="fg" cx="105" cy="105" r="5"/>
+  <circle class="fg" cx="98" cy="115" r="6"/>
+  <circle class="fg" cx="108" cy="113" r="4"/>
+
+  <!-- Right side - DISSOLVING (unobserved state, message vanishes) -->
+  <!-- Scattered particles - probability cloud -->
+  <circle class="fg" cx="125" cy="95" r="5"/>
+  <circle class="fg" cx="133" cy="100" r="4"/>
+  <circle class="fg" cx="128" cy="108" r="4.5"/>
+
+  <circle class="fg" cx="140" cy="92" r="3"/>
+  <circle class="fg" cx="146" cy="100" r="3.5"/>
+  <circle class="fg" cx="142" cy="110" r="3"/>
+
+  <circle class="fg" cx="153" cy="96" r="2"/>
+  <circle class="fg" cx="158" cy="103" r="2.5"/>
+  <circle class="fg" cx="155" cy="108" r="2"/>
+
+  <!-- Final quantum dispersion -->
+  <circle class="fg" cx="165" cy="98" r="1.5"/>
+  <circle class="fg" cx="170" cy="103" r="1"/>
+  <circle class="fg" cx="167" cy="106" r="1.5"/>
+
+  <!-- Wave function collapse indicator - vertical line at observation point -->
+  <line class="fg" x1="85" y1="70" x2="85" y2="130"
+        stroke="white" stroke-width="1" stroke-dasharray="3 3"/>
+</svg>

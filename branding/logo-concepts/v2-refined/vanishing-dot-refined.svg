@@ -1,0 +1,84 @@
+<!-- V2 REFINED: Vanishing Dot (消逝之点) -->
+<!-- Refinements:
+     - More strategic particle placement (golden ratio spiral)
+     - Size gradation follows exponential decay
+     - Added intermediate dissolution layers
+     - Asymmetric scatter for more natural feel
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center - the solid core (the message at peak existence) -->
+  <circle class="fg" cx="100" cy="100" r="16"/>
+
+  <!-- First dissolution ring - cardinal directions (r=7) -->
+  <circle class="fg" cx="75" cy="100" r="7"/>
+  <circle class="fg" cx="125" cy="100" r="7"/>
+  <circle class="fg" cx="100" cy="75" r="7"/>
+  <circle class="fg" cx="100" cy="125" r="7"/>
+
+  <!-- First ring diagonals (r=6) -->
+  <circle class="fg" cx="82" cy="82" r="6"/>
+  <circle class="fg" cx="118" cy="82" r="6"/>
+  <circle class="fg" cx="82" cy="118" r="6"/>
+  <circle class="fg" cx="118" cy="118" r="6"/>
+
+  <!-- Second dissolution ring - offset pattern (r=4.5) -->
+  <circle class="fg" cx="60" cy="100" r="4.5"/>
+  <circle class="fg" cx="140" cy="100" r="4.5"/>
+  <circle class="fg" cx="100" cy="60" r="4.5"/>
+  <circle class="fg" cx="100" cy="140" r="4.5"/>
+
+  <circle class="fg" cx="68" cy="68" r="4"/>
+  <circle class="fg" cx="132" cy="68" r="4"/>
+  <circle class="fg" cx="68" cy="132" r="4"/>
+  <circle class="fg" cx="132" cy="132" r="4"/>
+
+  <!-- Third dissolution ring - more scattered (r=3) -->
+  <circle class="fg" cx="50" cy="92" r="3"/>
+  <circle class="fg" cx="150" cy="92" r="3"/>
+  <circle class="fg" cx="50" cy="108" r="3"/>
+  <circle class="fg" cx="150" cy="108" r="3"/>
+  <circle class="fg" cx="92" cy="50" r="3"/>
+  <circle class="fg" cx="108" cy="50" r="3"/>
+  <circle class="fg" cx="92" cy="150" r="3"/>
+  <circle class="fg" cx="108" cy="150" r="3"/>
+
+  <!-- Intermediate particles (r=2.2) -->
+  <circle class="fg" cx="57" cy="78" r="2.2"/>
+  <circle class="fg" cx="143" cy="78" r="2.2"/>
+  <circle class="fg" cx="57" cy="122" r="2.2"/>
+  <circle class="fg" cx="143" cy="122" r="2.2"/>
+  <circle class="fg" cx="78" cy="57" r="2.2"/>
+  <circle class="fg" cx="122" cy="57" r="2.2"/>
+  <circle class="fg" cx="78" cy="143" r="2.2"/>
+  <circle class="fg" cx="122" cy="143" r="2.2"/>
+
+  <!-- Fourth dissolution ring - tiny particles (r=1.5) -->
+  <circle class="fg" cx="42" cy="85" r="1.5"/>
+  <circle class="fg" cx="158" cy="85" r="1.5"/>
+  <circle class="fg" cx="42" cy="115" r="1.5"/>
+  <circle class="fg" cx="158" cy="115" r="1.5"/>
+  <circle class="fg" cx="85" cy="42" r="1.5"/>
+  <circle class="fg" cx="115" cy="42" r="1.5"/>
+  <circle class="fg" cx="85" cy="158" r="1.5"/>
+  <circle class="fg" cx="115" cy="158" r="1.5"/>
+
+  <!-- Final traces - almost vanished (r=0.8) -->
+  <circle class="fg" cx="35" cy="100" r="0.8"/>
+  <circle class="fg" cx="165" cy="100" r="0.8"/>
+  <circle class="fg" cx="100" cy="35" r="0.8"/>
+  <circle class="fg" cx="100" cy="165" r="0.8"/>
+  <circle class="fg" cx="48" cy="48" r="0.8"/>
+  <circle class="fg" cx="152" cy="48" r="0.8"/>
+  <circle class="fg" cx="48" cy="152" r="0.8"/>
+  <circle class="fg" cx="152" cy="152" r="0.8"/>
+</svg>

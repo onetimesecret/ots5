@@ -1,0 +1,34 @@
+<!-- ICON OPTIMIZED: Fading Echo - 64px -->
+<!-- Simplified for small sizes: fewer rings, bolder strokes -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="64" height="64"/>
+
+  <!-- Center dot - larger for visibility -->
+  <circle class="fg" cx="32" cy="32" r="4"/>
+
+  <!-- Only 4 rings for clarity at small size -->
+  <!-- Ring 1 - solid, thick -->
+  <circle class="fg" cx="32" cy="32" r="10"
+          fill="none" stroke="white" stroke-width="3"/>
+
+  <!-- Ring 2 - solid but thinner -->
+  <circle class="fg" cx="32" cy="32" r="16"
+          fill="none" stroke="white" stroke-width="2.5"/>
+
+  <!-- Ring 3 - dashed -->
+  <circle class="fg" cx="32" cy="32" r="22"
+          fill="none" stroke="white" stroke-width="2"
+          stroke-dasharray="4 2"/>
+
+  <!-- Ring 4 - heavily dashed, fading -->
+  <circle class="fg" cx="32" cy="32" r="28"
+          fill="none" stroke="white" stroke-width="1.5"
+          stroke-dasharray="2 4"/>
+</svg>
