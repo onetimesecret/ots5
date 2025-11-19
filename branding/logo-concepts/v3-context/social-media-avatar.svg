@@ -1,0 +1,31 @@
+<!-- CONTEXT: Social Media Avatar/Profile Picture -->
+<!-- Circular avatar with centered logo -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+    <!-- Circular clip for profile picture -->
+    <clipPath id="avatar-circle">
+      <circle cx="200" cy="200" r="200"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle (black) -->
+  <circle class="bg" cx="200" cy="200" r="200"/>
+
+  <!-- Logo centered, optimized for circular frame -->
+  <g transform="translate(200, 200)" clip-path="url(#avatar-circle)">
+    <circle class="fg" cx="0" cy="0" r="25"/>
+    <circle class="fg" cx="0" cy="0" r="55" fill="none" stroke="white" stroke-width="15"/>
+    <circle class="fg" cx="0" cy="0" r="90" fill="none" stroke="white" stroke-width="10"/>
+    <circle class="fg" cx="0" cy="0" r="125" fill="none" stroke="white" stroke-width="7"
+            stroke-dasharray="15 5"/>
+    <circle class="fg" cx="0" cy="0" r="155" fill="none" stroke="white" stroke-width="5"
+            stroke-dasharray="10 10"/>
+  </g>
+
+  <!-- Optional: Ring border to define edge -->
+  <circle cx="200" cy="200" r="198" fill="none" stroke="#333" stroke-width="4"/>
+</svg>

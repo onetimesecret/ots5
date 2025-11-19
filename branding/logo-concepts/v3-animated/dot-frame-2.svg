@@ -1,0 +1,27 @@
+<!-- ANIMATED STORYBOARD: Vanishing Dot - Frame 2/4 -->
+<!-- Animation: 33% - First dissolution -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Core shrinking slightly -->
+  <circle class="fg" cx="100" cy="100" r="14"/>
+
+  <!-- First ring appearing - cardinal directions -->
+  <circle class="fg" cx="75" cy="100" r="6"/>
+  <circle class="fg" cx="125" cy="100" r="6"/>
+  <circle class="fg" cx="100" cy="75" r="6"/>
+  <circle class="fg" cx="100" cy="125" r="6"/>
+
+  <!-- Diagonals appearing -->
+  <circle class="fg" cx="82" cy="82" r="5" opacity="0.8"/>
+  <circle class="fg" cx="118" cy="82" r="5" opacity="0.8"/>
+  <circle class="fg" cx="82" cy="118" r="5" opacity="0.8"/>
+  <circle class="fg" cx="118" cy="118" r="5" opacity="0.8"/>
+</svg>

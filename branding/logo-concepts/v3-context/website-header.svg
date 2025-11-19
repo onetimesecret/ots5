@@ -1,0 +1,35 @@
+<!-- CONTEXT: Website Header -->
+<!-- Logo in navigation bar -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="800" height="80">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+      .text { font-family: 'Helvetica Neue', Arial, sans-serif; fill: #CCCCCC; }
+      .nav-item { font-size: 14px; font-weight: 400; }
+      .logo-text { font-size: 24px; font-weight: 200; letter-spacing: 4px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="800" height="80"/>
+
+  <!-- Logo + Brand (left side) -->
+  <g transform="translate(40, 40)">
+    <!-- Minimal pulse logo -->
+    <line class="fg" x1="0" y1="0" x2="6" y2="0" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+    <path class="fg" d="M 6 0 L 10 -9 L 14 0" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line class="fg" x1="14" y1="0" x2="22" y2="0" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="2 1.5"/>
+    <circle class="fg" cx="24" cy="0" r="0.6"/>
+  </g>
+
+  <!-- Brand name -->
+  <text class="fg logo-text" x="85" y="48">OTS</text>
+
+  <!-- Navigation menu (right side) -->
+  <text class="text nav-item" x="600" y="45">Create</text>
+  <text class="text nav-item" x="670" y="45">About</text>
+  <text class="text nav-item" x="730" y="45">Help</text>
+
+  <!-- Subtle bottom border -->
+  <line x1="0" y1="79.5" x2="800" y2="79.5" stroke="#222" stroke-width="1"/>
+</svg>

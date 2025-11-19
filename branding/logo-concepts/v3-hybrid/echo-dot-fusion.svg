@@ -1,0 +1,53 @@
+<!-- HYBRID: Echo + Dot Fusion -->
+<!-- Combines concentric rings with particle dissolution -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center solid dot -->
+  <circle class="fg" cx="100" cy="100" r="10"/>
+
+  <!-- First echo - solid ring -->
+  <circle class="fg" cx="100" cy="100" r="21" fill="none" stroke="white" stroke-width="7"/>
+
+  <!-- Second echo - solid ring -->
+  <circle class="fg" cx="100" cy="100" r="34" fill="none" stroke="white" stroke-width="5"/>
+
+  <!-- Transition zone - ring breaking into particles -->
+  <circle class="fg" cx="100" cy="100" r="55" fill="none" stroke="white" stroke-width="3.5"
+          stroke-dasharray="10 3"/>
+
+  <!-- Particle ring (cardinal directions) -->
+  <circle class="fg" cx="65" cy="100" r="4"/>
+  <circle class="fg" cx="135" cy="100" r="4"/>
+  <circle class="fg" cx="100" cy="65" r="4"/>
+  <circle class="fg" cx="100" cy="135" r="4"/>
+
+  <!-- More particles (diagonals) -->
+  <circle class="fg" cx="75" cy="75" r="3"/>
+  <circle class="fg" cx="125" cy="75" r="3"/>
+  <circle class="fg" cx="75" cy="125" r="3"/>
+  <circle class="fg" cx="125" cy="125" r="3"/>
+
+  <!-- Outer scattered particles -->
+  <circle class="fg" cx="55" cy="92" r="2"/>
+  <circle class="fg" cx="145" cy="92" r="2"/>
+  <circle class="fg" cx="55" cy="108" r="2"/>
+  <circle class="fg" cx="145" cy="108" r="2"/>
+  <circle class="fg" cx="92" cy="55" r="2"/>
+  <circle class="fg" cx="108" cy="55" r="2"/>
+  <circle class="fg" cx="92" cy="145" r="2"/>
+  <circle class="fg" cx="108" cy="145" r="2"/>
+
+  <!-- Tiniest particles -->
+  <circle class="fg" cx="48" cy="100" r="1"/>
+  <circle class="fg" cx="152" cy="100" r="1"/>
+  <circle class="fg" cx="100" cy="48" r="1"/>
+  <circle class="fg" cx="100" cy="152" r="1"/>
+</svg>

@@ -1,0 +1,47 @@
+<!-- HYBRID: Grid + Echo -->
+<!-- Pixelated center transitioning to echo rings -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center: Solid pixel grid (3x3) -->
+  <rect class="fg" x="88" y="88" width="8" height="8"/>
+  <rect class="fg" x="96" y="88" width="8" height="8"/>
+  <rect class="fg" x="104" y="88" width="8" height="8"/>
+
+  <rect class="fg" x="88" y="96" width="8" height="8"/>
+  <rect class="fg" x="96" y="96" width="8" height="8"/>
+  <rect class="fg" x="104" y="96" width="8" height="8"/>
+
+  <rect class="fg" x="88" y="104" width="8" height="8"/>
+  <rect class="fg" x="96" y="104" width="8" height="8"/>
+  <rect class="fg" x="104" y="104" width="8" height="8"/>
+
+  <!-- Transition: Fragmented pixels forming partial ring -->
+  <rect class="fg" x="78" y="98" width="6" height="6"/>
+  <rect class="fg" x="116" y="98" width="6" height="6"/>
+  <rect class="fg" x="98" y="78" width="6" height="6"/>
+  <rect class="fg" x="98" y="116" width="6" height="6"/>
+
+  <!-- First echo ring - dashed -->
+  <circle class="fg" cx="100" cy="100" r="34" fill="none" stroke="white" stroke-width="4"
+          stroke-dasharray="8 4"/>
+
+  <!-- Second echo ring - more dashed -->
+  <circle class="fg" cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="3"
+          stroke-dasharray="6 6"/>
+
+  <!-- Third echo ring - heavily dashed, fading -->
+  <circle class="fg" cx="100" cy="100" r="65" fill="none" stroke="white" stroke-width="2"
+          stroke-dasharray="4 8"/>
+
+  <!-- Outer echo - almost gone -->
+  <circle class="fg" cx="100" cy="100" r="78" fill="none" stroke="white" stroke-width="1.5"
+          stroke-dasharray="2 12"/>
+</svg>

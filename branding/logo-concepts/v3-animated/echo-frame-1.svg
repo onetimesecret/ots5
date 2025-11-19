@@ -1,0 +1,19 @@
+<!-- ANIMATED STORYBOARD: Fading Echo - Frame 1/5 -->
+<!-- Animation: 0% - Initial state (message exists) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Frame 1: Solid center dot appears -->
+  <circle class="fg" cx="100" cy="100" r="10"/>
+
+  <!-- Just the first echo, solid -->
+  <circle class="fg" cx="100" cy="100" r="21"
+          fill="none" stroke="white" stroke-width="7"/>
+</svg>

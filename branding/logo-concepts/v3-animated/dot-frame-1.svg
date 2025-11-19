@@ -1,0 +1,15 @@
+<!-- ANIMATED STORYBOARD: Vanishing Dot - Frame 1/4 -->
+<!-- Animation: 0% - Solid core -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Just the solid core -->
+  <circle class="fg" cx="100" cy="100" r="16"/>
+</svg>

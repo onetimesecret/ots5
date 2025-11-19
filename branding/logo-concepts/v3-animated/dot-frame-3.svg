@@ -1,0 +1,38 @@
+<!-- ANIMATED STORYBOARD: Vanishing Dot - Frame 3/4 -->
+<!-- Animation: 66% - Deep dissolution -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Core very small and fading -->
+  <circle class="fg" cx="100" cy="100" r="8" opacity="0.5"/>
+
+  <!-- First ring still visible but fading -->
+  <circle class="fg" cx="75" cy="100" r="5" opacity="0.7"/>
+  <circle class="fg" cx="125" cy="100" r="5" opacity="0.7"/>
+  <circle class="fg" cx="100" cy="75" r="5" opacity="0.7"/>
+  <circle class="fg" cx="100" cy="125" r="5" opacity="0.7"/>
+
+  <!-- Second and third rings prominent -->
+  <circle class="fg" cx="60" cy="100" r="4"/>
+  <circle class="fg" cx="140" cy="100" r="4"/>
+  <circle class="fg" cx="100" cy="60" r="4"/>
+  <circle class="fg" cx="100" cy="140" r="4"/>
+
+  <circle class="fg" cx="68" cy="68" r="3.5"/>
+  <circle class="fg" cx="132" cy="68" r="3.5"/>
+  <circle class="fg" cx="68" cy="132" r="3.5"/>
+  <circle class="fg" cx="132" cy="132" r="3.5"/>
+
+  <!-- Outer rings appearing -->
+  <circle class="fg" cx="50" cy="92" r="2.5" opacity="0.8"/>
+  <circle class="fg" cx="150" cy="92" r="2.5" opacity="0.8"/>
+  <circle class="fg" cx="92" cy="50" r="2.5" opacity="0.8"/>
+  <circle class="fg" cx="108" cy="150" r="2.5" opacity="0.8"/>
+</svg>

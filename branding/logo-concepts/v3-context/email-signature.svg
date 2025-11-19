@@ -1,0 +1,36 @@
+<!-- CONTEXT: Email Signature -->
+<!-- Compact logo for email footers -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .fg { fill: #000000; }
+      .text { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .name { font-size: 16px; font-weight: 600; fill: #000000; }
+      .title { font-size: 12px; font-weight: 400; fill: #666666; }
+      .company { font-size: 14px; font-weight: 400; fill: #000000; letter-spacing: 2px; }
+      .link { font-size: 11px; font-weight: 400; fill: #0066CC; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="400" height="100"/>
+
+  <!-- Divider line at top -->
+  <line x1="0" y1="15" x2="400" y2="15" stroke="#DDDDDD" stroke-width="1"/>
+
+  <!-- Logo (small, left) -->
+  <g transform="translate(35, 55)">
+    <circle class="fg" cx="0" cy="0" r="4"/>
+    <circle class="fg" cx="0" cy="0" r="10" fill="none" stroke="black" stroke-width="2.5"/>
+    <circle class="fg" cx="0" cy="0" r="16" fill="none" stroke="black" stroke-width="1.5"
+            stroke-dasharray="3 2"/>
+  </g>
+
+  <!-- Brand name -->
+  <text class="company" x="60" y="58">OTS</text>
+
+  <!-- Contact info -->
+  <text class="name" x="110" y="48">Ephemeral Messenger</text>
+  <text class="title" x="110" y="65">Secure one-time secrets</text>
+  <text class="link" x="110" y="80">https://onetimesecret.com</text>
+</svg>

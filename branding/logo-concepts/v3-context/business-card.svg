@@ -1,0 +1,41 @@
+<!-- CONTEXT: Business Card Design -->
+<!-- Minimal black card with logo -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="350" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+      .text { font-family: 'Helvetica Neue', Arial, sans-serif; fill: #FFFFFF; }
+      .subtle { fill: #666666; }
+    </style>
+  </defs>
+
+  <!-- Card background -->
+  <rect class="bg" width="350" height="200" rx="8"/>
+
+  <!-- Logo (top left) -->
+  <g transform="translate(50, 50)">
+    <circle class="fg" cx="0" cy="0" r="6"/>
+    <circle class="fg" cx="0" cy="0" r="13" fill="none" stroke="white" stroke-width="4"/>
+    <circle class="fg" cx="0" cy="0" r="21" fill="none" stroke="white" stroke-width="2.5"/>
+    <circle class="fg" cx="0" cy="0" r="30" fill="none" stroke="white" stroke-width="1.5"
+            stroke-dasharray="4 2"/>
+  </g>
+
+  <!-- Brand -->
+  <text class="text" x="105" y="55" font-size="28" font-weight="200" letter-spacing="4">OTS</text>
+
+  <!-- Details (bottom left) -->
+  <text class="text" x="30" y="145" font-size="12" font-weight="400">ONETIME SECRET</text>
+  <text class="subtle" x="30" y="165" font-size="10">Secure ephemeral messaging</text>
+  <text class="subtle" x="30" y="180" font-size="10">onetimesecret.com</text>
+
+  <!-- Subtle pattern (bottom right) - dissolving dots -->
+  <g transform="translate(280, 150)" opacity="0.2">
+    <circle class="fg" cx="0" cy="0" r="3"/>
+    <circle class="fg" cx="10" cy="0" r="2"/>
+    <circle class="fg" cx="18" cy="0" r="1.5"/>
+    <circle class="fg" cx="24" cy="0" r="1"/>
+    <circle class="fg" cx="29" cy="0" r="0.5"/>
+  </g>
+</svg>

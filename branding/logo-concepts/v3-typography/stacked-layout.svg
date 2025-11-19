@@ -1,0 +1,32 @@
+<!-- TYPOGRAPHY: Stacked Vertical Layout -->
+<!-- Logo above text, centered alignment -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+      .text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 200; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="280"/>
+
+  <!-- Logo at top (Fading Echo) -->
+  <g transform="translate(100, 90)">
+    <circle class="fg" cx="0" cy="0" r="10"/>
+    <circle class="fg" cx="0" cy="0" r="21" fill="none" stroke="white" stroke-width="7"/>
+    <circle class="fg" cx="0" cy="0" r="34" fill="none" stroke="white" stroke-width="5"/>
+    <circle class="fg" cx="0" cy="0" r="55" fill="none" stroke="white" stroke-width="3.5" stroke-dasharray="10 3"/>
+    <circle class="fg" cx="0" cy="0" r="70" fill="none" stroke="white" stroke-width="2.5" stroke-dasharray="7 5"/>
+  </g>
+
+  <!-- Brand name below -->
+  <text class="fg text" x="100" y="200" font-size="42" letter-spacing="6">OTS</text>
+
+  <!-- Full name -->
+  <text class="fg text" x="100" y="225" font-size="14" letter-spacing="2" opacity="0.7">ONETIME</text>
+  <text class="fg text" x="100" y="243" font-size="14" letter-spacing="2" opacity="0.7">SECRET</text>
+
+  <!-- Tagline -->
+  <text class="fg text" x="100" y="265" font-size="9" letter-spacing="1" opacity="0.5">Ephemeral Messenger</text>
+</svg>

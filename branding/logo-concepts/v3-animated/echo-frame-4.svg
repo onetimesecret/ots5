@@ -1,0 +1,39 @@
+<!-- ANIMATED STORYBOARD: Fading Echo - Frame 4/5 -->
+<!-- Animation: 75% - Fading away -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center fading -->
+  <circle class="fg" cx="100" cy="100" r="10" opacity="0.3"/>
+
+  <!-- Inner echoes fading -->
+  <circle class="fg" cx="100" cy="100" r="21"
+          fill="none" stroke="white" stroke-width="7" opacity="0.4"/>
+
+  <circle class="fg" cx="100" cy="100" r="34"
+          fill="none" stroke="white" stroke-width="5" opacity="0.5"/>
+
+  <circle class="fg" cx="100" cy="100" r="55"
+          fill="none" stroke="white" stroke-width="3.5"
+          stroke-dasharray="10 3" opacity="0.6"/>
+
+  <!-- Outer echoes still visible but fragmenting more -->
+  <circle class="fg" cx="100" cy="100" r="70"
+          fill="none" stroke="white" stroke-width="2.5"
+          stroke-dasharray="7 5" opacity="0.4"/>
+
+  <circle class="fg" cx="100" cy="100" r="82"
+          fill="none" stroke="white" stroke-width="1.8"
+          stroke-dasharray="4 8" opacity="0.3"/>
+
+  <circle class="fg" cx="100" cy="100" r="91"
+          fill="none" stroke="white" stroke-width="1.2"
+          stroke-dasharray="2 12" opacity="0.2"/>
+</svg>

@@ -1,0 +1,26 @@
+<!-- ANIMATED STORYBOARD: Fading Echo - Frame 2/5 -->
+<!-- Animation: 25% - First expansion -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <circle class="fg" cx="100" cy="100" r="10"/>
+
+  <!-- First two echoes expanding -->
+  <circle class="fg" cx="100" cy="100" r="21"
+          fill="none" stroke="white" stroke-width="7"/>
+
+  <circle class="fg" cx="100" cy="100" r="34"
+          fill="none" stroke="white" stroke-width="5"/>
+
+  <!-- Third echo appearing, faint -->
+  <circle class="fg" cx="100" cy="100" r="55"
+          fill="none" stroke="white" stroke-width="3.5"
+          stroke-dasharray="10 3" opacity="0.7"/>
+</svg>

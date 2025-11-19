@@ -1,0 +1,51 @@
+<!-- COLOR ACCENT: Vanishing Dot - Gradient Fade -->
+<!-- Particles fade from cyan to white to transparent -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+      .c1 { fill: #00FFFF; }  <!-- Cyan - innermost -->
+      .c2 { fill: #66FFFF; }  <!-- Light cyan -->
+      .c3 { fill: #CCFFFF; }  <!-- Very light cyan -->
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Center - Cyan (source) -->
+  <circle class="c1" cx="100" cy="100" r="16"/>
+
+  <!-- First ring - Light cyan -->
+  <circle class="c2" cx="75" cy="100" r="7"/>
+  <circle class="c2" cx="125" cy="100" r="7"/>
+  <circle class="c2" cx="100" cy="75" r="7"/>
+  <circle class="c2" cx="100" cy="125" r="7"/>
+
+  <!-- Second ring - Very light cyan -->
+  <circle class="c3" cx="60" cy="100" r="4.5"/>
+  <circle class="c3" cx="140" cy="100" r="4.5"/>
+  <circle class="c3" cx="100" cy="60" r="4.5"/>
+  <circle class="c3" cx="100" cy="140" r="4.5"/>
+
+  <circle class="c3" cx="68" cy="68" r="4"/>
+  <circle class="c3" cx="132" cy="68" r="4"/>
+  <circle class="c3" cx="68" cy="132" r="4"/>
+  <circle class="c3" cx="132" cy="132" r="4"/>
+
+  <!-- Third ring - White (faded) -->
+  <circle class="fg" cx="50" cy="92" r="3"/>
+  <circle class="fg" cx="150" cy="92" r="3"/>
+  <circle class="fg" cx="50" cy="108" r="3"/>
+  <circle class="fg" cx="150" cy="108" r="3"/>
+  <circle class="fg" cx="92" cy="50" r="3"/>
+  <circle class="fg" cx="108" cy="50" r="3"/>
+  <circle class="fg" cx="92" cy="150" r="3"/>
+  <circle class="fg" cx="108" cy="150" r="3"/>
+
+  <!-- Outer rings - white, smaller -->
+  <circle class="fg" cx="42" cy="85" r="1.5"/>
+  <circle class="fg" cx="158" cy="85" r="1.5"/>
+  <circle class="fg" cx="85" cy="42" r="1.5"/>
+  <circle class="fg" cx="115" cy="158" r="1.5"/>
+</svg>

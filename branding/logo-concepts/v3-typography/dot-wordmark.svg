@@ -1,0 +1,47 @@
+<!-- TYPOGRAPHY: Vanishing Dot + OTS Wordmark -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+      .text { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 200; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="400" height="120"/>
+
+  <!-- Logo on left (scaled down) -->
+  <g transform="translate(60, 60)">
+    <!-- Center -->
+    <circle class="fg" cx="0" cy="0" r="8"/>
+
+    <!-- First ring -->
+    <circle class="fg" cx="-13" cy="0" r="4"/>
+    <circle class="fg" cx="13" cy="0" r="4"/>
+    <circle class="fg" cx="0" cy="-13" r="4"/>
+    <circle class="fg" cx="0" cy="13" r="4"/>
+
+    <!-- Second ring -->
+    <circle class="fg" cx="-22" cy="0" r="2.5"/>
+    <circle class="fg" cx="22" cy="0" r="2.5"/>
+    <circle class="fg" cx="0" cy="-22" r="2.5"/>
+    <circle class="fg" cx="0" cy="22" r="2.5"/>
+
+    <circle class="fg" cx="-16" cy="-16" r="2.2"/>
+    <circle class="fg" cx="16" cy="-16" r="2.2"/>
+    <circle class="fg" cx="-16" cy="16" r="2.2"/>
+    <circle class="fg" cx="16" cy="16" r="2.2"/>
+
+    <!-- Third ring -->
+    <circle class="fg" cx="-30" cy="0" r="1.5"/>
+    <circle class="fg" cx="30" cy="0" r="1.5"/>
+    <circle class="fg" cx="0" cy="-30" r="1.5"/>
+    <circle class="fg" cx="0" cy="30" r="1.5"/>
+  </g>
+
+  <!-- Wordmark: OTS -->
+  <text class="fg text" x="130" y="75" font-size="56" letter-spacing="8">OTS</text>
+
+  <!-- Tagline -->
+  <text class="fg text" x="132" y="92" font-size="10" letter-spacing="3" opacity="0.6">ONETIME SECRET</text>
+</svg>

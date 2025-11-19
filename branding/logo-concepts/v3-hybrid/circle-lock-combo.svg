@@ -1,0 +1,53 @@
+<!-- HYBRID: One-Time Circle + Lock -->
+<!-- Broken circle with lock dissolving inside -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .fg { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="200" height="200"/>
+
+  <!-- Broken circle (from One-Time Circle) -->
+  <path class="fg" d="M 150 100 A 50 50 0 1 1 135.35 35.35"
+        fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Arrow at break -->
+  <path class="fg" d="M 135 35 L 147 27 L 141 42 Z"/>
+
+  <!-- Dissolving particles from break -->
+  <circle class="fg" cx="151" cy="22" r="3"/>
+  <circle class="fg" cx="158" cy="18" r="2"/>
+  <circle class="fg" cx="163" cy="15" r="1.5"/>
+  <circle class="fg" cx="168" cy="12" r="1"/>
+
+  <!-- Lock inside (dissolving) -->
+  <!-- Solid top half of lock body -->
+  <rect class="fg" x="85" y="95" width="30" height="15" rx="3"/>
+
+  <!-- Fragmenting bottom half -->
+  <rect class="fg" x="85" y="112" width="9" height="7"/>
+  <rect class="fg" x="100" y="112" width="9" height="7"/>
+
+  <rect class="fg" x="86" y="121" width="7" height="6"/>
+  <rect class="fg" x="102" y="121" width="7" height="6"/>
+
+  <!-- Particles falling from lock -->
+  <rect class="fg" x="89" y="130" width="4" height="4"/>
+  <rect class="fg" x="104" y="130" width="4" height="4"/>
+
+  <rect class="fg" x="92" y="137" width="3" height="3"/>
+  <rect class="fg" x="105" y="137" width="3" height="3"/>
+
+  <!-- Lock shackle (top arc) -->
+  <path class="fg" d="M 93 95 L 93 80 Q 93 70 100 70 Q 107 70 107 80 L 107 95"
+        fill="none" stroke="white" stroke-width="6"/>
+  <path class="bg" d="M 97 95 L 97 82 Q 97 76 100 76 Q 103 76 103 82 L 103 95"
+        fill="none" stroke="black" stroke-width="4"/>
+
+  <!-- Keyhole -->
+  <circle class="bg" cx="100" cy="103" r="4"/>
+  <rect class="bg" x="98" y="103" width="4" height="6"/>
+</svg>
