@@ -1,0 +1,21 @@
+<!-- Iteration 47: Curtain Close - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <path d="M 40 50 Q 45 80 40 110 Q 38 140 40 160" fill="none" stroke="#FFF" stroke-width="8"/>
+  <path d="M 50 50 Q 55 80 50 110 Q 48 140 50 160" fill="none" stroke="#FFF" stroke-width="7"/>
+  <path d="M 60 50 Q 64 80 60 110 Q 58 140 60 160" fill="none" stroke="#FFF" stroke-width="6"/>
+  <path d="M 70 50 Q 73 80 70 110 Q 68 140 70 160" fill="none" stroke="#FFF" stroke-width="5"/>
+
+  <path d="M 160 50 Q 155 80 160 110 Q 162 140 160 160" fill="none" stroke="#FFF" stroke-width="8"/>
+  <path d="M 150 50 Q 145 80 150 110 Q 152 140 150 160" fill="none" stroke="#FFF" stroke-width="7"/>
+  <path d="M 140 50 Q 136 80 140 110 Q 142 140 140 160" fill="none" stroke="#FFF" stroke-width="6"/>
+  <path d="M 130 50 Q 127 80 130 110 Q 132 140 130 160" fill="none" stroke="#FFF" stroke-width="5" opacity="0.9"/>
+
+  <path d="M 120 52 Q 118 80 120 108" fill="none" stroke="#FFF" stroke-width="4" opacity="0.6"/>
+  <path d="M 110 55 Q 109 80 110 105" fill="none" stroke="#FFF" stroke-width="3" opacity="0.4"/>
+
+  <circle cx="100" cy="100" r="4" fill="#FFF" opacity="0.3"/>
+  <circle cx="95" cy="90" r="2.5" fill="#FFF" opacity="0.2"/>
+  <circle cx="105" cy="110" r="2.5" fill="#FFF" opacity="0.2"/>
+</svg>

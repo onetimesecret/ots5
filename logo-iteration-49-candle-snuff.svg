@@ -1,0 +1,27 @@
+<!-- Iteration 49: Candle Snuff - Light Mode -->
+<!-- Concept: Flame being extinguished - light going out -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Candle body -->
+  <rect x="90" y="120" width="20" height="40" fill="#000"/>
+
+  <!-- Wick -->
+  <rect x="98" y="115" width="4" height="8" fill="#000"/>
+
+  <!-- Flame - being extinguished -->
+  <path d="M 100 115 Q 95 105 97 95 Q 100 85 100 80 Q 100 85 103 95 Q 105 105 100 115 Z"
+        fill="#000" opacity="0.7"/>
+
+  <!-- Snuffer descending -->
+  <path d="M 85 60 L 85 75 L 100 90 L 115 75 L 115 60 Z" fill="none" stroke="#000" stroke-width="4"/>
+
+  <!-- Smoke trails from extinguishing -->
+  <path d="M 100 78 Q 95 70 97 62 Q 100 54 98 46"
+        fill="none" stroke="#000" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 102 76 Q 105 68 103 60 Q 100 52 102 44"
+        fill="none" stroke="#000" stroke-width="1.8" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Smoke particles -->
+  <circle cx="96" cy="42" r="1.5" fill="#000" opacity="0.2"/>
+  <circle cx="104" cy="40" r="1.2" fill="#000" opacity="0.15"/>
+  <circle cx="100" cy="35" r="1" fill="#000" opacity="0.1"/>
+</svg>

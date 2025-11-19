@@ -1,0 +1,26 @@
+<!-- Iteration 45: DNA Unzip - Light Mode -->
+<!-- Concept: Double helix unzipping - genetic code separating and dissolving -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left strand - intact -->
+  <path d="M 80 50 Q 75 70 80 90 Q 85 110 80 130 Q 78 140 80 150"
+        fill="none" stroke="#000" stroke-width="4"/>
+
+  <!-- Right strand - separating -->
+  <path d="M 120 50 Q 125 70 120 90" fill="none" stroke="#000" stroke-width="4" opacity="0.9"/>
+  <path d="M 120 90 Q 118 105 120 120" fill="none" stroke="#000" stroke-width="3.5" opacity="0.6"/>
+  <path d="M 120 120 Q 122 132 120 145" fill="none" stroke="#000" stroke-width="2.5" opacity="0.3"/>
+
+  <!-- Base pairs - breaking -->
+  <line x1="80" y1="60" x2="120" y2="60" stroke="#000" stroke-width="2.5"/>
+  <line x1="80" y1="75" x2="118" y2="75" stroke="#000" stroke-width="2.5" opacity="0.9"/>
+  <line x1="80" y1="90" x2="115" y2="90" stroke="#000" stroke-width="2" opacity="0.7"/>
+  <line x1="80" y1="105" x2="110" y2="107" stroke="#000" stroke-width="1.8" opacity="0.5"/>
+  <line x1="80" y1="120" x2="100" y2="123" stroke="#000" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Broken fragments floating away -->
+  <line x1="130" y1="125" x2="138" y2="126" stroke="#000" stroke-width="1.5" opacity="0.2"/>
+  <line x1="125" y1="138" x2="133" y2="140" stroke="#000" stroke-width="1.2" opacity="0.15"/>
+
+  <circle cx="142" cy="127" r="1.5" fill="#000" opacity="0.15"/>
+  <circle cx="137" cy="142" r="1.2" fill="#000" opacity="0.1"/>
+</svg>

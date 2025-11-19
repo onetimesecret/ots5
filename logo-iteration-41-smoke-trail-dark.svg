@@ -1,0 +1,21 @@
+<!-- Iteration 41: Smoke Trail - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <rect x="85" y="140" width="30" height="15" fill="#FFF"/>
+
+  <path d="M 95 135 Q 92 125 95 115 Q 98 105 95 95"
+        fill="none" stroke="#FFF" stroke-width="6" opacity="0.8" stroke-linecap="round"/>
+  <path d="M 105 135 Q 108 120 105 105 Q 102 90 105 75"
+        fill="none" stroke="#FFF" stroke-width="5" opacity="0.7" stroke-linecap="round"/>
+
+  <path d="M 95 95 Q 90 85 92 75 Q 94 65 90 55"
+        fill="none" stroke="#FFF" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 105 75 Q 110 65 108 55 Q 106 45 110 35"
+        fill="none" stroke="#FFF" stroke-width="2.5" opacity="0.3" stroke-linecap="round"/>
+
+  <circle cx="88" cy="50" r="2" fill="#FFF" opacity="0.2"/>
+  <circle cx="112" cy="30" r="1.5" fill="#FFF" opacity="0.15"/>
+  <circle cx="95" cy="40" r="1.5" fill="#FFF" opacity="0.2"/>
+  <circle cx="108" cy="45" r="1" fill="#FFF" opacity="0.1"/>
+</svg>

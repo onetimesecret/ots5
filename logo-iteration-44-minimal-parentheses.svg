@@ -1,0 +1,21 @@
+<!-- Iteration 44: Minimal Parentheses - Light Mode -->
+<!-- Concept: Opening/closing brackets with content vanishing between -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left parenthesis - solid -->
+  <path d="M 75 65 Q 60 100 75 135" fill="none" stroke="#000" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Right parenthesis - fragmenting -->
+  <path d="M 125 65 Q 130 85 130 100" fill="none" stroke="#000" stroke-width="9" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 130 100 Q 130 115 125 135" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Dispersing fragments from right paren -->
+  <line x1="133" y1="90" x2="140" y2="88" stroke="#000" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  <line x1="132" y1="110" x2="138" y2="112" stroke="#000" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Content between - vanishing -->
+  <circle cx="100" cy="100" r="5" fill="#000" opacity="0.3"/>
+  <circle cx="90" cy="95" r="3" fill="#000" opacity="0.2"/>
+  <circle cx="110" cy="105" r="3" fill="#000" opacity="0.2"/>
+  <circle cx="100" cy="90" r="2" fill="#000" opacity="0.15"/>
+  <circle cx="100" cy="110" r="2" fill="#000" opacity="0.15"/>
+</svg>

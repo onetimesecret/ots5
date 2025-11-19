@@ -1,0 +1,33 @@
+<!-- Iteration 46: Starburst Fade - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <circle cx="100" cy="100" r="8" fill="#FFF"/>
+
+  <line x1="100" y1="100" x2="100" y2="60" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="128" y2="72" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="140" y2="100" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="128" y2="128" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="100" y2="140" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="72" y2="128" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="60" y2="100" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="72" y2="72" stroke="#FFF" stroke-width="6" stroke-linecap="round"/>
+
+  <line x1="100" y1="55" x2="100" y2="45" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="132" y1="68" x2="140" y2="60" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="145" y1="100" x2="155" y2="100" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="132" y1="132" x2="140" y2="140" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="100" y1="145" x2="100" y2="155" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="68" y1="132" x2="60" y2="140" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="55" y1="100" x2="45" y2="100" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="68" y1="68" x2="60" y2="60" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <circle cx="100" cy="40" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="145" cy="55" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="160" cy="100" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="145" cy="145" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="100" cy="160" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="55" cy="145" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="40" cy="100" r="2" fill="#FFF" opacity="0.3"/>
+  <circle cx="55" cy="55" r="2" fill="#FFF" opacity="0.3"/>
+</svg>

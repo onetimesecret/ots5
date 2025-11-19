@@ -1,6 +1,6 @@
 # Ephemeral Messaging Logo Explorations
 
-**40 minimalist, high-contrast logo concepts** exploring themes of **disappearance**, **encryption**, and **urgency** for a service delivering sensitive information with absolute ephemerality.
+**52 minimalist, high-contrast logo concepts** exploring themes of **disappearance**, **encryption**, and **urgency** for a service delivering sensitive information with absolute ephemerality.
 
 ## Design Principles
 
@@ -12,7 +12,7 @@
 
 ## Viewing the Concepts
 
-Open `logo-overview-v2.html` in a browser to view all 40 concepts with interactive light/dark mode comparison.
+Open `logo-overview-v3.html` in a browser to view all 52 concepts with interactive light/dark mode comparison.
 
 ---
 
@@ -98,6 +98,30 @@ Open `logo-overview-v2.html` in a browser to view all 40 concepts with interacti
 
 ---
 
+### Phase 3: Advanced Concepts (41-52)
+
+#### Atmospheric & Elemental
+- **41. Smoke Trail** - Message rising as smoke, dispersing into nothing
+- **42. Ink Blot Reverse** - Ink blot receding, shrinking (reverse of spreading)
+- **49. Candle Snuff** - Flame being extinguished - light going out
+- **50. Wave Collapse** - Wave cresting then crashing - peak before destruction
+
+#### Seals & Barriers
+- **43. Envelope Seal Break** - Wax seal breaking - old-world secrecy meets digital destruction
+- **44. Minimal Parentheses** - Opening/closing brackets with content vanishing between
+- **47. Curtain Close** - Theater curtains closing on the secret
+
+#### Biological & Structural
+- **45. DNA Unzip** - Double helix unzipping and dissolving - genetic code separating
+- **48. Binary Dissolve** - Binary code degrading to nothing - digital ephemerality
+- **52. Origami Unfold** - Folded secret unfolding and disintegrating
+
+#### Dimensional & Abstract
+- **46. Starburst Fade** - Radial burst fading outward - brief flash
+- **51. Tesseract Fold** - 4D hypercube folding out of dimension - dimensional ephemerality
+
+---
+
 ## Design Philosophy
 
 **What does irreversible confidentiality look like?**
@@ -140,7 +164,7 @@ Each mark suggests both the transmission of a secret and its immediate, permanen
 - **Format**: SVG vector graphics
 - **Viewbox**: 200×200 (scales infinitely)
 - **Color modes**: Black-on-white + White-on-black
-- **Files**: 80 total (40 concepts × 2 modes)
+- **Files**: 104 total (52 concepts × 2 modes)
 - **Rendering**: Optimized for clarity at small sizes
 - **Validation**: Tested for visual integrity under color inversion
 

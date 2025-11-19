@@ -1,0 +1,49 @@
+<!-- Iteration 48: Binary Dissolve - Dark Mode -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#000"/>
+
+  <circle cx="50" cy="70" r="5" fill="#FFF"/>
+  <circle cx="50" cy="85" r="5" fill="#FFF"/>
+  <circle cx="50" cy="100" r="5" fill="#FFF"/>
+  <circle cx="50" cy="115" r="5" fill="#FFF"/>
+  <circle cx="50" cy="130" r="5" fill="#FFF"/>
+
+  <rect x="62" y="67" width="3" height="6" fill="#FFF"/>
+  <rect x="62" y="82" width="3" height="6" fill="#FFF"/>
+  <rect x="62" y="97" width="3" height="6" fill="#FFF"/>
+  <rect x="62" y="112" width="3" height="6" fill="#FFF"/>
+  <rect x="62" y="127" width="3" height="6" fill="#FFF"/>
+
+  <circle cx="80" cy="70" r="4.5" fill="#FFF" opacity="0.9"/>
+  <circle cx="80" cy="85" r="4.5" fill="#FFF" opacity="0.9"/>
+  <circle cx="80" cy="100" r="4.5" fill="#FFF" opacity="0.9"/>
+  <circle cx="80" cy="115" r="4.5" fill="#FFF" opacity="0.9"/>
+  <circle cx="80" cy="130" r="4.5" fill="#FFF" opacity="0.9"/>
+
+  <rect x="92" y="68" width="3" height="5" fill="#FFF" opacity="0.8"/>
+  <rect x="92" y="83" width="3" height="5" fill="#FFF" opacity="0.8"/>
+  <rect x="92" y="98" width="3" height="5" fill="#FFF" opacity="0.8"/>
+  <rect x="92" y="113" width="3" height="5" fill="#FFF" opacity="0.8"/>
+  <rect x="92" y="128" width="3" height="5" fill="#FFF" opacity="0.8"/>
+
+  <circle cx="110" cy="71" r="3.5" fill="#FFF" opacity="0.6"/>
+  <circle cx="110" cy="86" r="3.5" fill="#FFF" opacity="0.6"/>
+  <circle cx="110" cy="101" r="3.5" fill="#FFF" opacity="0.6"/>
+  <circle cx="110" cy="116" r="3.5" fill="#FFF" opacity="0.6"/>
+  <circle cx="110" cy="131" r="3.5" fill="#FFF" opacity="0.6"/>
+
+  <rect x="120" y="70" width="2.5" height="4" fill="#FFF" opacity="0.5"/>
+  <rect x="120" y="85" width="2.5" height="4" fill="#FFF" opacity="0.5"/>
+  <rect x="120" y="100" width="2.5" height="4" fill="#FFF" opacity="0.5"/>
+  <rect x="120" y="115" width="2.5" height="4" fill="#FFF" opacity="0.5"/>
+
+  <circle cx="135" cy="72" r="2.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="135" cy="87" r="2.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="135" cy="102" r="2.5" fill="#FFF" opacity="0.3"/>
+
+  <rect x="145" y="73" width="2" height="3" fill="#FFF" opacity="0.2"/>
+  <rect x="145" y="88" width="2" height="3" fill="#FFF" opacity="0.2"/>
+
+  <circle cx="157" cy="75" r="1.5" fill="#FFF" opacity="0.15"/>
+  <circle cx="157" cy="90" r="1.5" fill="#FFF" opacity="0.15"/>
+</svg>
