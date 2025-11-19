@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200">
+<text x="570" y="10" font-size="7" opacity=".3">#M4U1</text>
+<!-- GLYPH 16×16 -->
+<rect x="24" y="24" width="2" height="2"/>
+<rect x="27" y="24" width="2" height="2"/>
+<rect x="30" y="24" width="2" height="2"/>
+<rect x="24" y="27" width="2" height="2" opacity=".7"/>
+<rect x="30" y="27" width="2" height="2" opacity=".7"/>
+<rect x="27" y="30" width="2" height="2" opacity=".4"/>
+<!-- LOCKUP 80px -->
+<g transform="translate(70,0)">
+<rect x="20" y="52" width="4" height="4"/>
+<rect x="26" y="52" width="4" height="4"/>
+<rect x="32" y="52" width="4" height="4"/>
+<rect x="38" y="52" width="4" height="4"/>
+<rect x="20" y="58" width="4" height="4" opacity=".8"/>
+<rect x="32" y="58" width="4" height="4" opacity=".8"/>
+<rect x="38" y="58" width="4" height="4" opacity=".8"/>
+<rect x="26" y="64" width="4" height="4" opacity=".5"/>
+<rect x="32" y="64" width="4" height="4" opacity=".5"/>
+<rect x="26" y="70" width="4" height="4" opacity=".2"/>
+<text x="60" y="52" font-size="18" font-weight="700">OneTime</text>
+<text x="60" y="70" font-size="18" font-weight="300">Secret</text>
+</g>
+<!-- BADGE 200px -->
+<g transform="translate(300,0)">
+<rect x="108" y="50" width="8" height="8"/>
+<rect x="118" y="50" width="8" height="8"/>
+<rect x="128" y="50" width="8" height="8"/>
+<rect x="138" y="50" width="8" height="8"/>
+<rect x="148" y="50" width="8" height="8"/>
+<rect x="108" y="60" width="8" height="8" opacity=".9"/>
+<rect x="128" y="60" width="8" height="8" opacity=".9"/>
+<rect x="148" y="60" width="8" height="8" opacity=".9"/>
+<rect x="118" y="70" width="8" height="8" opacity=".7"/>
+<rect x="138" y="70" width="8" height="8" opacity=".7"/>
+<rect x="118" y="80" width="8" height="8" opacity=".4"/>
+<rect x="128" y="80" width="8" height="8" opacity=".4"/>
+<text x="130" y="125" font-size="28" font-weight="700" text-anchor="middle">OneTime</text>
+<text x="130" y="150" font-size="28" font-weight="300" text-anchor="middle">Secret</text>
+<text x="130" y="175" font-size="14" text-anchor="middle" opacity=".7">One view. Then gone.</text>
+</g>
+<text x="5" y="195" font-size="8" opacity=".4">Digital decay—pixels dissolving.</text>
+</svg>

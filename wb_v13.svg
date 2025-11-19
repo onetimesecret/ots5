@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 200">
+<rect width="580" height="200" fill="#000"/>
+<text x="570" y="10" font-size="7" fill="#fff" opacity=".3">#N5V2</text>
+<!-- GLYPH 16×16 -->
+<rect x="27" y="22" width="2" height="12" fill="#fff"/>
+<path d="M27 22l-2 2" fill="none" stroke="#fff" stroke-width="1"/>
+<rect x="27" y="34" width="2" height="1" fill="#fff" opacity=".5"/>
+<rect x="27" y="35" width="2" height=".5" fill="#fff" opacity=".3"/>
+<!-- LOCKUP 80px -->
+<g transform="translate(70,0)">
+<rect x="28" y="45" width="4" height="28" fill="#fff"/>
+<path d="M28 45l-4 4" fill="none" stroke="#fff" stroke-width="2"/>
+<rect x="28" y="73" width="4" height="2" fill="#fff" opacity=".6"/>
+<rect x="27" y="75" width="6" height="1.5" fill="#fff" opacity=".4"/>
+<rect x="26" y="76.5" width="8" height="1" fill="#fff" opacity=".25"/>
+<text x="60" y="52" font-size="18" font-weight="700" fill="#fff">OneTime</text>
+<text x="60" y="70" font-size="18" font-weight="300" fill="#fff">Secret</text>
+</g>
+<!-- BADGE 200px -->
+<g transform="translate(300,0)">
+<rect x="125" y="35" width="10" height="60" fill="#fff"/>
+<path d="M125 35l-10 10" fill="none" stroke="#fff" stroke-width="4"/>
+<rect x="125" y="95" width="10" height="4" fill="#fff" opacity=".7"/>
+<rect x="122" y="99" width="16" height="3" fill="#fff" opacity=".5"/>
+<rect x="119" y="102" width="22" height="2.5" fill="#fff" opacity=".35"/>
+<rect x="116" y="104.5" width="28" height="2" fill="#fff" opacity=".2"/>
+<text x="130" y="135" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">OneTime</text>
+<text x="130" y="160" font-size="28" font-weight="300" fill="#fff" text-anchor="middle">Secret</text>
+<text x="130" y="185" font-size="14" fill="#fff" text-anchor="middle" opacity=".7">One view. Then gone.</text>
+</g>
+<text x="5" y="195" font-size="8" fill="#fff" opacity=".4">The number "1" crumbling—one chance, then dust.</text>
+</svg>
